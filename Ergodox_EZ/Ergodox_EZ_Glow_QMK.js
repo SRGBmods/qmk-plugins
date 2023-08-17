@@ -1,5 +1,5 @@
 export function Name() { return "Ergodox EZ Glow"; }
-export function Version() { return "1.1.4"; }
+export function Version() { return "1.1.5"; }
 export function VendorId() { return 0x3297; }
 export function ProductId() { return 0x4976; }
 export function Publisher() { return "WhirlwindFX"; }
@@ -62,6 +62,13 @@ export function LedPositions() {
 	return vKeyPositions;
 }
 
+export function vKeysArrayCount()
+{
+	device.log('vKeys ' + vKeys.length);
+	device.log('vKeyNames ' + vKeyNames.length);
+	device.log('vKeyPositions ' + vKeyPositions.length);
+}
+
 export function Initialize() {
 	requestFirmwareType();
 	requestQMKVersion();
@@ -87,6 +94,7 @@ export function Shutdown(SystemSuspending) {
 			effectDisable();
 		}
 	}
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 

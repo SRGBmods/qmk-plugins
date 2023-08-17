@@ -1,5 +1,5 @@
 export function Name() { return "DZTech DZ65RGB V3"; }
-export function Version() { return "1.1.4"; }
+export function Version() { return "1.1.5"; }
 export function VendorId() { return 0x445a; }
 export function ProductId() { return 0x1424; }
 export function Publisher() { return "chewtoy9696"; }
@@ -67,6 +67,13 @@ export function LedPositions()
 	return vKeyPositions;
 }
 
+export function vKeysArrayCount()
+{
+	device.log('vKeys ' + vKeys.length);
+	device.log('vKeyNames ' + vKeyNames.length);
+	device.log('vKeyPositions ' + vKeyPositions.length);
+}
+
 export function Initialize()
 {
 	requestFirmwareType();
@@ -93,6 +100,7 @@ export function Shutdown()
 	{
 		effectDisable();
 	}
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 

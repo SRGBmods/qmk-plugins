@@ -1,5 +1,5 @@
 export function Name() { return "Feker IK75 (QMK/VIA)"; }
-export function Version() { return "1.1.4"; }
+export function Version() { return "1.1.5"; }
 export function VendorId() { return 0xF2E7; }
 export function ProductId() { return 0x1226; }
 export function Publisher() { return "986nick"; }
@@ -76,6 +76,13 @@ export function LedPositions()
 	return vKeyPositions;
 }
 
+export function vKeysArrayCount()
+{
+	device.log('vKeys ' + vKeys.length);
+	device.log('vKeyNames ' + vKeyNames.length);
+	device.log('vKeyPositions ' + vKeyPositions.length);
+}
+
 export function Initialize()
 {
 	requestFirmwareType();
@@ -110,6 +117,7 @@ export function Shutdown(SystemSuspending)
 			effectDisable();
 		}
 	}
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 

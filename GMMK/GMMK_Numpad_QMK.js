@@ -1,5 +1,5 @@
 export function Name() { return "GMMK Numpad"; }
-export function Version() { return "1.1.4"; }
+export function Version() { return "1.1.5"; }
 export function VendorId() { return 0x320F; }
 export function ProductId() { return 0x5088; }
 export function Publisher() { return "WhirlwindFX"; }
@@ -44,13 +44,13 @@ const vKeyNames = [
 ];
 
 const vKeyPositions = [
-	[5,0], [0, 0], [1, 0], [2, 0], [3, 0], [4, 0],
-	[5,1], [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
-	[5,2], [0, 2], [1, 2], [2, 2],         [4, 2],
-	[5,3], [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
-	[5,4], [0, 4], [1, 4],                 [4, 4],
-	[5,5],                                 [4, 5],
-	[5,6],                                 [4, 6]
+	[5, 0], [0, 0], [1, 0], [2, 0], [3, 0], [4, 0],
+	[5, 1], [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+	[5, 2], [0, 2], [1, 2], [2, 2],         [4, 2],
+	[5, 3], [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+	[5, 4], [0, 4], [1, 4],                 [4, 4],
+	[5, 5],                                 [4, 5],
+	[5, 6],                                 [4, 6]
 ];
 
 let LEDCount = 0;
@@ -67,6 +67,13 @@ export function LedNames()
 export function LedPositions()
 {
 	return vKeyPositions;
+}
+
+export function vKeysArrayCount()
+{
+	device.log('vKeys ' + vKeys.length);
+	device.log('vKeyNames ' + vKeyNames.length);
+	device.log('vKeyPositions ' + vKeyPositions.length);
 }
 
 export function Initialize()
@@ -103,6 +110,7 @@ export function Shutdown(SystemSuspending)
 			effectDisable();
 		}
 	}
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 
