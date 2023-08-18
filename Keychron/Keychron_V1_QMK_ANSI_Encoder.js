@@ -19,7 +19,7 @@ export function ControllableParameters()
 		{"property":"shutdownMode", "group":"lighting", "label":"Shutdown Mode", "type":"combobox", "values":["SignalRGB", "Hardware"], "default":"SignalRGB"},
 		{"property":"shutdownColor", "group":"lighting", "label":"Shutdown Color", "min":"0", "max":"360", "type":"color", "default":"000000"},
 		{"property":"LightingMode", "group":"lighting", "label":"Lighting Mode", "type":"combobox", "values":["Canvas", "Forced"], "default":"Canvas"},
-		{"property":"forcedColor", "group":"lighting", "label":"Forced Color", "min":"0", "max":"360", "type":"color", "default":"000000"},
+		{"property":"forcedColor", "group":"lighting", "label":"Forced Color", "min":"0", "max":"360", "type":"color", "default":"009bde"},
 	];
 }
 
@@ -70,6 +70,13 @@ export function LedPositions()
 	return vKeyPositions;
 }
 
+export function vKeysArrayCount()
+{
+	device.log('vKeys ' + vKeys.length);
+	device.log('vKeyNames ' + vKeyNames.length);
+	device.log('vKeyPositions ' + vKeyPositions.length);
+}
+
 export function Initialize()
 {
 	requestFirmwareType();
@@ -86,16 +93,25 @@ export function Render()
 	sendColors();
 }
 
-export function Shutdown()
+export function Shutdown(SystemSuspending)
 {
-	if (shutdownMode === "SignalRGB")
+
+	if(SystemSuspending)
 	{
-		sendColors(true);
+		sendColors("#000000"); // Go Dark on System Sleep/Shutdown
 	}
 	else
 	{
-		effectDisable();
+		if (shutdownMode === "SignalRGB")
+		{
+			sendColors(shutdownColor);
+		}
+		else
+		{
+			effectDisable();
+		}
 	}
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 
@@ -159,7 +175,7 @@ function returnQMKVersion(data)
 	const QMKVersionByte2 = data[3];
 	const QMKVersionByte3 = data[4];
 	device.log("QMK Version: " + QMKVersionByte1 + "." + QMKVersionByte2 + "." + QMKVersionByte3);
-	device.log("QMK SRGB Plugin Version: "+ Version() );
+	device.log("QMK SRGB Plugin Version: "+ Version());
 	device.pause(30);
 }
 
@@ -179,9 +195,10 @@ function returnSignalRGBProtocolVersion(data)
 	const SignalRGBProtocolVersion = ProtocolVersionByte1 + "." + ProtocolVersionByte2 + "." + ProtocolVersionByte3;
 	device.log(`SignalRGB Protocol Version: ${SignalRGBProtocolVersion}`);
 
+
 	if(PluginProtocolVersion !== SignalRGBProtocolVersion)
 	{
-		device.notify("Unsupported Protocol Version: ", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 0);
+		device.notify("Unsupported Protocol Version: ", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 1, "Documentation");
 	}
 
 	device.pause(30);
@@ -191,12 +208,13 @@ function requestUniqueIdentifier() //Grab the unique identifier for this keyboar
 {
 	if(device.write([0x00, 0x23], 32) === -1)
 	{
-		device.notify("Unsupported Firmware: ", `This device is not running SignalRGB-compatible firmware. Click the Open Troubleshooting Docs button to learn more.`, 0);
+		device.notify("Unsupported Firmware: ", `This device is not running SignalRGB-compatible firmware. Click the Open Troubleshooting Docs button to learn more.`, 1, "Documentation");
 	}
 
 	device.pause(30);
 	commandHandler();
 }
+
 
 function returnUniqueIdentifier(data)
 {
@@ -239,7 +257,7 @@ function returnFirmwareType(data)
 
 	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware))
 	{
-		device.notify("Unsupported Firmware: ", "Click Show Console, and then click on troubleshooting for your keyboard to find out more.", 0);
+		device.notify("Unsupported Firmware: ", "Click Show Console, and then click on troubleshooting for your keyboard to find out more.", 1, "Documentation");
 	}
 
 	if(FirmwareTypeByte === MainlineQMKFirmware)
@@ -269,7 +287,7 @@ function effectDisable() //Revert to Hardware Mode
 	device.pause(30);
 }
 
-function grabColors(shutdown = false)
+function grabColors(overrideColor)
 {
 	const rgbdata = [];
 
@@ -279,9 +297,9 @@ function grabColors(shutdown = false)
 		const iPxY = vKeyPositions[iIdx][1];
 		let color;
 
-		if(shutdown)
+		if(overrideColor)
 		{
-			color = hexToRgb(shutdownColor);
+			color = hexToRgb(overrideColor);
 		}
 		else if (LightingMode === "Forced")
 		{
@@ -301,9 +319,9 @@ function grabColors(shutdown = false)
 	return rgbdata;
 }
 
-function sendColors(shutdown = false)
+function sendColors(overrideColor)
 {
-	let rgbdata = grabColors(shutdown);
+	const rgbdata = grabColors(overrideColor);
 
 	const LedsPerPacket = 9;
 	let BytesSent = 0;
