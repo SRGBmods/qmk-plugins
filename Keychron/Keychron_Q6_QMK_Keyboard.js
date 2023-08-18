@@ -425,7 +425,7 @@ export function Image()
 
 	if ([0x0161].includes(device.productId())) // ANSI + Encoder
 	{
-		return "https://github.com/SRGBmods/qmk-plugins/blob/main/_images/Keychron_Q6_ANSI_Encoder.png";
+		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI_Encoder.png";
 	}
 
 	if ([0x0163].includes(device.productId())) // ISO + Encoder
