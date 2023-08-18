@@ -423,8 +423,7 @@ export function ImageUrl() {
 	} 
 	if ([0x0161].includes(device.productId())) // ANSI + Encoder
 	{
-		//return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI_Encoder.png";
-		return "https://www.keychron.com/cdn/shop/products/Keychron-Q6-QMK-VIA-custom-mechanical-keyboard-full-size-layout-full-aluminum-black-frame-B-knob-for-Mac-Windows-with-hot-swappable-Gateron-G-Pro-switch-red-Q6-M1Z_1024x1024.png";
+		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI_Encoder.png";
 	}
 	if ([0x0163].includes(device.productId())) // ISO + Encoder
 	{
