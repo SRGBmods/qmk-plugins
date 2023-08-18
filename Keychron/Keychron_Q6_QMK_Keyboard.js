@@ -423,7 +423,7 @@ export function ImageUrl() {
 	}
 }
 
-export function Image()
+/* export function Image()
 {
 	if ([0x0160].includes(device.productId())) // ANSI
 	{
@@ -439,3 +439,4 @@ export function Image()
 		return "";
 	}
 }
+*/
