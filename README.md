@@ -17,6 +17,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 	* GMMK 2 96% ANSI & ISO
 	* GMMK Numpad
 	* GMMK Pro
+	* GMMK TKL rev2 ISO
 * KBDFans:
 	* KBD67 V2 ANSI & ISO
 * Keychron:
