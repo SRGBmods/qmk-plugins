@@ -1,7 +1,7 @@
 export function Name() { return "Keychron V1 QMK Keyboard"; }
 export function Version() { return "1.1.5"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return 0x0310; }
+export function ProductId() { return [0x0310, 0x0311]; }
 export function Publisher() { return "MrNRod45 & WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [15, 6]; }
