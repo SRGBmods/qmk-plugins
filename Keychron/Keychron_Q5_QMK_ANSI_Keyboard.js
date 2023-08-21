@@ -2,7 +2,7 @@ export function Name() { return "Keychron Q5 QMK Keyboard"; }
 export function Version() { return "1.1.5"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return [0x0150]; }
-export function Publisher() { return "AkIrA & WhirlwindFX"; }
+export function Publisher() { return "Scope666 & AkIrA & WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [19, 6]; }
 export function DefaultPosition(){return [10, 100]; }
