@@ -10,7 +10,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 ### Supported Devices ###
 * DZTech: DZTech 65RGB V3
 * Epomaker: TH96
-* Ergodox_EZ: Ergodox EZ Glow
+* Ergodox EZ: Ergodox EZ Glow
 * Feker: IK75
 * GMMK:
 	* GMMK 2 65% ANSI & ISO
