@@ -34,7 +34,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 	* Q6 ANSI & ANSI Encoder & ISO Encoder
 	* Q10 ANSI
 	* Q12 ANSI
-	* V1 ANSI & ANSI Encoder & V2 & V3 & V4 & V5 & V6
+	* V1 ANSI & ANSI Encoder & V2 & V3 & V4 & V5 & V6 (Wanting ISO users!)
 * Massdrop:
 	* ALT
 	* CTRL
