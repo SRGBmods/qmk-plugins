@@ -29,6 +29,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 	* Q1 ANSI
 	* Q1v2 ANSI & ISO
 	* Q2 ANSI
+	* Q3 ANSI & ANSI Encoder
 	* Q4 ANSI
 	* Q5 Pro ANSI
 	* Q5 ANSI & ANSI Encoder
