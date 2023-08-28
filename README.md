@@ -5,6 +5,8 @@
 
 [![Click here to add this repo to SignalRGB](https://github.com/SRGBmods/qmk-plugins/blob/main/_images/add-to-signalrgb.png)](https://srgbmods.net/s?p=addon/install?url=https://github.com/SRGBmods/qmk-plugins)
 
+Tech support is available on the Test Plugin Discord: <https://discord.com/invite/J5dwtcNhqC> with the QMK #roles (join #roles and pick QMK there!)
+
 Using the above button will help keep your plugins up to date whenever any changes are made to them.
 
 ### Supported Devices ###
