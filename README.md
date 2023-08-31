@@ -20,9 +20,10 @@ Using the above button will help keep your plugins up to date whenever any chang
 	* GMMK Numpad
 	* GMMK Pro
 	* GMMK TKL rev2 ISO
+* Helheim Designs: Freja 65
+* IDOBAO: ID67
 * KBDFans:
 	* KBD67 V2 ANSI & ISO
-* IDOBAO: ID67
 * Keychron: (ISO users please help us!)
 	* K2 Pro ANSI
 	* K8 TKL ANSI
@@ -34,7 +35,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 * Massdrop:
 	* ALT
 	* CTRL
-* Redragon:
+* Redragon: (These are pulled temporarily due to modifications for Unique Byte check needing to be done.)
 	* K556
 	* K582
 	* K630 v2
