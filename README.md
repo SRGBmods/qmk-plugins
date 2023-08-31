@@ -40,3 +40,24 @@ Tech support is available on the Test Plugin Discord: <https://discord.com/invit
 	* K630 v2
 * YMDK
 	* Melody96rgb
+
+### Needs Testing ###
+* 1upkeyboards
+	* 1upocarina, pi60, pi60hse
+* Akko
+	* 5108, acr87, top40
+* Boardsource: the_mark65
+* Chosfox: chosfox_cf81
+* Massdrop (Drop Inc)
+	* ALT v2, CTRL v2
+* Ethan: alcordactyl
+* Hoksi Technology: durgod_hades_qmk
+* Inland: mk47
+* KBDFans: kbdpadmk3
+* Kuro: kuro65
+* LX3: fave60a
+* Monsgeek
+	* m1, m5, m6
+* Projectd: projectd_65_ansi
+* Tominabox1: le_chiffre
+* YMDK: idobao_x_ymdk_id75
