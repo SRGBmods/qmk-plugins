@@ -28,9 +28,8 @@ Using the above button will help keep your plugins up to date whenever any chang
 	* K2 Pro ANSI
 	* K8 TKL ANSI
 	* K10 Pro ANSI
-	* ANSI:
-		* Q0 ANSI & Q0 ANSI Caedendi
-		* Q1, Q1v2 ANSI & ISO, Q2 ANSI, Q3 ANSI & ANSI Encoder, Q4 ANSI, Q5 Pro ANSI, Q5 ANSI & ANSI Encoder, Q6 ANSI & ANSI Encoder & ISO Encoder, Q10 ANSI, Q12 ANSI
+	* Q0 ANSI & Q0 ANSI Caedendi
+	* Q1, Q1v2 ANSI & ISO, Q2 ANSI, Q3 ANSI & ANSI Encoder, Q4 ANSI, Q5 Pro ANSI, Q5 ANSI & ANSI Encoder, Q6 ANSI & ANSI Encoder & ISO Encoder, Q10 ANSI, Q12 ANSI
 	* V1 ANSI & ANSI Encoder & V2 & V3 & V4 & V5 & V6
 * Massdrop:
 	* ALT
