@@ -360,7 +360,7 @@ export function Validate(endpoint)
 	return endpoint.interface === 1;
 }
 
-export function Image()
+export function ImageUrl()
 {
-	return "https://avatars.githubusercontent.com/u/98346428";
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Drop_Inc_SENSE75.png";
 }
