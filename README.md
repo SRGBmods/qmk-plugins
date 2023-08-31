@@ -42,4 +42,4 @@ Tech support is available on the Test Plugin Discord: <https://discord.com/invit
 	* Melody96rgb
 
 ### Needs Testing ###
-Please see the \_Needs-Testing directory
+Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/main/_Needs-Testing) directory
