@@ -33,6 +33,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 * Massdrop:
 	* ALT
 	* CTRL
+	* SENSE75
 * Redragon: (These are pulled temporarily due to modifications for Unique Byte check needing to be done.)
 	* K556
 	* K582
