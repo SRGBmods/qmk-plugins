@@ -22,6 +22,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 	* GMMK TKL rev2 ISO
 * KBDFans:
 	* KBD67 V2 ANSI & ISO
+* IDOBAO: ID67
 * Keychron: (ISO users please help us!)
 	* K2 Pro ANSI
 	* K8 TKL ANSI
