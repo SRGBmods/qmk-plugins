@@ -1,5 +1,5 @@
 export function Name() { return "Keychron Q6 QMK Keyboard"; }
-export function Version() { return "1.1.5"; }
+export function Version() { return "1.1.6"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return [0x0160, 0x0161, 0x0162, 0x0163]; }
 export function Publisher() { return "WhirlwindFX"; }
@@ -342,28 +342,39 @@ function effectDisable() //Revert to Hardware Mode
 	device.pause(30);
 }
 
+function createSolidColorArray(color)
+{
+	const rgbdata = new Array(vKeys.length * 3).fill(0);
+
+	for(let iIdx = 0; iIdx < vKeys.length; iIdx++)
+	{
+		const iLedIdx = vKeys[iIdx] * 3;
+		rgbdata[iLedIdx] = color[0];
+		rgbdata[iLedIdx+1] = color[1];
+		rgbdata[iLedIdx+2] = color[2];
+	}
+
+	return rgbdata;
+}
+
 function grabColors(overrideColor)
 {
-	const rgbdata = [];
+	if(overrideColor)
+	{
+		return createSolidColorArray(hexToRgb(overrideColor));
+	}
+	else if (LightingMode === "Forced")
+	{
+		return createSolidColorArray(hexToRgb(forcedColor));
+	}
+
+	const rgbdata = new Array(vKeys.length * 3).fill(0);
 
 	for(let iIdx = 0; iIdx < vKeys.length; iIdx++)
 	{
 		const iPxX = vKeyPositions[iIdx][0];
 		const iPxY = vKeyPositions[iIdx][1];
-		let color;
-
-		if(overrideColor)
-		{
-			color = hexToRgb(overrideColor);
-		}
-		else if (LightingMode === "Forced")
-		{
-			color = hexToRgb(forcedColor);
-		}
-		else
-		{
-			color = device.color(iPxX, iPxY);
-		}
+		let color = device.color(iPxX, iPxY);
 
 		const iLedIdx = vKeys[iIdx] * 3;
 		rgbdata[iLedIdx] = color[0];
@@ -394,9 +405,7 @@ function sendColors(overrideColor)
 
 function StreamLightingData(StartLedIdx, RGBData)
 {
-	const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)];
-
-	packet.push(...RGBData);
+	const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)].concat(RGBData);
 	device.write(packet, 33);
 }
 
@@ -416,15 +425,18 @@ export function Validate(endpoint)
 	return endpoint.interface === 1;
 }
 
-export function ImageUrl() {
+export function ImageUrl()
+{
 	if ([0x0160].includes(device.productId())) // ANSI
 	{
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
-	} 
+	}
+
 	if ([0x0161].includes(device.productId())) // ANSI + Encoder
 	{
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI_Encoder.png";
 	}
+
 	if ([0x0163].includes(device.productId())) // ISO + Encoder
 	{
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ISO_Encoder.png";
