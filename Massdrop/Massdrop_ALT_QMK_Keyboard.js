@@ -93,16 +93,25 @@ export function Render()
 	sendColors();
 }
 
-export function Shutdown()
+export function Shutdown(SystemSuspending)
 {
-	if (shutdownMode === "SignalRGB")
+
+	if(SystemSuspending)
 	{
-		sendColors(true);
+		sendColors("#000000"); // Go Dark on System Sleep/Shutdown
 	}
 	else
 	{
-		effectDisable();
+		if (shutdownMode === "SignalRGB")
+		{
+			sendColors(shutdownColor);
+		}
+		else
+		{
+			effectDisable();
+		}
 	}
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 

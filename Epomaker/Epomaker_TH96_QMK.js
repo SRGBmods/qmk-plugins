@@ -3,6 +3,7 @@ export function Version() { return "1.1.6"; }
 export function VendorId() { return 0x3151; }
 export function ProductId() { return 0x4010; }
 export function Publisher() { return "WhirlwindFX"; }
+export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [19, 6]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
@@ -90,15 +91,23 @@ export function Render()
 	sendColors();
 }
 
-export function Shutdown()
+export function Shutdown(SystemSuspending)
 {
-	if (shutdownMode === "SignalRGB")
+
+	if(SystemSuspending)
 	{
-		sendColors(true);
+		sendColors("#000000"); // Go Dark on System Sleep/Shutdown
 	}
 	else
 	{
-		effectDisable();
+		if (shutdownMode === "SignalRGB")
+		{
+			sendColors(shutdownColor);
+		}
+		else
+		{
+			effectDisable();
+		}
 	}
 	//vKeysArrayCount(); // For debugging array counts
 

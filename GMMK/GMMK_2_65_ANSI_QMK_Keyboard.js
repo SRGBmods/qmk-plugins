@@ -8,6 +8,7 @@ export function Size() { return [17, 5]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
+shutdownMode:readonly
 shutdownColor:readonly
 LightingMode:readonly
 forcedColor:readonly
@@ -98,10 +99,26 @@ export function Render()
 	sendColors();
 }
 
-export function Shutdown()
+export function Shutdown(SystemSuspending)
 {
-	effectDisable();
+
+	if(SystemSuspending)
+	{
+		sendColors("#000000"); // Go Dark on System Sleep/Shutdown
+	}
+	else
+	{
+		if (shutdownMode === "SignalRGB")
+		{
+			sendColors(shutdownColor);
+		}
+		else
+		{
+			effectDisable();
+		}
+	}
 	//vKeysArrayCount(); // For debugging array counts
+
 }
 
 function commandHandler()
@@ -350,5 +367,5 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/GMMK_2_96_ANSI.png";
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/GMMK_2_96_ANSI.png";
 }

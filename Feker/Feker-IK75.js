@@ -376,5 +376,5 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Feker-IK75.png";
-} 
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Feker-IK75.png";
+}

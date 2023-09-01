@@ -12,7 +12,8 @@ shutdownColor:readonly
 LightingMode:readonly
 forcedColor:readonly
 */
-export function ControllableParameters() {
+export function ControllableParameters()
+{
 	return [
 		{"property":"shutdownMode", "group":"lighting", "label":"Shutdown Mode", "type":"combobox", "values":["SignalRGB", "Hardware"], "default":"SignalRGB"},
 		{"property":"shutdownColor", "group":"lighting", "label":"Shutdown Color", "min":"0", "max":"360", "type":"color", "default":"#009bde"},
@@ -59,15 +60,18 @@ const vKeyPositions =
 let LEDCount = 0;
 const FirmwareType = 2;
 
-export function LedNames() {
+export function LedNames()
+{
 	return vKeyNames;
 }
 
-export function LedPositions() {
+export function LedPositions()
+{
 	return vKeyPositions;
 }
 
-export function Initialize() {
+export function Initialize()
+{
 	ClearReadBuffer();
 	checkFirmwareType();
 	versionQMK();
@@ -77,25 +81,35 @@ export function Initialize() {
 	totalLEDs();
 }
 
-export function Render() {
+export function Render()
+{
 	sendColors();
 }
 
-export function Shutdown(SystemSuspending) {
+export function Shutdown(SystemSuspending)
+{
 
-	if(SystemSuspending) {
+	if(SystemSuspending)
+	{
 		sendColors("#000000"); // Go Dark on System Sleep/Shutdown
-	} else {
-		if (shutdownMode === "SignalRGB") {
+	}
+	else
+	{
+		if (shutdownMode === "SignalRGB")
+		{
 			sendColors(shutdownColor);
-		} else {
+		}
+		else
+		{
 			effectDisable();
 		}
 	}
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 
-function checkFirmwareType() {
+function checkFirmwareType()
+{
 	const packet = [];
 	packet[0] = 0x00;
 	packet[1] = 0x28;
@@ -105,7 +119,8 @@ function checkFirmwareType() {
 	const returnpacket = device.read(packet, 32);
 	const FirmwareTypeByte = returnpacket[2];
 
-	if(FirmwareTypeByte !== 1 || FirmwareTypeByte !== 2) {
+	if(FirmwareTypeByte !== 1 || FirmwareTypeByte !== 2)
+	{
 		device.notify("Unsupported Firmware: ", "Click Show Console, and then click on troubleshooting for your keyboard to find out more.", 1, "Documentation");
 	}
 
@@ -118,7 +133,8 @@ function ClearReadBuffer(timeout = 10) //Clear Read buffer to get correct values
 	let count = 0;
 	const readCounts = [];
 
-	while(device.getLastReadSize() > 0) {
+	while(device.getLastReadSize() > 0)
+	{
 		device.read([0x00], 32, timeout);
 		count++;
 		readCounts.push(device.getLastReadSize());
@@ -272,7 +288,8 @@ function StreamLightingData(StartLedIdx, RGBData)
 	device.write(packet, 33);
 }
 
-function hexToRgb(hex) {
+function hexToRgb(hex)
+{
 	const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
 	const colors = [];
 	colors[0] = parseInt(result[1], 16);
@@ -282,10 +299,12 @@ function hexToRgb(hex) {
 	return colors;
 }
 
-export function Validate(endpoint) {
+export function Validate(endpoint)
+{
 	return endpoint.interface === 1;
 }
 
-export function ImageUrl() {
+export function ImageUrl()
+{
 	return "https://marketplace.signalrgb.com/devices/brands/massdrop/keyboards/ctrl.png";
 }

@@ -13,7 +13,8 @@ shutdownColor:readonly
 LightingMode:readonly
 forcedColor:readonly
 */
-export function ControllableParameters() {
+export function ControllableParameters()
+{
 	return [
 		{"property":"shutdownMode", "group":"lighting", "label":"Shutdown Mode", "type":"combobox", "values":["SignalRGB", "Hardware"], "default":"SignalRGB"},
 		{"property":"shutdownColor", "group":"lighting", "label":"Shutdown Color", "min":"0", "max":"360", "type":"color", "default":"#009bde"},
@@ -74,11 +75,13 @@ const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
 const PluginProtocolVersion = "1.0.4";
 
-export function LedNames() {
+export function LedNames()
+{
 	return vKeyNames;
 }
 
-export function LedPositions() {
+export function LedPositions()
+{
 	return vKeyPositions;
 }
 
@@ -89,7 +92,8 @@ export function vKeysArrayCount()
 	device.log('vKeyPositions ' + vKeyPositions.length);
 }
 
-export function Initialize() {
+export function Initialize()
+{
 
 
 	device.setControllableLeds(vKeyNames, vKeyPositions);
@@ -102,28 +106,38 @@ export function Initialize() {
 	effectEnable();
 }
 
-export function Render() {
+export function Render()
+{
 	sendColors();
 }
 
-export function Shutdown(SystemSuspending) {
+export function Shutdown(SystemSuspending)
+{
 
-	if(SystemSuspending) {
+	if(SystemSuspending)
+	{
 		sendColors("#000000"); // Go Dark on System Sleep/Shutdown
-	} else {
-		if (shutdownMode === "SignalRGB") {
+	}
+	else
+	{
+		if (shutdownMode === "SignalRGB")
+		{
 			sendColors(shutdownColor);
-		} else {
+		}
+		else
+		{
 			effectDisable();
 		}
 	}
 
 }
 
-function commandHandler() {
+function commandHandler()
+{
 	const readCounts = [];
 
-	do {
+	do
+	{
 		const returnpacket = device.read([0x00], 32, 10);
 		processCommands(returnpacket);
 
@@ -131,7 +145,8 @@ function commandHandler() {
 
 		// Extra Read to throw away empty packets from Via
 		// Via always sends a second packet with the same Command Id.
-		if(IsViaKeyboard) {
+		if(IsViaKeyboard)
+		{
 			device.read([0x00], 32, 10);
 		}
 	}
@@ -139,8 +154,10 @@ function commandHandler() {
 
 }
 
-function processCommands(data) {
-	switch(data[1]) {
+function processCommands(data)
+{
+	switch(data[1])
+	{
 	case 0x21:
 		returnQMKVersion(data);
 		break;
@@ -169,7 +186,8 @@ function requestQMKVersion() //Check the version of QMK Firmware that the keyboa
 	commandHandler();
 }
 
-function returnQMKVersion(data) {
+function returnQMKVersion(data)
+{
 	const QMKVersionByte1 = data[2];
 	const QMKVersionByte2 = data[3];
 	const QMKVersionByte3 = data[4];
@@ -185,7 +203,8 @@ function requestSignalRGBProtocolVersion() //Grab the version of the SignalRGB P
 	commandHandler();
 }
 
-function returnSignalRGBProtocolVersion(data) {
+function returnSignalRGBProtocolVersion(data)
+{
 	const ProtocolVersionByte1 = data[2];
 	const ProtocolVersionByte2 = data[3];
 	const ProtocolVersionByte3 = data[4];
@@ -194,7 +213,8 @@ function returnSignalRGBProtocolVersion(data) {
 	device.log(`SignalRGB Protocol Version: ${SignalRGBProtocolVersion}`);
 
 
-	if(PluginProtocolVersion !== SignalRGBProtocolVersion) {
+	if(PluginProtocolVersion !== SignalRGBProtocolVersion)
+	{
 		device.notify("Unsupported Protocol Version: ", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 1, "Documentation");
 	}
 
@@ -203,7 +223,8 @@ function returnSignalRGBProtocolVersion(data) {
 
 function requestUniqueIdentifier() //Grab the unique identifier for this keyboard model
 {
-	if(device.write([0x00, 0x23], 32) === -1) {
+	if(device.write([0x00, 0x23], 32) === -1)
+	{
 		device.notify("Unsupported Firmware: ", `This device is not running SignalRGB-compatible firmware. Click the Open Troubleshooting Docs button to learn more.`, 1, "Documentation");
 	}
 
@@ -212,12 +233,14 @@ function requestUniqueIdentifier() //Grab the unique identifier for this keyboar
 }
 
 
-function returnUniqueIdentifier(data) {
+function returnUniqueIdentifier(data)
+{
 	const UniqueIdentifierByte1 = data[2];
 	const UniqueIdentifierByte2 = data[3];
 	const UniqueIdentifierByte3 = data[4];
 
-	if(!(UniqueIdentifierByte1 === 0 && UniqueIdentifierByte2 === 0 && UniqueIdentifierByte3 === 0)) {
+	if(!(UniqueIdentifierByte1 === 0 && UniqueIdentifierByte2 === 0 && UniqueIdentifierByte3 === 0))
+	{
 		device.log("Unique Device Identifier: " + UniqueIdentifierByte1 + UniqueIdentifierByte2 + UniqueIdentifierByte3);
 	}
 
@@ -231,31 +254,37 @@ function requestTotalLeds() //Calculate total number of LEDs
 	commandHandler();
 }
 
-function returnTotalLeds(data) {
+function returnTotalLeds(data)
+{
 	LEDCount = data[2];
 	device.log("Device Total LED Count: " + LEDCount);
 	device.pause(30);
 }
 
-function requestFirmwareType() {
+function requestFirmwareType()
+{
 	device.write([0x00, 0x28], 32);
 	device.pause(30);
 	commandHandler();
 }
 
-function returnFirmwareType(data) {
+function returnFirmwareType(data)
+{
 	const FirmwareTypeByte = data[2];
 
-	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware)) {
+	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware))
+	{
 		device.notify("Unsupported Firmware: ", "Click Show Console, and then click on troubleshooting for your keyboard to find out more.", 1, "Documentation");
 	}
 
-	if(FirmwareTypeByte === MainlineQMKFirmware) {
+	if(FirmwareTypeByte === MainlineQMKFirmware)
+	{
 		IsViaKeyboard = false;
 		device.log("Firmware Type: Mainline");
 	}
 
-	if(FirmwareTypeByte === VIAFirmware) {
+	if(FirmwareTypeByte === VIAFirmware)
+	{
 		IsViaKeyboard = true;
 		device.log("Firmware Type: VIA");
 	}
@@ -342,7 +371,8 @@ function StreamLightingData(StartLedIdx, RGBData)
 	device.write(packet, 33);
 }
 
-function hexToRgb(hex) {
+function hexToRgb(hex)
+{
 	const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
 	const colors = [];
 	colors[0] = parseInt(result[1], 16);
@@ -352,10 +382,12 @@ function hexToRgb(hex) {
 	return colors;
 }
 
-export function Validate(endpoint) {
+export function Validate(endpoint)
+{
 	return endpoint.interface === 1;
 }
 
-export function Image() {
+export function Image()
+{
 	return "";
 }
