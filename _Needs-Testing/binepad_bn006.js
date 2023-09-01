@@ -1,5 +1,5 @@
 export function Name() { return "Binepad BN006 QMK Keyboard"; }
-export function Version() { return "1.1.5"; }
+export function Version() { return "1.1.6"; }
 export function VendorId() { return 0x4249; }
 export function ProductId() { return 0x426E; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
@@ -261,21 +261,39 @@ function effectDisable() //Revert to Hardware Mode
     device.pause(30);
 }
 
-function grabColors(overrideColor) {
-    const rgbdata = [];
+function createSolidColorArray(color)
+{
+    const rgbdata = new Array(vKeys.length * 3).fill(0);
 
-    for(let iIdx = 0; iIdx < vKeys.length; iIdx++) {
+    for(let iIdx = 0; iIdx < vKeys.length; iIdx++)
+    {
+        const iLedIdx = vKeys[iIdx] * 3;
+        rgbdata[iLedIdx] = color[0];
+        rgbdata[iLedIdx+1] = color[1];
+        rgbdata[iLedIdx+2] = color[2];
+    }
+
+    return rgbdata;
+}
+
+function grabColors(overrideColor)
+{
+    if(overrideColor)
+    {
+        return createSolidColorArray(hexToRgb(overrideColor));
+    }
+    else if (LightingMode === "Forced")
+    {
+        return createSolidColorArray(hexToRgb(forcedColor));
+    }
+
+    const rgbdata = new Array(vKeys.length * 3).fill(0);
+
+    for(let iIdx = 0; iIdx < vKeys.length; iIdx++)
+    {
         const iPxX = vKeyPositions[iIdx][0];
         const iPxY = vKeyPositions[iIdx][1];
-        let color;
-
-        if(overrideColor) {
-            color = hexToRgb(overrideColor);
-        } else if (LightingMode === "Forced") {
-            color = hexToRgb(forcedColor);
-        } else {
-            color = device.color(iPxX, iPxY);
-        }
+        let color = device.color(iPxX, iPxY);
 
         const iLedIdx = vKeys[iIdx] * 3;
         rgbdata[iLedIdx] = color[0];
@@ -286,14 +304,16 @@ function grabColors(overrideColor) {
     return rgbdata;
 }
 
-function sendColors(overrideColor) {
+function sendColors(overrideColor)
+{
     const rgbdata = grabColors(overrideColor);
 
     const LedsPerPacket = 9;
     let BytesSent = 0;
     let BytesLeft = rgbdata.length;
 
-    while(BytesLeft > 0) {
+    while(BytesLeft > 0)
+    {
         const BytesToSend = Math.min(LedsPerPacket * 3, BytesLeft);
         StreamLightingData(Math.floor(BytesSent / 3), rgbdata.splice(0, BytesToSend));
 
@@ -302,10 +322,9 @@ function sendColors(overrideColor) {
     }
 }
 
-function StreamLightingData(StartLedIdx, RGBData) {
-    const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)];
-
-    packet.push(...RGBData);
+function StreamLightingData(StartLedIdx, RGBData)
+{
+    const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)].concat(RGBData);
     device.write(packet, 33);
 }
 
