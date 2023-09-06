@@ -10,7 +10,7 @@ Using the above button will help keep your plugins up to date whenever any chang
 Tech support is available on the Test Plugin Discord: <https://discord.com/invite/J5dwtcNhqC> with the QMK #roles (join #roles and pick QMK there!)
 
 ### Needs Testing ###
-Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/main/_Needs-Testing) directory if you find your keyboard in there works please let us know either via the Discord link above or with the Issues system here on Github and thanks for the help!
+Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/needs-testing) branch if you find your keyboard in there works please let us know either via the Discord link above or with the Issues system here on Github and thanks for the help!
 
 ### Supported Devices ###
 * DZTech: DZTech 65RGB V3
