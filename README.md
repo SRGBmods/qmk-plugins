@@ -30,7 +30,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ma
 * Keychron: (ISO users please help us!)
 	* K2 Pro ANSI
 	* K8 TKL ANSI
-	* K8 Pro ISO DE
+	* K8 Pro ANSI & ISO DE
 	* K10 Pro ANSI
 	* Q0 ANSI, Q1, Q1v2 ANSI & ISO, Q2 ANSI, Q3 ANSI & ANSI Encoder, Q4 ANSI, Q5 Pro ANSI, Q5 ANSI & ANSI Encoder, Q6 ANSI & ANSI Encoder & ISO Encoder, Q10 ANSI, Q12 ANSI
 	* V1 ANSI & ANSI Encoder & V2 & V3 & V4 & V5 & V6
