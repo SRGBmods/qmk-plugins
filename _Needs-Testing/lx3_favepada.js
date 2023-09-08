@@ -1,10 +1,10 @@
-export function Name() { return "Work Louder numpad QMK Keyboard"; }
+export function Name() { return "Lx3 favepada QMK Keyboard"; }
 export function Version() { return "1.1.6"; }
-export function VendorId() { return 0x574C; }
-export function ProductId() { return 0x99EB; }
+export function VendorId() { return 0x4C58; }
+export function ProductId() { return 0x000B; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function Size() { return [4, 4]; }
+export function Size() { return [4, 12]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
@@ -26,15 +26,15 @@ export function ControllableParameters()
 //Plugin Version: Built for Protocol V1.0.4
 
 const vKeys = [
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36
 ];
 
 const vKeyNames = [
-   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Light 14", "Light 15", "Light 16"
+   "Del", "0", "1", "2", "3", "Enter", "6", "5", "4", "7", "8", "9", "+", "-", "*", "/", "Num Lock", "K00", "K01", "K02", "K03", "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Light 14", "Light 15", "Light 16"
 ];
 
 const vKeyPositions = [
-    [2, 0], [0, 0], [3, 0], [1, 0], [1, 2], [3, 2], [0, 2], [2, 2], [2, 1], [0, 1], [3, 1], [1, 1], [1, 3], [3, 3], [0, 3], [2, 3]
+    [3, 10], [0, 10], [0, 7], [2, 7], [3, 7], [1, 7], [3, 3], [2, 3], [0, 3], [0, 9], [2, 9], [3, 9], [1, 9], [1, 5], [3, 5], [2, 5], [0, 5], [0, 0], [2, 0], [3, 0], [1, 0], [1, 2], [3, 2], [2, 2], [0, 2], [0, 6], [0, 11], [0, 4], [0, 8], [0, 1], [2, 1], [3, 1], [1, 1], [1, 8], [1, 4], [1, 11], [1, 6]
 ];
 
 let LEDCount = 0;

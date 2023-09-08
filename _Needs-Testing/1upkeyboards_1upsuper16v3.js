@@ -1,10 +1,10 @@
-export function Name() { return "Work Louder numpad QMK Keyboard"; }
+export function Name() { return "1upkeyboards 1upsuper16v3 QMK Keyboard"; }
 export function Version() { return "1.1.6"; }
-export function VendorId() { return 0x574C; }
-export function ProductId() { return 0x99EB; }
+export function VendorId() { return 0x6F75; }
+export function ProductId() { return 0x5610; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function Size() { return [4, 4]; }
+export function Size() { return [14, 14]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
@@ -26,15 +26,15 @@ export function ControllableParameters()
 //Plugin Version: Built for Protocol V1.0.4
 
 const vKeys = [
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47
 ];
 
 const vKeyNames = [
-   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Light 14", "Light 15", "Light 16"
+   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "00", "01", "Light 7", "Light 8", "10", "11", "Light 9", "Light 10", "20", "21", "Light 11", "Light 12", "Light 13", "30", "Light 14", "Light 15", "31", "Light 16", "Light 17", "32", "Light 18", "Light 19", "33", "Light 20", "Light 21", "Light 22", "Light 23", "23", "22", "Light 24", "Light 25", "13", "12", "Light 26", "Light 27", "03", "02", "Light 28", "Light 29", "Light 30", "Light 31", "Light 32"
 ];
 
 const vKeyPositions = [
-    [2, 0], [0, 0], [3, 0], [1, 0], [1, 2], [3, 2], [0, 2], [2, 2], [2, 1], [0, 1], [3, 1], [1, 1], [1, 3], [3, 3], [0, 3], [2, 3]
+    [0, 0], [3, 0], [4, 0], [6, 0], [1, 1], [1, 5], [12, 3], [9, 3], [1, 8], [1, 12], [12, 10], [9, 10], [1, 2], [1, 6], [12, 4], [9, 4], [1, 9], [1, 7], [6, 13], [12, 11], [4, 13], [3, 13], [9, 11], [0, 13], [13, 13], [5, 11], [11, 13], [10, 13], [2, 11], [7, 13], [8, 7], [8, 9], [8, 6], [2, 4], [5, 4], [8, 2], [8, 12], [2, 10], [5, 10], [8, 8], [8, 5], [2, 3], [5, 3], [8, 1], [7, 0], [10, 0], [11, 0], [13, 0]
 ];
 
 let LEDCount = 0;

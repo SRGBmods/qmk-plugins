@@ -1,10 +1,10 @@
-export function Name() { return "Work Louder numpad QMK Keyboard"; }
+export function Name() { return "redragon k667 QMK Keyboard"; }
 export function Version() { return "1.1.6"; }
-export function VendorId() { return 0x574C; }
-export function ProductId() { return 0x99EB; }
+export function VendorId() { return 0x369B; }
+export function ProductId() { return 0x0021; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function Size() { return [4, 4]; }
+export function Size() { return [69, 11]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
@@ -26,15 +26,15 @@ export function ControllableParameters()
 //Plugin Version: Built for Protocol V1.0.4
 
 const vKeys = [
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89
 ];
 
 const vKeyNames = [
-   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Light 14", "Light 15", "Light 16"
+   "ESC", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Light 1", "GRV", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "MINS", "EQL", "BSPC", "HOME", "TAB", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LBRC", "RBRC", "BSLS", "DEL", "CAPS", "A", "S", "D", "F", "G", "H", "J", "K", "L", "SCLN", "QUOT", "Light 2", "ENT", "PGUP", "LSFT", "Light 3", "Z", "X", "C", "V", "B", "N", "M", "COMM", "DOT", "SLSH", "RSFT", "UP", "PGDN", "LCTL", "LGUI", "LALT", "Light 4", "Light 5", "Light 6", "SPC", "Light 7", "RALT", "MO(1)", "RCTL", "LEFT", "DOWN", "RGHT", "Light 8", "Light 9"
 ];
 
 const vKeyPositions = [
-    [2, 0], [0, 0], [3, 0], [1, 0], [1, 2], [3, 2], [0, 2], [2, 2], [2, 1], [0, 1], [3, 1], [1, 1], [1, 3], [3, 3], [0, 3], [2, 3]
+    [2, 0], [19, 0], [27, 0], [36, 0], [46, 0], [57, 0], [62, 0], [67, 0], [4, 0], [16, 0], [24, 0], [33, 0], [43, 0], [54, 0], [2, 3], [10, 3], [19, 3], [27, 3], [36, 3], [46, 3], [53, 3], [59, 3], [64, 3], [0, 3], [8, 3], [16, 3], [24, 3], [38, 3], [54, 3], [5, 7], [15, 7], [23, 7], [32, 7], [42, 7], [50, 7], [57, 7], [62, 7], [67, 7], [4, 7], [11, 7], [20, 7], [28, 7], [40, 7], [54, 7], [6, 1], [17, 1], [26, 1], [34, 1], [44, 1], [51, 1], [58, 1], [63, 1], [68, 1], [7, 1], [14, 1], [22, 1], [31, 1], [37, 1], [54, 1], [3, 2], [12, 2], [21, 2], [29, 2], [39, 2], [47, 2], [55, 2], [60, 2], [65, 2], [1, 2], [9, 2], [18, 2], [30, 2], [45, 4], [54, 2], [3, 5], [13, 5], [25, 5], [41, 8], [49, 8], [56, 5], [61, 8], [66, 8], [8, 5], [16, 5], [24, 5], [35, 9], [45, 9], [52, 9], [48, 6], [48, 10]
 ];
 
 let LEDCount = 0;

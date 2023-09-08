@@ -1,10 +1,10 @@
-export function Name() { return "Work Louder numpad QMK Keyboard"; }
+export function Name() { return "HelHeim Freja 65 QMK Keyboard"; }
 export function Version() { return "1.1.6"; }
-export function VendorId() { return 0x574C; }
-export function ProductId() { return 0x99EB; }
+export function VendorId() { return 0x5453; }
+export function ProductId() { return 0x0067; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function Size() { return [4, 4]; }
+export function Size() { return [81, 13]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
@@ -26,15 +26,15 @@ export function ControllableParameters()
 //Plugin Version: Built for Protocol V1.0.4
 
 const vKeys = [
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101
 ];
 
 const vKeyNames = [
-   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Light 14", "Light 15", "Light 16"
+   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Light 14", "Light 15", "Light 16", "Light 17", "Light 18", "Light 19", "Light 20", "Light 21", "Light 22", "Light 23", "Light 24", "Light 25", "Light 26", "Light 27", "Light 28", "Light 29", "Light 30", "Light 31", "Light 32", "Light 33", "Light 34", "Light 35", "Light 36", "Light 37", "Light 38", "Light 39", "Light 40", "Light 41", "Light 42", "Light 43", "Light 44", "Light 45", "Light 46", "Light 47", "Light 48", "Light 49", "Light 50", "Light 51", "Light 52", "Light 53", "Light 54", "Light 55", "Light 56", "Light 57", "Light 58", "Light 59", "Light 60", "Light 61", "Light 62", "Light 63", "Light 64", "Light 65", "Light 66", "Light 67", "Light 68", "Light 69", "Light 70", "Light 71", "Light 72", "Light 73", "Light 74", "Light 75", "Light 76", "Light 77", "Light 78", "Light 79", "Light 80", "Light 81", "Light 82", "Light 83", "Light 84", "Light 85", "Light 86", "Light 87", "Light 88", "Light 89", "Light 90", "Light 91", "Light 92", "Light 93", "Light 94", "Light 95", "Light 96", "Light 97", "Light 98", "Light 99", "Light 100", "Light 101", "Light 102"
 ];
 
 const vKeyPositions = [
-    [2, 0], [0, 0], [3, 0], [1, 0], [1, 2], [3, 2], [0, 2], [2, 2], [2, 1], [0, 1], [3, 1], [1, 1], [1, 3], [3, 3], [0, 3], [2, 3]
+    [2, 2], [2, 9], [8, 8], [13, 9], [20, 9], [24, 9], [30, 9], [36, 9], [41, 9], [47, 9], [53, 9], [59, 9], [64, 9], [69, 9], [77, 9], [80, 9], [80, 2], [74, 2], [66, 2], [60, 2], [55, 2], [50, 2], [44, 2], [38, 2], [32, 2], [26, 2], [21, 2], [15, 2], [9, 2], [11, 7], [17, 7], [23, 7], [28, 7], [34, 7], [40, 7], [46, 7], [52, 7], [58, 7], [63, 7], [70, 7], [78, 7], [80, 7], [80, 1], [78, 1], [73, 1], [68, 1], [62, 1], [57, 1], [39, 1], [35, 1], [14, 1], [7, 1], [1, 1], [3, 7], [0, 0], [4, 0], [10, 4], [16, 4], [22, 4], [27, 4], [33, 4], [39, 4], [45, 4], [51, 4], [56, 4], [62, 4], [68, 4], [75, 4], [80, 4], [76, 5], [79, 6], [79, 12], [79, 3], [78, 10], [72, 10], [67, 10], [60, 10], [54, 10], [48, 10], [42, 10], [36, 10], [29, 10], [25, 10], [18, 10], [11, 10], [5, 10], [2, 10], [2, 3], [2, 11], [2, 5], [6, 5], [12, 5], [19, 5], [24, 5], [31, 5], [37, 5], [43, 5], [49, 5], [54, 5], [61, 5], [65, 5], [71, 5]
 ];
 
 let LEDCount = 0;

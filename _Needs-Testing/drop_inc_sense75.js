@@ -1,10 +1,10 @@
-export function Name() { return "Work Louder numpad QMK Keyboard"; }
+export function Name() { return "Drop Inc. SENSE75 QMK Keyboard"; }
 export function Version() { return "1.1.6"; }
-export function VendorId() { return 0x574C; }
-export function ProductId() { return 0x99EB; }
+export function VendorId() { return 0x359B; }
+export function ProductId() { return 0x0001; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function Size() { return [4, 4]; }
+export function Size() { return [80, 16]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
@@ -26,15 +26,15 @@ export function ControllableParameters()
 //Plugin Version: Built for Protocol V1.0.4
 
 const vKeys = [
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110
 ];
 
 const vKeyNames = [
-   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Light 14", "Light 15", "Light 16"
+   "Light 1", "Light 2", "Light 3", "Light 4", "Light 5", "Light 6", "Light 7", "Light 8", "Light 9", "Light 10", "Light 11", "Light 12", "Light 13", "Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "PrtSc", "Light 14", "Light 15", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "Backspace", "Del", "Light 16", "Light 17", "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "{", "}", "|", "Page Up", "Light 18", "Caps Lock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ":", "\"", "Enter", "Page Down", "Light 19", "Shift", "Z", "X", "C", "V", "B", "N", "M", "<", ">", "?", "Shift", "UPWARDS ARROW", "Light 20", "Light 21", "Ctrl", "Win", "Alt", " ", "Alt", "Fn", "Ctrl", "LEFTWARDS ARROW", "DOWNWARDS ARROW", "RIGHTWARDS ARROW", "Light 22", "Light 23", "Light 24", "Light 25", "Light 26", "Light 27", "Light 28", "Light 29", "Light 30"
 ];
 
 const vKeyPositions = [
-    [2, 0], [0, 0], [3, 0], [1, 0], [1, 2], [3, 2], [0, 2], [2, 2], [2, 1], [0, 1], [3, 1], [1, 1], [1, 3], [3, 3], [0, 3], [2, 3]
+    [1, 0], [9, 0], [18, 0], [24, 0], [30, 0], [37, 0], [44, 0], [54, 0], [62, 0], [69, 0], [75, 0], [78, 0], [0, 3], [2, 4], [10, 4], [15, 4], [21, 4], [25, 4], [30, 4], [35, 4], [40, 4], [46, 4], [53, 4], [59, 4], [64, 4], [69, 4], [74, 4], [79, 2], [0, 7], [2, 10], [8, 10], [14, 10], [20, 10], [24, 10], [28, 10], [32, 10], [38, 10], [42, 10], [49, 10], [55, 10], [60, 10], [65, 10], [72, 10], [77, 10], [79, 7], [0, 12], [5, 14], [12, 14], [17, 14], [22, 14], [26, 14], [30, 14], [35, 14], [40, 14], [45, 14], [51, 14], [57, 14], [63, 14], [67, 14], [73, 14], [77, 14], [79, 12], [6, 5], [13, 5], [19, 5], [23, 5], [27, 5], [31, 5], [36, 5], [41, 5], [48, 5], [52, 5], [58, 5], [64, 5], [71, 5], [77, 5], [0, 6], [7, 8], [15, 8], [21, 8], [25, 8], [29, 8], [33, 8], [39, 8], [43, 8], [50, 8], [56, 8], [61, 8], [68, 8], [75, 11], [79, 6], [0, 9], [3, 13], [11, 13], [18, 13], [34, 13], [55, 13], [60, 13], [66, 13], [70, 15], [75, 15], [77, 15], [79, 9], [4, 1], [16, 1], [26, 1], [35, 1], [47, 1], [58, 1], [69, 1], [76, 1]
 ];
 
 let LEDCount = 0;
