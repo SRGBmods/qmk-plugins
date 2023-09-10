@@ -371,7 +371,7 @@ export function Validate(endpoint)
 	return endpoint.interface === 1;
 }
 
-export function Image()
+export function ImageUrl()
 {
-	return "";
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_K10Pro_QMK_ISO_UK.png";
 }
