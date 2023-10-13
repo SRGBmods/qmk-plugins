@@ -23,7 +23,7 @@ export function ControllableParameters()
 	];
 }
 
-//Plugin Version: Built for Protocol V1.0.4
+//Plugin Version: Built for Protocol V1.0.5
 
 const vKeys =
     [
@@ -58,7 +58,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.5";
 
 export function LedNames()
 {
