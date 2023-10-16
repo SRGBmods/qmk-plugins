@@ -38,6 +38,8 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* ALT
 	* CTRL
 	* SENSE75
+* nerdytec
+	* CYKEY ANSI
 * Redragon: (These are pulled temporarily due to modifications for Unique Byte check needing to be done.)
 	* K556
 	* K582
