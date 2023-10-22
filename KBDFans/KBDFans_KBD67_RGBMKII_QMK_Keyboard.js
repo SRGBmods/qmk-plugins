@@ -1,7 +1,7 @@
-export function Name() { return "KBDFans KBD67"; }
+export function Name() { return "KBDFans KBD67 RGB MKII"; }
 export function Version() { return "1.1.6"; }
 export function VendorId() { return 0x4b42; }
-export function ProductId() { return 0x1225; }
+export function ProductId() { return [0x1225, 0x1226]; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [15, 5]; }
