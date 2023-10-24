@@ -121,7 +121,7 @@ function checkFirmwareType()
 
 	if(FirmwareTypeByte !== 1 || FirmwareTypeByte !== 2)
 	{
-		device.notify("Unsupported Firmware", "Click the Documentation button to learn more.", 3, "Documentation"););
+		device.notify("Unsupported Firmware", "Click the Documentation button to learn more.", 3, "Documentation");
 	}
 
 	device.log("Firmware Type: " + FirmwareTypeByte);

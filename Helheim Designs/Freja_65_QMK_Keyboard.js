@@ -274,7 +274,7 @@ function returnFirmwareType(data)
 
 	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware))
 	{
-		device.notify("Unsupported Firmware", "Click the Documentation button to learn more.", 3, "Documentation"););
+		device.notify("Unsupported Firmware", "Click the Documentation button to learn more.", 3, "Documentation");
 	}
 
 	if(FirmwareTypeByte === MainlineQMKFirmware)
