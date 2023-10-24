@@ -1,5 +1,5 @@
 export function Name() { return "Massdrop SENSE75 QMK Keyboard"; }
-export function Version() { return "1.1.6"; }
+export function Version() { return "1.1.7;"; }
 export function VendorId() { return 0x359B; }
 export function ProductId() { return 0x0001; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
@@ -183,7 +183,7 @@ function returnSignalRGBProtocolVersion(data)
 	if(PluginProtocolVersion !== SignalRGBProtocolVersion)
 	{
 		device.notify(
-			"Unsupported Protocol Version: ",
+			"Unsupported Protocol Version",
 			`This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`,
 			1,
 			"Documentation"
@@ -198,8 +198,8 @@ function requestUniqueIdentifier() //Grab the unique identifier for this keyboar
 	if(device.write([0x00, 0x23], 32) === -1)
 	{
 		device.notify(
-			"Unsupported Firmware: ",
-			`This device is not running SignalRGB-compatible firmware. Click the Open Troubleshooting Docs button to learn more.`,
+			"Unsupported Firmware",
+			"This device is not running SignalRGB-compatible firmware. Click the Documentation button to learn more.",
 			1,
 			"Documentation"
 		);
@@ -252,7 +252,7 @@ function returnFirmwareType(data)
 	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware))
 	{
 		device.notify(
-			"Unsupported Firmware: ",
+			"Unsupported Firmware",
 			"Click Show Console, and then click on troubleshooting for your keyboard to find out more.",
 			1,
 			"Documentation"

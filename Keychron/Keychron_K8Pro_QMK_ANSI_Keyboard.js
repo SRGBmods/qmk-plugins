@@ -1,5 +1,5 @@
 export function Name() { return "Keychron K8 Pro QMK Keyboard"; }
-export function Version() { return "1.1.6"; }
+export function Version() { return "1.1.7;"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return 0x0280; }
 export function Publisher() { return "NotACardboardBox & WhirlwindFX"; }
@@ -198,7 +198,7 @@ function returnSignalRGBProtocolVersion(data)
 
 	if(PluginProtocolVersion !== SignalRGBProtocolVersion)
 	{
-		device.notify("Unsupported Protocol Version: ", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 1, "Documentation");
+		device.notify("Unsupported Protocol Version", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 2, "Documentation");
 	}
 
 	device.pause(30);
@@ -208,7 +208,7 @@ function requestUniqueIdentifier() //Grab the unique identifier for this keyboar
 {
 	if(device.write([0x00, 0x23], 32) === -1)
 	{
-		device.notify("Unsupported Firmware: ", `This device is not running SignalRGB-compatible firmware. Click the Open Troubleshooting Docs button to learn more.`, 1, "Documentation");
+		device.notify("Unsupported Firmware", "This device is not running SignalRGB-compatible firmware. Click the Documentation button to learn more.", 3, "Documentation");
 	}
 
 	device.pause(30);
@@ -257,7 +257,7 @@ function returnFirmwareType(data)
 
 	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware))
 	{
-		device.notify("Unsupported Firmware: ", "Click Show Console, and then click on troubleshooting for your keyboard to find out more.", 1, "Documentation");
+		device.notify("Unsupported Firmware", "Click the Documentation button to learn more.", 3, "Documentation"););
 	}
 
 	if(FirmwareTypeByte === MainlineQMKFirmware)

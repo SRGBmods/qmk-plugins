@@ -1,5 +1,5 @@
 export function Name() { return "GMMK 2 65% ANSI QMK Keyboard"; }
-export function Version() { return "1.1.6"; }
+export function Version() { return "1.1.7;"; }
 export function VendorId() { return 0x320F; }
 export function ProductId() { return 0x5045; }
 export function Publisher() { return "WhirlwindFX"; }
@@ -203,7 +203,7 @@ function returnSignalRGBProtocolVersion(data)
 
 	if(PluginProtocolVersion !== SignalRGBProtocolVersion)
 	{
-		device.notify("Unsupported Protocol Version: ", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 1, "Documentation");
+		device.notify("Unsupported Protocol Version", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 2, "Documentation");
 	}
 
 	device.pause(30);
@@ -252,7 +252,7 @@ function returnFirmwareType(data)
 
 	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware))
 	{
-		device.notify("Unsupported Firmware: ", "Click Show Console, and then click on troubleshooting for your keyboard to find out more.", 1, "Documentation");
+		device.notify("Unsupported Firmware", "Click the Documentation button to learn more.", 3, "Documentation"););
 	}
 
 	if(FirmwareTypeByte === MainlineQMKFirmware)
