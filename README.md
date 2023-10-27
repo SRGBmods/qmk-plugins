@@ -40,7 +40,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* Q12 ANSI
 	* Q1v2 ANSI Encoder & ISO Encoder & ISO Nordic
 	* Q1 ANSI
-	* Q2 ANSI
+	* Q2 ANSI & ANSI Encoder
 	* Q3 ANSI
 	* Q4 ANSI
 	* Q5 Pro ANSI
@@ -51,6 +51,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* V3 ANSI
 	* V5 ANSI
 	* V6 ANSI
+	* 81 Pro (Oneplus)
 * Massdrop:
 	* ALT v1
 	* CTRL v1
