@@ -45,7 +45,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* Q4 ANSI
 	* Q5 Pro ANSI
 	* Q5 ANSI Encoder & ANSI
-	* Q6 ANSI ISO
+	* Q6 ANSI, ANSI Encoder, ISO, and ISO Encoder
 	* V1 ANSI Encoder & ANSI
 	* V2 ANSI
 	* V3 ANSI & ISO Encoder
