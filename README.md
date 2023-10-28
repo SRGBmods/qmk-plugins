@@ -15,5 +15,4 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 ### Supported Devices ###
 * Redragon
 	* K556 / K582
-	* K630v2
 	* K667
