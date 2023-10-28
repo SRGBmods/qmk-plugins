@@ -13,77 +13,88 @@ Tech support is available on the Test Plugin Discord: <https://discord.com/invit
 Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/needs-testing) branch if you find your keyboard in there works please let us know either via the Discord link above or with the Issues system here on Github and thanks for the help!
 
 ### Supported Devices ###
-1upkeyboards_1upocarina
-1upkeyboards_1upsuper16v3
-1upkeyboards_pi40
-1upkeyboards_pi60
-1upkeyboards_pi60hse
-1upkeyboards_pi60rgb
-1upkeyboards_sweet16v2
-abko_ak84bt
-akko_5108
-akko_acr87
-akko_top40
-anachronism_tetromino
-atlantis_ps17
-binepad_bn006
-boardsource_beiwagon
-boardsource_lulu
-boardsource_techniko
-boardsource_techniks
-boardsource_the_mark65
-chosfox_chosfox_cf81
-controller_works_city42
-controller_works_mini36
-controller_works_mini42
-cxt_cxtstudio
-czcgaming_dwarf
-dekunukem_duckypad
-depermana12_dp3000
-doio_doiokb38
-drop_inc_alt_v2
-drop_inc_ctrl_v2
-drop_inc_sense75
-drop_inc_shift_v2
-eggsworks_egg58
-ethan_alcordactyl
-fancytech_fancyalice66
-flashquark_horizonz
-freya_splaytoraid
-gg_berserker
-gg_ironclad
-gkeyboard_gpad82r
-helheim_freja_65
-hoksi_technology_durgod_hades_qmk
-inland_mk47
-jzskyloong_dt40
-kbdcraft_adam64
-kbdfans_kbdpadmk3
-keebio_nyquistpad
-keychron_keychron_q0_plus
-keychron_q0
-kuro_kuro65
-laser_ninja_pumpkin_pad
-lx3_fave60a
-lx3_favepada
-lx3_fave_84h
-mattmcca_blackhellebore
-mattmcca_heliotrope
-monsgeek_m1
-monsgeek_m5
-monsgeek_m6
-ozone_tactical
-plywrks_ply8x
-projectd_projectd_65_ansi
-rama_m6c
-rama_works_m60b
-skeletonkbd_frost68
-skmt_skmt_15k
-soda_mango
-synth_labs_060
-tominabox1_le_chiffre
-unknown_tan67
-work_louder_numpad
-yiancardesigns_nk
-ymdk_idobao_x_ymdk_id75
-zzeneg_stront
+* 1upkeyboards
+	* 1upocarina
+	* 1upsuper16v3
+	* pi40
+	* pi60
+	* pi60hse
+	* pi60rgb
+	* sweet16v2
+* abko: ak84bt
+* akko
+	* 5108
+	* acr87
+	* top40
+* anachronism: tetromino
+* atlantis: ps17
+* binepad: bn006
+* boardsource
+	* beiwagon
+	* lulu
+	* techniko
+	* techniks
+	* the_mark65
+* chosfox: chosfox_cf81
+* controller_works:
+	* city42
+	* mini36
+	* mini42
+* cxt: cxtstudio
+* czcgaming: dwarf
+* dekunukem: duckypad
+* depermana12: dp3000
+* doio: doiokb38
+* drop_inc:
+	* alt_v2
+	* ctrl_v2
+	* sense75
+	* shift_v2
+* eggsworks: egg58
+* ethan: alcordactyl
+* fancytech: fancyalice66
+* flashquark: horizonz
+* freya: splaytoraid
+* gg
+	* berserker
+	* ironclad
+* gkeyboard: gpad82r
+* helheim: freja_65
+* hoksi_technology: durgod_hades
+* inland: mk47
+* jzskyloong: dt40
+* kbdcraft
+	* adam64
+	* kbdpadmk3
+* keebio: nyquistpad
+* keychron
+	* q0_plus
+	* q0
+* kuro: kuro65
+* laser_ninja: pumpkin_pad
+* lx3
+	* fave60a
+	* favepada
+	* fave_84h
+* mattmcca
+	* blackhellebore
+	* heliotrope
+* monsgeek
+	* m1
+	* m5
+	* m6
+* ozone: tactical
+* plywrks: ply8x
+* projectd: projectd_65_ansi
+* rama: m6c
+* rama: works_m60b
+* skeletonkbd: frost68
+* skmt: skmt_15k
+* soda: mango
+* synth_labs: 060
+* tominabox1: le_chiffre
+* unknown: tan67
+* work_louder: numpad
+* yiancardesigns: nk
+* ymdk: idobao_x_ymdk_id75
+* zzeneg: stront
