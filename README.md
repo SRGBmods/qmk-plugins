@@ -13,34 +13,77 @@ Tech support is available on the Test Plugin Discord: <https://discord.com/invit
 Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/needs-testing) branch if you find your keyboard in there works please let us know either via the Discord link above or with the Issues system here on Github and thanks for the help!
 
 ### Supported Devices ###
-* DZTech: DZTech 65RGB V3
-* Epomaker: TH96
-* Ergodox EZ: Ergodox EZ Glow
-* Feker: IK75
-* GMMK:
-	* GMMK 2 65% ANSI & ISO
-	* GMMK 2 96% ANSI & ISO
-	* GMMK Numpad
-	* GMMK Pro
-	* GMMK TKL rev2 ISO
-* Helheim Designs: Freja 65
-* IDOBAO: ID67
-* KBDFans:
-	* KBD67 V2 ANSI & ISO
-* Keychron: (ISO users please help us!)
-	* K2 Pro ANSI
-	* K8 TKL ANSI
-	* K8 Pro ANSI & ISO DE
-	* K10 Pro ANSI
-	* Q0 ANSI, Q1, Q1v2 ANSI & ISO, Q2 ANSI, Q3 ANSI & ANSI Encoder, Q4 ANSI, Q5 Pro ANSI, Q5 ANSI & ANSI Encoder, Q6 ANSI & ANSI Encoder & ISO Encoder, Q10 ANSI, Q12 ANSI
-	* V1 ANSI & ANSI Encoder & V2 & V3 & V4 & V5 & V6
-* Massdrop:
-	* ALT
-	* CTRL
-	* SENSE75
-* Redragon: (These are pulled temporarily due to modifications for Unique Byte check needing to be done.)
-	* K556
-	* K582
-	* K630 v2
-* YMDK
-	* Melody96rgb
+1upkeyboards_1upocarina
+1upkeyboards_1upsuper16v3
+1upkeyboards_pi40
+1upkeyboards_pi60
+1upkeyboards_pi60hse
+1upkeyboards_pi60rgb
+1upkeyboards_sweet16v2
+abko_ak84bt
+akko_5108
+akko_acr87
+akko_top40
+anachronism_tetromino
+atlantis_ps17
+binepad_bn006
+boardsource_beiwagon
+boardsource_lulu
+boardsource_techniko
+boardsource_techniks
+boardsource_the_mark65
+chosfox_chosfox_cf81
+controller_works_city42
+controller_works_mini36
+controller_works_mini42
+cxt_cxtstudio
+czcgaming_dwarf
+dekunukem_duckypad
+depermana12_dp3000
+doio_doiokb38
+drop_inc_alt_v2
+drop_inc_ctrl_v2
+drop_inc_sense75
+drop_inc_shift_v2
+eggsworks_egg58
+ethan_alcordactyl
+fancytech_fancyalice66
+flashquark_horizonz
+freya_splaytoraid
+gg_berserker
+gg_ironclad
+gkeyboard_gpad82r
+helheim_freja_65
+hoksi_technology_durgod_hades_qmk
+inland_mk47
+jzskyloong_dt40
+kbdcraft_adam64
+kbdfans_kbdpadmk3
+keebio_nyquistpad
+keychron_keychron_q0_plus
+keychron_q0
+kuro_kuro65
+laser_ninja_pumpkin_pad
+lx3_fave60a
+lx3_favepada
+lx3_fave_84h
+mattmcca_blackhellebore
+mattmcca_heliotrope
+monsgeek_m1
+monsgeek_m5
+monsgeek_m6
+ozone_tactical
+plywrks_ply8x
+projectd_projectd_65_ansi
+rama_m6c
+rama_works_m60b
+skeletonkbd_frost68
+skmt_skmt_15k
+soda_mango
+synth_labs_060
+tominabox1_le_chiffre
+unknown_tan67
+work_louder_numpad
+yiancardesigns_nk
+ymdk_idobao_x_ymdk_id75
+zzeneg_stront
