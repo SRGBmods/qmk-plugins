@@ -1,4 +1,4 @@
-export function Name() { return "YMDK Melody96 RGB"; }
+export function Name() { return "YMDK Melody96 RGB QMK Keyboard"; }
 export function Version() { return "1.1.7;"; }
 export function VendorId() { return 0x594d; }
 export function ProductId() { return 0x6060; }
