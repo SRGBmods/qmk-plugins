@@ -1,7 +1,7 @@
 export function Name() { return "Keychron V2 QMK Keyboard"; }
 export function Version() { return "1.1.7;"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return 0x0321; }
+export function ProductId() { return [0x0320, 0x0321]; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [15, 5]; }
