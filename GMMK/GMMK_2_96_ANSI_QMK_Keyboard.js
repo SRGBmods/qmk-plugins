@@ -1,7 +1,7 @@
 export function Name() { return "GMMK 2 96% ANSI QMK Keyboard"; }
 export function Version() { return "1.1.7;"; }
 export function VendorId() { return 0x320F; }
-export function ProductId() { return [0x505A, 0x505B]; }
+export function ProductId() { return [0x504B, 0x505B]; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/supported-keyboards"; }
 export function Size() { return [21, 7]; }
