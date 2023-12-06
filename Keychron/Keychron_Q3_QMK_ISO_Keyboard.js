@@ -1,7 +1,7 @@
-export function Name() { return "Keychron Q3 ISO Encoder Keyboard"; }
+export function Name() { return "Keychron Q3 ISO Keyboard"; }
 export function Version() { return "1.1.7"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return 0x0123; }
+export function ProductId() { return [0x0122, 0x0123]; }
 export function Publisher() { return "Chom"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [17, 6]; }
