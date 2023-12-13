@@ -1,4 +1,4 @@
-export function Name() { return "QMK Keyboard"; }
+export function Name() { return "Keychon K2 ANSI"; }
 export function Version() { return "1.1.7"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return 0xfe02; }
