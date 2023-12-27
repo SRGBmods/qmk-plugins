@@ -44,8 +44,8 @@ const vKeyNames =
 	"CapsLock",  "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter",                                                  "Num 4", "Num 5", "Num 6",              //16
 	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift",                  "Up Arrow",                   "Num 1",  "Num 2",  "Num 3",   "Num Enter",  //17
 	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Ctrl",  "Left Arrow",  "Down Arrow", "Right Arrow",  "Num 0", "Num .", //12
-	"Right LED 1", "Right LED 2", "Right LED 3", "Right LED 4", "Right LED 5", "Right LED 6", "Right LED 7 ", "Right LED 8", "Right LED 9", "Right LED 10",
 	"Left LED 1", "Left LED 2", "Left LED 3", "Left LED 4", "Left LED 5", "Left LED 6", "Left LED 7", "Left LED 8", "Left LED 9", "Left LED 10",
+	"Right LED 1", "Right LED 2", "Right LED 3", "Right LED 4", "Right LED 5", "Right LED 6", "Right LED 7 ", "Right LED 8", "Right LED 9", "Right LED 10",
 ];
 
 const vKeyPositions =
@@ -57,8 +57,8 @@ const vKeyPositions =
 	[1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4], [12, 4],                 [15, 4], [16, 4], [17, 4], [18, 4], [19, 4], //17
 	[1, 5], [2, 5], [3, 5],                  [7, 5],                   [11, 5], [12, 5], [13, 5], [14, 5], [15, 5], [16, 5], [17, 5], [18, 5],        //12
 
-	[20, 0], [20, 1], [20, 1], [20, 2], [20, 2], [20, 3], [20, 3], [20, 4], [20, 4], [20, 5],
 	[0, 0], [0, 1], [0, 1], [0, 2], [0, 2], [0, 3], [0, 3], [0, 4], [0, 4], [0, 5],
+	[20, 0], [20, 1], [20, 1], [20, 2], [20, 2], [20, 3], [20, 3], [20, 4], [20, 4], [20, 5],
 ];
 
 let LEDCount = 0;
