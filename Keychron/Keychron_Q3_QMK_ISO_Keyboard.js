@@ -35,7 +35,7 @@ const vKeys = [
 
 const vKeyNames = [
 	"Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",	"Print Screen", "Scroll Lock",	"Pause Break", 	//16
-	"`", "11",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",			"Insert",		"Home",			"Page Up",		//17
+	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",			"Insert",		"Home",			"Page Up",		//17
 	"Tab", "Q", "W", "E", "R", "T", "Z", "U", "I", "O", "P", "Ü", "+",					"Del",			"End",			"Page Down",	//17
 	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ö", "Ä", "NUHS",			"Enter", 														//13
 	"Left Shift", "NUBS", "Y", "X", "C", "V", "B", "N", "M", ",", ".", "-",		  "Right Shift",						"Up Arrow",						//14
