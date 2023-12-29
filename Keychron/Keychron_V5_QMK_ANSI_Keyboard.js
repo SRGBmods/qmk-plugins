@@ -1,7 +1,7 @@
 export function Name() { return "Keychron V5 QMK Keyboard"; }
 export function Version() { return "1.1.7;"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return 0x0351; }
+export function ProductId() { return [0x0350, 0x0351]; }
 export function Publisher() { return "AkIrA(modded by 7EVEN) & WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [19, 6]; }
