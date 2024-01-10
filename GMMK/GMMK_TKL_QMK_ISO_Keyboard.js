@@ -1,10 +1,10 @@
-export function Name() { return "KBDfans KBD67MKIIRGB ISO QMK Keyboard"; }
+export function Name() { return "GMMK TKL ISO"; }
 export function Version() { return "1.1.7;"; }
-export function VendorId() { return 0x4b42; }
-export function ProductId() { return 0x0105; }
-export function Publisher() { return "mestermandarin"; }
+export function VendorId() { return 0x0c45; }
+export function ProductId() { return 0x652f; }
+export function Publisher() { return "skank & WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function Size() { return [15, 5]; }
+export function Size() { return [17, 6]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
@@ -17,36 +17,39 @@ export function ControllableParameters()
 {
 	return [
 		{"property":"shutdownMode", "group":"lighting", "label":"Shutdown Mode", "type":"combobox", "values":["SignalRGB", "Hardware"], "default":"SignalRGB"},
-		{"property":"shutdownColor", "group":"lighting", "label":"Shutdown Color", "min":"0", "max":"360", "type":"color", "default":"000000"},
+		{"property":"shutdownColor", "group":"lighting", "label":"Shutdown Color", "min":"0", "max":"360", "type":"color", "default":"#009bde"},
 		{"property":"LightingMode", "group":"lighting", "label":"Lighting Mode", "type":"combobox", "values":["Canvas", "Forced"], "default":"Canvas"},
-		{"property":"forcedColor", "group":"lighting", "label":"Forced Color", "min":"0", "max":"360", "type":"color", "default":"009bde"},
+		{"property":"forcedColor", "group":"lighting", "label":"Forced Color", "min":"0", "max":"360", "type":"color", "default":"#009bde"},
 	];
 }
 
 //Plugin Version: Built for Protocol V1.0.4
 
 const vKeys = [
-	0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,	13, 14,
-	28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15,
-	29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,	42,	43,
-	58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44,
-	59, 60, 61,				62,				63, 64, 65, 66, 67
+	0,    1, 2, 3, 4,   5, 6, 7, 8,   9, 10, 11, 12,		    13, 14, 15,
+	16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,  29,    30, 31, 32,
+	33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,	        47, 48, 49,
+	50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 46,   62,
+	63, 87, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,	      		75,
+	76, 77, 78, 79,         80,         81, 82, 83,  			84, 85, 86
 ];
 
 const vKeyNames = [
-	"Esc", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Home",
-	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "PgUp",
-	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "\\", "Enter", "PgDn",
-	"Left Shift", "ISO", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End",
-	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Menu", "Left Arrow",  "Down Arrow", "Right Arrow"
+	"Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",	          "Print Screen", "Scroll Lock",	"Pause Break",
+	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",		              "Insert",	      	"Home",			"Page Up",
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", 				                      "Del",			"End",			"Page Down",
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "#",		"Enter",
+	"Left Shift", "\\", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/",		  "Right Shift",	          				"Up Arrow",
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Menu", "Right Ctrl",	              "Left Arrow",	"Down Arrow",	"Right Arrow"
 ];
 
 const vKeyPositions = [
-	[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0],
-	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1],			[14, 1],
-	[0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2], [14, 2],
-	[0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], [12, 3], [13, 3], [14, 3],
-	[0, 4], [1, 4], [2, 4],			  		[6, 4],			  	   [10, 4], [11, 4], [12, 4], [13, 4], [14, 4]
+	[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [8, 0], [9, 0], [10, 0], 		 [11, 0], [12, 0],  [13, 0],     [14, 0], [15, 0], [16, 0],
+	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1],  [13, 1],     [14, 1], [15, 1], [16, 1],
+	[0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2],  		     [14, 2], [15, 2], [16, 2],
+	[0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], [12, 3],  [13, 3],
+	[0, 4], [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4], [13, 4], 	     				  [15, 4],
+	[0, 5], [1, 5], [2, 5],                         [6, 5],                         [10, 5], [11, 5], [12, 5],  [13, 5],     [14, 5], [15, 5], [16, 5]
 ];
 
 let LEDCount = 0;
@@ -106,7 +109,7 @@ export function Shutdown(SystemSuspending)
 			effectDisable();
 		}
 	}
-	//vKeysArrayCount(); // For debugging array counts
+	//vKeysArrayCount();
 
 }
 
