@@ -432,7 +432,7 @@ export function ImageUrl()
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
 	}
 
-	f ([0x0660].includes(device.productId())) // ANSI
+	if ([0x0660].includes(device.productId())) // ANSI
 	{
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
 	}
