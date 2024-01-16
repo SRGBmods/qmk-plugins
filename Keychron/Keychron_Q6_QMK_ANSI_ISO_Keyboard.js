@@ -1,7 +1,7 @@
-export function Name() { return "Keychron Q6 QMK Keyboard"; }
+export function Name() { return "Keychron Q6 / Q6 PRO QMK Keyboard"; }
 export function Version() { return "1.1.7"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return [0x0160, 0x0161, 0x0162, 0x0163]; }
+export function ProductId() { return [0x0160, 0x0161, 0x0162, 0x0163, 0x0660, 0x0661]; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [21, 6]; }
@@ -115,7 +115,7 @@ export function vKeysArrayCount()
 export function Initialize()
 {
 
-	if ([0x0160, 0x0161].includes(device.productId()))
+	if ([0x0160, 0x0161, 0x0660].includes(device.productId()))
 	{
 		vKeyNames = vKeyNamesANSI;
 		vKeyPositions = vKeyPositionsANSI;
@@ -432,12 +432,22 @@ export function ImageUrl()
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
 	}
 
+	f ([0x0660].includes(device.productId())) // ANSI
+	{
+		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
+	}
+
 	if ([0x0161].includes(device.productId())) // ANSI + Encoder
 	{
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI_Encoder.png";
 	}
 
 	if ([0x0163].includes(device.productId())) // ISO + Encoder
+	{
+		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ISO_Encoder.png";
+	}
+
+	if ([0x0661].includes(device.productId())) // ISO + Encoder
 	{
 		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ISO_Encoder.png";
 	}
