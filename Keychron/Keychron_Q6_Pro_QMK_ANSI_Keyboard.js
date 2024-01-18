@@ -1,7 +1,7 @@
-export function Name() { return "Keychron Q6 / Q6 PRO QMK Keyboard"; }
+export function Name() { return "Keychron Q6 Pro ANSI QMK Keyboard"; }
 export function Version() { return "1.1.7"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return [0x0160, 0x0161, 0x0162, 0x0163]; }
+export function ProductId() { return 0x0660; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [21, 6]; }
@@ -23,70 +23,36 @@ export function ControllableParameters()
 	];
 }
 
-let vKeyNames = [];
-let vKeyPositions = [];
-let vKeys = [];
-
 //Plugin Version: Built for Protocol V1.0.4
 
-const vKeysANSI =
+const vKeys =
 [
-	0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12, 		13, 14, 15,    16, 17, 18, 19,
-	20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,  33, 	34, 35, 36,    37, 38, 39, 40,
-	41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,		55, 56, 57,    58, 59, 60,
-	61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 				   75, 76, 77, 78,
-	79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 				91,  	   92, 93, 94,
-	95,	96, 97, 			98, 		99, 100, 101, 102,  	103, 104, 105, 106, 107
+	0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12, 		13, 14, 15,    16, 17, 18, 19,  //20
+	20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 	34, 35, 36,    37, 38, 39, 40,  //21
+	41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,		55, 56, 57,    58, 59, 60, 61,  //21
+	62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 				       75, 76, 77,		//16
+	78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 			     90,  	   91, 92, 93, 94,  //17
+	95, 96, 97,         98,           99, 100, 101, 102,      103, 104, 105,   106, 107,        //13
 ];
 
-const vKeyNamesANSI =
+const vKeyNames =
 [
-	"Esc",	"F1", "F2", "F3", "F4",	"F5", "F6", "F7", "F8", "F9",	"F10", "F11", "F12", 			"Print Screen", "Scroll Lock", "Pause Break",	"Circle", "Triangle", "Square", "Cross",
-	"`",   "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+",		  "Backspace",        	"Insert", "Home", "Page Up",         			"NumLock", "Num /", "Num *", "Num -",
-	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",	            		"Del", "End", "Page Down",          		    "Num 7", "Num 8", "Num 9",
-	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter",											           					"Num 4", "Num 5", "Num 6", "Num +",
-	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/",	"Right Shift",									"Up Arrow",		   		  		"Num 1", "Num 2", "Num 3",
-	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Menu", "Right Ctrl", 			"Left Arrow", "Down Arrow", "Right Arrow",		"Num 0", "Num .", "Num Enter",
+	"Esc",	"F1", "F2", "F3", "F4",	"F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", 			"Print Screen", "Scroll Lock", "Pause Break",	"Circle", "Triangle", "Square", "Cross",  	//20
+	"`",   "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+",		  "Backspace",        	"Insert", "Home", "Page Up",         			"NumLock", "Num /", "Num *", "Num -", 	//21
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",	            		"Del", "End", "Page Down",          		    "Num 7", "Num 8", "Num 9", "Num +",   	//21
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter",											           					"Num 4", "Num 5", "Num 6", 				//16
+	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/",	"Right Shift",									"Up Arrow",		   		  		"Num 1", "Num 2", "Num 3", "Num Enter", //17
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Menu", "Right Ctrl", 			"Left Arrow", "Down Arrow", "Right Arrow",		"Num 0", "Num .", 						//13
 ];
 
-const vKeyPositionsANSI =
+const vKeyPositions =
 [
-	[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0],	[10, 0], [11, 0], [12, 0], 			[14, 0], [15, 0], [16, 0], [17, 0], [18, 0], [19, 0], [20, 0],
-	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1],
-	[0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2],	[14, 2], [15, 2], [16, 2], [17, 2], [18, 2], [19, 2],
-	[0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], 		   [13, 3],	 						   [17, 3], [18, 3], [19, 3], [20, 3],
-	[0, 4], [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4],		                     [15, 4],	       [17, 4], [18, 4], [19, 4],
-	[0, 5], [1, 5], [2, 5], 				[5, 5], 						[9, 5], [10, 5], [11, 5], [12, 5],	  		[14, 5], [15, 5], [16, 5], [17, 5], [18, 5], 		  [20, 5],
-];
-
-const vKeysISO =
-[
-	0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12, 		13, 14, 15,    16, 17, 18, 19,
-	20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,  33, 	34, 35, 36,    37, 38, 39, 40,
-	41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,  		54, 55, 56,    57, 58, 59,
-	60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 				   74, 75, 76, 77,
-	78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90,  			91,        92, 93, 94,
-	95,	96, 97, 			98, 		99, 100, 101, 102,  	103, 104, 105,  106, 107, 108,
-];
-
-const vKeyNamesISO =
-[
-	"Esc",	"F1", "F2", "F3", "F4",	"F5", "F6", "F7", "F8", "F9",	"F10", "F11", "F12", 			"Print Screen", "Scroll Lock", "Pause Break",	"Circle", "Triangle", "Square", "Cross",
-	"`",   "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+",		  "Backspace",        	"Insert", "Home", "Page Up",         			"NumLock", "Num /", "Num *", "Num -",
-	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]",			            		"Del", "End", "Page Down",          		    "Num 7", "Num 8", "Num 9",
-	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "ISO_#",	"Enter",											           		"Num 4", "Num 5", "Num 6", "Num +",
-	"Left Shift", "ISO_<", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/",	"Right Shift",				"Up Arrow",		   		  		    	"Num 1", "Num 2", "Num 3",
-	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Menu", "Right Ctrl", 			"Left Arrow", "Down Arrow", "Right Arrow",		"Num 0", "Num .", "Num Enter",
-];
-
-const vKeyPositionsISO =
-[
-	[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0],	[10, 0], [11, 0], [12, 0], 			[14, 0], [15, 0], [16, 0], [17, 0], [18, 0], [19, 0], [20, 0],
-	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1],
-	[0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], 			[14, 2], [15, 2], [16, 2], [17, 2], [18, 2], [19, 2],
-	[0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], [12, 3], [13, 3],	 						   [17, 3], [18, 3], [19, 3], [20, 3],
-	[0, 4], [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4], [12, 4],                   [15, 4],	       [17, 4], [18, 4], [19, 4],
-	[0, 5], [1, 5], [2, 5], 				[5, 5], 						[9, 5], [10, 5], [11, 5], [12, 5],	  		[14, 5], [15, 5], [16, 5], [17, 5], [18, 5], 		  [20, 5],
+	[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0],	[10, 0], [11, 0], [12, 0], 			[14, 0], [15, 0], [16, 0], [17, 0], [18, 0], [19, 0], [20, 0],		//20
+	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1],		//21
+	[0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2],	[14, 2], [15, 2], [16, 2], [17, 2], [18, 2], [19, 2], [20, 2],		//21
+	[0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], 		   [13, 3],	 						   [17, 3], [18, 3], [19, 3], 				//16
+	[0, 4], [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4],		                     [15, 4],	       [17, 4], [18, 4], [19, 4], [20, 4],		//17
+	[0, 5], [1, 5], [2, 5], 				[5, 5], 						[9, 5], [10, 5], [11, 5], [12, 5],	  		[14, 5], [15, 5], [16, 5], [17, 5], [18, 5], 		  				//13
 ];
 
 let LEDCount = 0;
@@ -97,12 +63,12 @@ const PluginProtocolVersion = "1.0.4";
 
 export function LedNames()
 {
-	return vKeyNamesANSI;
+	return vKeyNames;
 }
 
 export function LedPositions()
 {
-	return vKeyPositionsANSI;
+	return vKeyPositions;
 }
 
 export function vKeysArrayCount()
@@ -114,25 +80,6 @@ export function vKeysArrayCount()
 
 export function Initialize()
 {
-
-	if ([0x0160, 0x0161].includes(device.productId()))
-	{
-		vKeyNames = vKeyNamesANSI;
-		vKeyPositions = vKeyPositionsANSI;
-		vKeys = vKeysANSI;
-
-		device.log(`Layout changed to ANSI`);
-		device.setControllableLeds(vKeyNames, vKeyPositions);
-	}
-	else
-	{
-		vKeyNames = vKeyNamesISO;
-		vKeyPositions = vKeyPositionsISO;
-		vKeys = vKeysISO;
-
-		device.log(`Layout changed to ISO`);
-		device.setControllableLeds(vKeyNames, vKeyPositions);
-	}
 
 	requestFirmwareType();
 	requestQMKVersion();
@@ -427,28 +374,4 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-	if ([0x0160].includes(device.productId())) // ANSI
-	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
-	}
-
-	if ([0x0660].includes(device.productId())) // ANSI
-	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
-	}
-
-	if ([0x0161].includes(device.productId())) // ANSI + Encoder
-	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI_Encoder.png";
-	}
-
-	if ([0x0163].includes(device.productId())) // ISO + Encoder
-	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ISO_Encoder.png";
-	}
-
-	if ([0x0661].includes(device.productId())) // ISO + Encoder
-	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ISO_Encoder.png";
-	}
 }
