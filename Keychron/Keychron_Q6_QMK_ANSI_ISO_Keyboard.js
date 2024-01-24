@@ -1,4 +1,4 @@
-export function Name() { return "Keychron Q6 / Q6 PRO QMK Keyboard"; }
+export function Name() { return "Keychron Q6 QMK Keyboard"; }
 export function Version() { return "1.1.7"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return [0x0160, 0x0161, 0x0162, 0x0163]; }
