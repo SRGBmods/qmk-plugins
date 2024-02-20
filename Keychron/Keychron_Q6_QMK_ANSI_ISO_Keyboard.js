@@ -427,28 +427,29 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
+	const baseImageUrl = "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/";
 	if ([0x0160].includes(device.productId())) // ANSI
 	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
+		return baseImageUrl + "Keychron_Q6_ANSI.png";
 	}
 
 	if ([0x0660].includes(device.productId())) // ANSI
 	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI.png";
+		return baseImageUrl + "Keychron_Q6_ANSI.png";
 	}
 
 	if ([0x0161].includes(device.productId())) // ANSI + Encoder
 	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ANSI_Encoder.png";
+		return baseImageUrl + "Keychron_Q6_ANSI_Encoder.png";
 	}
 
 	if ([0x0163].includes(device.productId())) // ISO + Encoder
 	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ISO_Encoder.png";
+		return baseImageUrl + "Keychron_Q6_ISO_Encoder.png";
 	}
 
 	if ([0x0661].includes(device.productId())) // ISO + Encoder
 	{
-		return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q6_ISO_Encoder.png";
+		return baseImageUrl + "Keychron_Q6_ISO_Encoder.png";
 	}
 }
