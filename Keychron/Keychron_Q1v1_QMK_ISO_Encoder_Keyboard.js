@@ -1,5 +1,5 @@
 export function Name() { return "Keychron Q1v1 ISO Encoder"; }
-export function Version() { return "1.0.0"; }
+export function Version() { return "1.1.7"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return 0x0103; }
 export function Publisher() { return "CephDigital"; }
