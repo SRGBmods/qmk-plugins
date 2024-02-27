@@ -1,5 +1,5 @@
 export function Name() { return "Feker IK75 (QMK/VIA)"; }
-export function Version() { return "1.1.7;"; }
+export function Version() { return "1.1.8;"; }
 export function VendorId() { return 0xF2E7; }
 export function ProductId() { return 0x1226; }
 export function Publisher() { return "986nick"; }
@@ -64,7 +64,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.5";
 
 export function LedNames()
 {

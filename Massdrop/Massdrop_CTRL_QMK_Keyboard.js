@@ -1,4 +1,5 @@
 export function Name() { return "Massdrop CTRL QMK Keyboard"; }
+export function Version() { return "1.1.2"; }
 export function VendorId() { return 0x04d8; }
 export function ProductId() { return 0xEED2; }
 export function Publisher() { return "WhirlwindFX"; }

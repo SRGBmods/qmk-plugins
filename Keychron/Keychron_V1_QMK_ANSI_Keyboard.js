@@ -1,5 +1,5 @@
 export function Name() { return "Keychron V1 QMK Keyboard"; }
-export function Version() { return "1.1.7;"; }
+export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return [0x0310]; }
 export function Publisher() { return "MrNRod45 & WhirlwindFX"; }
@@ -58,7 +58,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.5";
 
 export function LedNames()
 {

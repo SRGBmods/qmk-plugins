@@ -1,5 +1,5 @@
 export function Name() { return "GMMK 2 65% ISO QMK Keyboard"; }
-export function Version() { return "1.1.7;"; }
+export function Version() { return "1.1.8;"; }
 export function VendorId() { return 0x320F; }
 export function ProductId() { return 0x504A; }
 export function Publisher() { return "WhirlwindFX"; }
@@ -65,7 +65,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.5";
 
 export function LedNames()
 {

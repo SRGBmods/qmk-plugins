@@ -1,5 +1,5 @@
 export function Name() { return "DZTech DZ65RGB V3"; }
-export function Version() { return "1.1.7;"; }
+export function Version() { return "1.1.8;"; }
 export function VendorId() { return 0x445a; }
 export function ProductId() { return 0x1424; }
 export function Publisher() { return "chewtoy9696"; }
@@ -55,7 +55,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.5";
 
 export function LedNames()
 {

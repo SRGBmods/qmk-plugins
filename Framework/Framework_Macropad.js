@@ -1,5 +1,5 @@
 export function Name() { return "Laptop 16 RGB Macropad"; }
-export function Version() { return "1.1.4"; }
+export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x32AC; }
 export function ProductId() { return 0x0013; }
 export function Publisher() { return "WhirlwindFX"; }
@@ -60,7 +60,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.5";
 
 export function LedNames()
 {
