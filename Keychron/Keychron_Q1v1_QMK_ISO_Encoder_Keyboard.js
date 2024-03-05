@@ -1,7 +1,7 @@
-export function Name() { return "Keychron Q1v1 ISO Encoder"; }
+export function Name() { return "Keychron Q1v1 ISO QMK Keyboard"; }
 export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return 0x0103; }
+export function ProductId() { return [0x0102, 0x0103]; }
 export function Publisher() { return "CephDigital"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [21, 6]; }
