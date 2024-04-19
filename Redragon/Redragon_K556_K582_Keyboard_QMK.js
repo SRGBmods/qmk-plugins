@@ -348,7 +348,7 @@ function sendColors(overrideColor)
 
 function StreamLightingData(StartLedIdx, RGBData)
 {
-	device.pause(10);
+	device.pause(15);
 	const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)].concat(RGBData);
 	device.write(packet, 33);
 }
