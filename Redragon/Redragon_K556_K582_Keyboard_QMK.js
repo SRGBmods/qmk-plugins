@@ -1,5 +1,5 @@
 export function Name() { return "Redragon K556/K582 Keyboard"; }
-export function Version() { return "1.1.6"; }
+export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x0c45; }
 export function ProductId() { return 0x5004; }
 export function Publisher() { return "WhirlwindFX"; }
@@ -56,7 +56,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.5";
 
 export function LedNames()
 {
@@ -109,8 +109,7 @@ export function Shutdown(SystemSuspending)
 			effectDisable();
 		}
 	}
-
-	vKeysArrayCount(); // For debugging array counts
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 
@@ -197,7 +196,7 @@ function returnSignalRGBProtocolVersion(data)
 
 	if(PluginProtocolVersion !== SignalRGBProtocolVersion)
 	{
-		device.notify("Unsupported Protocol Version: ", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 1, "Documentation");
+		device.notify("Unsupported Protocol Version", `This plugin is intended for SignalRGB Protocol version ${PluginProtocolVersion}. This device is version: ${SignalRGBProtocolVersion}`, 2, "Documentation");
 	}
 
 	device.pause(30);
@@ -207,7 +206,7 @@ function requestUniqueIdentifier() //Grab the unique identifier for this keyboar
 {
 	if(device.write([0x00, 0x23], 32) === -1)
 	{
-		device.notify("Unsupported Firmware: ", `This device is not running SignalRGB-compatible firmware. Click the Open Troubleshooting Docs button to learn more.`, 1, "Documentation");
+		device.notify("Unsupported Firmware", "This device is not running SignalRGB-compatible firmware. Click the Documentation button to learn more.", 3, "Documentation");
 	}
 
 	device.pause(30);
@@ -256,7 +255,7 @@ function returnFirmwareType(data)
 
 	if(!(FirmwareTypeByte === MainlineQMKFirmware || FirmwareTypeByte === VIAFirmware))
 	{
-		device.notify("Unsupported Firmware: ", "Click Show Console, and then click on troubleshooting for your keyboard to find out more.", 1, "Documentation");
+		device.notify("Unsupported Firmware", "Click the Documentation button to learn more.", 3, "Documentation");
 	}
 
 	if(FirmwareTypeByte === MainlineQMKFirmware)
@@ -318,7 +317,7 @@ function grabColors(overrideColor)
 	{
 		const iPxX = vKeyPositions[iIdx][0];
 		const iPxY = vKeyPositions[iIdx][1];
-		const color = device.color(iPxX, iPxY);
+		let color = device.color(iPxX, iPxY);
 
 		const iLedIdx = vKeys[iIdx] * 3;
 		rgbdata[iLedIdx] = color[0];
@@ -349,6 +348,7 @@ function sendColors(overrideColor)
 
 function StreamLightingData(StartLedIdx, RGBData)
 {
+	device.pause(5);
 	const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)].concat(RGBData);
 	device.write(packet, 33);
 }
