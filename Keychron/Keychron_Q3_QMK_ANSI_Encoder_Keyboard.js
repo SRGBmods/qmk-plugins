@@ -1,7 +1,7 @@
 export function Name() { return "Keychron Q3 ANSI Encoder Keyboard"; }
 export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return [0x0121]; }
+export function ProductId() { return 0x0121; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [17, 6]; }
