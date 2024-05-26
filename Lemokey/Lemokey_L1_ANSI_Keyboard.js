@@ -2,7 +2,7 @@ export function Name() { return "Lemokey L1"; }
 export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x362d; }
 export function ProductId() { return 0x0110; }
-export function Publisher() { return "Ziel"; }
+export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [19, 7]; }
 export function DefaultPosition(){return [10, 100]; }
