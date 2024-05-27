@@ -83,6 +83,8 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* m1
 	* m5
 	* m6
+* nuphy
+    * halo75v2
 * ozone: tactical
 * plywrks: ply8x
 * projectd: projectd_65_ansi
