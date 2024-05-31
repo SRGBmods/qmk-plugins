@@ -1,4 +1,4 @@
-export function Name() { return "Keychron Q1 Pro QMK Keyboard"; }
+export function Name() { return "Keychron Q1 Pro / OnePlus 81 Pro QMK Keyboard"; }
 export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return 0x0610; }
@@ -23,7 +23,7 @@ export function ControllableParameters()
 	];
 }
 
-//Plugin Version: Built for Protocol V1.0.4
+//Plugin Version: Built for Protocol V1.0.5
 
 const vKeys =
 [
