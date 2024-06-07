@@ -62,7 +62,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.5";
+const PluginProtocolVersion = "1.0.4";
 
 export function LedNames() {
 	return vKeyNames;
