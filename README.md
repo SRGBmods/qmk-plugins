@@ -68,8 +68,8 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* kbdpadmk3
 * keebio: nyquistpad
 * keychron
-	* q0_plus
-	* q0
+    * v1 max ansi encoder
+    * v1 max iso encoder
 * kuro: kuro65
 * laser_ninja: pumpkin_pad
 * lx3
@@ -79,10 +79,14 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 * mattmcca
 	* blackhellebore
 	* heliotrope
+* meletrix
+    * zoom98
 * monsgeek
 	* m1
 	* m5
 	* m6
+* novelkeys
+    * nk87
 * nuphy
     * halo75v2
 * ozone: tactical
