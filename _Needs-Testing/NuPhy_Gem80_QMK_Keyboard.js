@@ -1,8 +1,8 @@
 export function Name() { return "NuPhy Gem80 QMK Keyboard"; }
-export function Version() { return "1.0.0"; }
+export function Version() { return "1.0.8"; }
 export function VendorId() { return 0x19F5; }
 export function ProductId() { return 0x3275; }
-export function Publisher() { return "NuPhy"; }
+export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [18, 6]; }
 export function DefaultPosition(){return [10, 100]; }
