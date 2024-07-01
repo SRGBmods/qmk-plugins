@@ -49,7 +49,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* V1 ANSI & ANSI Encoder
 	* V2 ANSI
 	* V3 ANSI & ISO Encoder
-	* V5 ANSI
+	* V5 ANSI, ANSI Encoder & ISO Encoder
 	* V6 ANSI
 	* 81 Pro (Oneplus)
 * Massdrop:
