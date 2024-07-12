@@ -55,7 +55,11 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 * Massdrop:
 	* ALT v1
 	* CTRL v1
-	* SENSE75 v1 
+	* SENSE75 v1
+* Nuphy:
+    * Air75 v2
+    * Air96 v2
+    * Halo96 v2
 * XBows
 	* XBows KnightPlus ANSI
 	* XBows KnightPlus ANSI Numpad
