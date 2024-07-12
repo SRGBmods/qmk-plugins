@@ -25,30 +25,30 @@ export function ControllableParameters() {
 //Plugin Version: Built for Protocol V1.0.4
 
 const vKeys =     [
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
-    16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,
-    31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
-    46,47,48,49,50,51,52,53,54,55,56,57,58,59,
-    60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
-    74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98
+     0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+    19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,     33, 34, 35, 36,
+    37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,     51, 52, 53, 54,
+    55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66,     67,     68, 69, 70, 
+    71,     72, 73, 74, 75, 76, 77, 78, 79, 80, 81,     82, 83, 84, 85, 86, 87,
+    88, 89, 90,             91,         92, 93,         94, 95, 96, 97, 98
 ];
 
 const vKeyNames =     [
-    "KC_ESC", "KC_BRID", "KC_BRIU", "MAC_TASK", "MAC_SEARCH", "MAC_VOICE", "MAC_CONSOLE", "KC_MPRV", "KC_MPLY", "KC_MNXT", "KC_MUTE", "KC_VOLD", "KC_VOLU", "MAC_PRTA", "KC_DEL", "KC_HOME","KC_END","KC_PGUP","KC_PGDN",
-    "KC_GRV", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_MINS", "KC_EQL", "KC_BSPC","KC_NUM","KC_PSLS","KC_PAST","KC_PMNS",
-    "KC_TAB", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_LBRC", "KC_RBRC", "KC_BSLS", "KC_P7","KC_P8","KC_P9","KC_PPLS",
-    "KC_CAPS", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G", "KC_H", "KC_J", "KC_K", "KC_L", "KC_SCLN", "KC_QUOT", "KC_ENT","KC_P4","KC_P5","KC_P6",
-    "KC_LSFT", "KC_Z", "KC_X", "KC_C", "KC_V", "KC_B", "KC_N", "KC_M", "KC_COMM", "KC_DOT", "KC_SLSH", "KC_RSFT", "KC_UP", "KC_P1","KC_P2","KC_P3","KC_PENT",
-    "KC_LCTL", "KC_LALT", "KC_LGUI", "KC_SPC", "KC_RGUI", "Fn", "KC_LEFT", "KC_DOWN", "KC_RGHT","KC_P0","KC_PDOT",
+    "Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Mac Prta", "Del", "Home", "End", "Pgup", "Pgdn",
+      "`",  "1",  "2",  "3",  "4",  "5",  "6",  "7",  "8",  "9",  "10",   "-",   "=", "Backspace", "Numlock", "Num /", "Num *", "Num -",
+    "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Num 7","Num 8","Num 9","Num +",
+    "Capslock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "‘", "Enter","Num 4","Num 5","Num 6",
+    "Left Shift", "Z", "X", "C", "V", "B", "N", "M", "Comma", ".", "/", "Right Shift", "Up Arrow", "Num 1","Num 2","Num 3","Num Enter",
+    "Left Ctrl", "Left Win", "Left Alt", "Spacebar", "Right Alt", "Fn", "Right Arror", "Down Arrow", "Right Arrow","Num 0","Num ."
 ];
 
 const vKeyPositions =     [
-    [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0],[16, 0],[17, 0],[18, 0],
-    [0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [15, 1], [16, 1],[17, 1],[18, 1],
-    [0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2], [15, 2], [16, 2],[17, 2],[18, 2],
-    [0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], [13, 3], [15, 3], [16, 3], [17, 3],
-    [0, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4],[11, 4], [13, 4], [14, 4], [15, 4], [16, 4], [17, 4],[18, 4],
-    [0, 5], [1, 5], [2, 5], [6, 5], [9, 5], [10, 5],[13, 5],[14, 5],[15, 5],[16, 5],[17, 5]
+    [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0], [16, 0], [17, 0], [18, 0],
+    [0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1],          [15, 1], [16, 1], [17, 1], [18, 1],
+    [0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2],          [15, 2], [16, 2], [17, 2], [18, 2],
+    [0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3],          [13, 3],          [15, 3], [16, 3], [17, 3],
+    [0, 4],         [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4],          [13, 4], [14, 4], [15, 4], [16, 4], [17, 4], [18, 4],
+    [0, 5], [1, 5], [2, 5],                         [6, 5],                 [9, 5], [10, 5],                   [13, 5], [14, 5], [15, 5], [16, 5], [17, 5]
 ];
 
 let LEDCount = 0;
@@ -65,6 +65,13 @@ export function LedNames()
 export function LedPositions() 
 {
     return vKeyPositions;
+}
+
+export function vKeysArrayCount()
+{
+    device.log('vKeys ' + vKeys.length);
+    device.log('vKeyNames ' + vKeyNames.length);
+    device.log('vKeyPositions ' + vKeyPositions.length);
 }
 
 export function Initialize() 
@@ -97,7 +104,7 @@ export function Shutdown(SystemSuspending) {
 		}
 	}
 
-	vKeysArrayCount(); // For debugging array counts
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 
@@ -271,7 +278,7 @@ export function Validate(endpoint)
 	return endpoint.interface === 1;
 }
 
-export function Image() 
+export function ImageUrl()
 {
-	return "";
+    return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Nuphy_Halo96v2.png";
 }
