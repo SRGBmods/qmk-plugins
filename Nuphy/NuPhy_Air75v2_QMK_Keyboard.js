@@ -1,7 +1,7 @@
 export function Name() { return "NuPhy Air75 V2 QMK Keyboard"; }
 export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x19f5; }
-export function ProductId() { return 0x3245; }
+export function ProductId() { return [0x3245, 0x3246]; }
 export function Publisher() { return "Django"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function Size() { return [16, 6]; }
