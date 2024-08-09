@@ -1,10 +1,10 @@
 export function Name() { return "Glorious GMMK Pro QMK Keyboard"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x320F; }
 export function ProductId() { return 0x5044; }
 export function Publisher() { return "WhirlwindFX"; }
-export function Documentation(){ return "qmk/gmmk-pro"; }
-export function DeviceType() {return "keyboard";}
+export function Documentation() { return "qmk/gmmk-pro"; }
+export function DeviceType() { return "keyboard";}
 export function Size() { return [19, 7]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

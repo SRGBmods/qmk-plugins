@@ -1,10 +1,10 @@
 export function Name() { return "Keychron K8 TKL QMK Keyboard"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return 0xfe0f; }
 export function Publisher() { return "realSnosh & WhirlwindFX"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function DeviceType() {return "keyboard";}
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard";}
 export function Size() { return [17, 6]; }
 export function DefaultPosition(){return [150, 95]; }
 export function DefaultScale(){return 8.6;}

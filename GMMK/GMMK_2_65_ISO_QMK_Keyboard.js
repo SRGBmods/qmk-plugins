@@ -1,10 +1,10 @@
 export function Name() { return "GMMK 2 65% ISO QMK Keyboard"; }
-export function Version() { return "1.1.8;"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x320F; }
 export function ProductId() { return 0x504A; }
 export function Publisher() { return "WhirlwindFX"; }
-export function Documentation(){ return "qmk/supported-keyboards"; }
-export function DeviceType() {return "keyboard";}
+export function Documentation() { return "qmk/supported-keyboards"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [17, 5]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

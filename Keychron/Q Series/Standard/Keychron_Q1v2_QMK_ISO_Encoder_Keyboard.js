@@ -1,10 +1,10 @@
 export function Name() { return "Keychron Q1v2 ISO QMK Keyboard"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return [0x0108 ,0x0109]; }
 export function Publisher() { return "Genjimon"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function DeviceType() {return "keyboard";}
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard";}
 export function Size() { return [15, 6]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

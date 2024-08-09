@@ -1,10 +1,10 @@
 export function Name() { return "Akko 5075 QMK Keyboard"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0xfffe; }
 export function ProductId() { return 0x000b; }
 export function Publisher() { return "X12013"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function DeviceType() {return "keyboard";}
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [134, 56]; }
 export function DefaultPosition(){return [1, 1]; }
 export function DefaultScale(){return 1;}

@@ -1,10 +1,10 @@
 export function Name() { return "Lemokey L3"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x362d; }
 export function ProductId() { return 0x0130; }
 export function Publisher() { return "Ziel"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function DeviceType() {return "keyboard";}
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard";}
 export function Size() { return [19, 7]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

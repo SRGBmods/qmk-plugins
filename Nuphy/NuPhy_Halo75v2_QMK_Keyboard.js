@@ -1,10 +1,10 @@
 export function Name() { return "NuPhy Halo75 V2"; }
-export function Version() { return "1.0.0"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x19f5; }
 export function ProductId() { return 0x32f5; }
 export function Publisher() { return "NuPhy"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function DeviceType() {return "keyboard"; }
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [16, 6]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

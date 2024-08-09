@@ -1,10 +1,10 @@
 export function Name() { return "Halo96 V2 Keyboard"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x19F5; }
 export function ProductId() { return 0x3302; }
 export function Publisher() { return "NuPhy + WhirlWindFX"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function DeviceType() {return "keyboard"; }
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [19, 6]; }
 export function DefaultPosition() { return [10, 100]; }
 export function DefaultScale() { return 8.0; }

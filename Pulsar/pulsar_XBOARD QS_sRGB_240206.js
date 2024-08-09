@@ -1,10 +1,10 @@
 export function Name() { return "Pulsar XBOARD QS"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x3710; }
 export function ProductId() { return 0x2400; }
 export function Publisher() { return "James Yun"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
-export function DeviceType() {return "keyboard"; }
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [21, 7]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
