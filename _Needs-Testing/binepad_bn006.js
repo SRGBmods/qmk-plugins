@@ -4,6 +4,7 @@ export function VendorId() { return 0x4249; }
 export function ProductId() { return 0x426E; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [3, 2]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
