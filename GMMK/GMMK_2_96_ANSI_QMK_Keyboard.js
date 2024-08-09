@@ -4,6 +4,7 @@ export function VendorId() { return 0x320F; }
 export function ProductId() { return [0x504B, 0x505B]; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/supported-keyboards"; }
+export function DeviceType() {return "keyboard";}
 export function Size() { return [21, 7]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

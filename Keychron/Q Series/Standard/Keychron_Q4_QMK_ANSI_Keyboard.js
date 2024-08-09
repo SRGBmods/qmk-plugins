@@ -4,6 +4,7 @@ export function VendorId() { return 0x3434; }
 export function ProductId() { return 0x0140; }
 export function Publisher() { return "Obzyaaaa"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() {return "keyboard";}
 export function Size() { return [14, 5]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

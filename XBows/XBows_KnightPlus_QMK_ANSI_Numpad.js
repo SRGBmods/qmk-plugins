@@ -4,6 +4,7 @@ export function VendorId() { return 0x5842; }
 export function ProductId() { return 0x4e75; }
 export function Publisher() { return "The Larch"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() {return "keyboard"; }
 export function Size() { return [5, 7]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

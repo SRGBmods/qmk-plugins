@@ -4,6 +4,7 @@ export function VendorId() { return 0x4d54; }
 export function ProductId() { return 0x2002; }
 export function Publisher() { return "Daniel Von Tier"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() {return "keyboard";}
 export function Size() { return [17, 6]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
