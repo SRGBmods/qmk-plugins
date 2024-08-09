@@ -3,7 +3,8 @@ export function Version() { return "1.1.8"; }
 export function VendorId() { return 0x0c45; }
 export function ProductId() { return 0x5004; }
 export function Publisher() { return "WhirlwindFX"; }
-export function Documentation(){ return "qmk/redragon-k556-k582"; }
+export function Documentation() { return "qmk/redragon-k556-k582"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [21, 6]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

@@ -3,7 +3,8 @@ export function Version() { return "1.1.6"; }
 export function VendorId() { return 0x369B; }
 export function ProductId() { return 0x0021; }
 export function Publisher() { return "Polyhaze (@Polyhaze) / Dylan Perks (@Perksey)"; }
-export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
+export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
+export function DeviceType() { return "keyboard"; }
 export function Size() { return [69, 11]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
