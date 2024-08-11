@@ -4,7 +4,8 @@ export function VendorId() { return 0x04d8; }
 export function ProductId() { return 0xEED2; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation() { return "qmk/drop-ctrl"; }
-export function DeviceType() { return "keyboard";}
+export function DeviceType() { return "keyboard"; }
+export function ConflictingProcesses() { return ["VIA.exe"]; }
 export function Size() { return [19, 8]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

@@ -5,6 +5,7 @@ export function ProductId() { return 0xfe0f; }
 export function Publisher() { return "realSnosh & WhirlwindFX"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard";}
+export function ConflictingProcesses() { return ["VIA.exe"]; }
 export function Size() { return [17, 6]; }
 export function DefaultPosition(){return [150, 95]; }
 export function DefaultScale(){return 8.6;}

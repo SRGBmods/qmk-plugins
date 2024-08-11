@@ -5,6 +5,7 @@ export function ProductId() { return 0x1226; }
 export function Publisher() { return "986nick"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard";}
+export function ConflictingProcesses() { return ["VIA.exe"]; }
 export function Size() { return [18, 9]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}

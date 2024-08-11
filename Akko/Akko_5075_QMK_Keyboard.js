@@ -5,6 +5,7 @@ export function ProductId() { return 0x000b; }
 export function Publisher() { return "X12013"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard"; }
+export function ConflictingProcesses() { return ["VIA.exe"]; }
 export function Size() { return [134, 56]; }
 export function DefaultPosition(){return [1, 1]; }
 export function DefaultScale(){return 1;}
