@@ -1,5 +1,5 @@
 export function Name() { return "Drop SHIFT v2 QMK Keyboard"; }
-export function Version() { return "1.1.8"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x359b; }
 export function ProductId() { return 0x000c; }
 export function Publisher() { return "Angrychair"; }
@@ -22,7 +22,7 @@ export function ControllableParameters() {
 	];
 }
 
-//Plugin Version: Built for Protocol V1.0.4
+//Plugin Version: Built for Protocol V1.0.5
 
 const vKeys = [
 //	   0   1     2    3   4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20   21   22   23   24	
@@ -287,7 +287,7 @@ function grabColors(overrideColor) {
 	for(let iIdx = 0; iIdx < vKeys.length; iIdx++) {
 		const iPxX = vKeyPositions[iIdx][0];
 		const iPxY = vKeyPositions[iIdx][1];
-		let color = device.color(iPxX, iPxY);
+		const color = device.color(iPxX, iPxY);
 
 		const iLedIdx = vKeys[iIdx] * 3;
 		rgbdata[iLedIdx] = color[0];
