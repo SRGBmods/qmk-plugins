@@ -329,6 +329,6 @@ export function Validate(endpoint) {
 	return endpoint.interface === 1;
 }
 
-export function Image() {
+export function ImageUrl() {
 	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q1_HE_ISO.png";
 }
