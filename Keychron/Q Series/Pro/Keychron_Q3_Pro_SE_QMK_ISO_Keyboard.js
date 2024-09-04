@@ -82,7 +82,6 @@ export function Initialize() {
 }
 
 export function Render() {
-	SetFrameDelaySafe();
 	sendColors();
 }
 
@@ -98,21 +97,8 @@ export function Shutdown(SystemSuspending) {
 		}
 	}
 
-	vKeysArrayCount(); // For debugging array counts
+	//vKeysArrayCount(); // For debugging array counts
 
-}
-
-function SetFrameDelaySafe(){
-    if(SetFrameDelaySafe.set){
-        return;
-    }
-
-    try {
-        device.setFrameDelay(15);
-        SetFrameDelaySafe.set = true;
-    } catch (error) {
-        console.error(error.message);
-    }
 }
 
 function commandHandler() {
