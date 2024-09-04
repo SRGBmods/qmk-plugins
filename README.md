@@ -35,6 +35,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* K2 Pro ANSI & ISO DE
 	* K8Pro ANSI & ISO DE
 	* K8 TKL ANSI
+	* Q1 HE ANSI & ISO
 	* Q0 ANSI
 	* Q10 ANSI
 	* Q12 ANSI
