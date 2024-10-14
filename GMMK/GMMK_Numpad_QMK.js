@@ -39,11 +39,11 @@ const vKeys = [
 ];
 
 const vKeyNames = [
-	"Sidestrip 1", "Numlock", "/",  "*", "-", "Sidestrip 8",
-	"Sidestrip 2", "7",       "8",  "9", "+", "Sidestrip 9",
-	"Sidestrip 3", "4", "5", "6",             "Sidestrip 10",
-	"Sidestrip 4", "1", "2", "3",   "Enter",  "Sidestrip 11",
-	"Sidestrip 5", "0", ".",                  "Sidestrip 12",
+	"Sidestrip 1", "NumLock", "Num /",  "Num *", "Num -", "Sidestrip 8",
+	"Sidestrip 2", "Num 7",       "Num 8",  "Num 9", "Num +", "Sidestrip 9",
+	"Sidestrip 3", "Num 4", "Num 5", "Num 6",             "Sidestrip 10",
+	"Sidestrip 4", "Num 1", "Num 2", "Num 3",   "Num Enter",  "Sidestrip 11",
+	"Sidestrip 5", "Num 0", "Num .",                  "Sidestrip 12",
 	"Sidestrip 6",                            "Sidestrip 13",
 	"Sidestrip 7",                            "Sidestrip 14",
 
