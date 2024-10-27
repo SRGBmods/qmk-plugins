@@ -96,7 +96,7 @@ export function Shutdown(SystemSuspending) {
 		}
 	}
 
-	vKeysArrayCount(); // For debugging array counts
+	//vKeysArrayCount(); // For debugging array counts
 
 }
 
