@@ -160,7 +160,7 @@ function returnQMKVersion(data) {
 
 function requestSignalRGBProtocolVersion() //Grab the version of the SignalRGB Protocol the keyboard is running
 {
-	device.write([0x00, 0x21], 32);
+	device.write([0x00, 0x22], 32);
 	device.pause(30);
 	commandHandler();
 }
@@ -183,7 +183,7 @@ function returnSignalRGBProtocolVersion(data) {
 
 function requestUniqueIdentifier() //Grab the unique identifier for this keyboard model
 {
-	if(device.write([0x00, 0x22], 32) === -1) {
+	if(device.write([0x00, 0x23], 32) === -1) {
 		device.notify("Unsupported Firmware", "This device is not running SignalRGB-compatible firmware. Click the Documentation button to learn more.", 3, "Documentation");
 	}
 
@@ -245,7 +245,7 @@ function returnFirmwareType(data) {
 
 function effectEnable() //Enable the SignalRGB Effect Mode
 {
-	device.write([0x00, 0x24], 32);
+	device.write([0x00, 0x25], 32);
 	device.pause(30);
 }
 
@@ -310,15 +310,14 @@ function sendColors(overrideColor) {
 function StreamLightingData(StartLedIdx, RGBData) {
 	const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)].concat(RGBData);
 	device.write(packet, 33);
-	//device.pause(20);
 }
 
 function hexToRgb(hex) {
 	const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
 	const colors = [];
 	colors[0] = parseInt(result[1], 16);
-	colors[1] = parseInt(result[1], 16);
-	colors[2] = parseInt(result[2], 16);
+	colors[1] = parseInt(result[2], 16);
+	colors[2] = parseInt(result[3], 16);
 
 	return colors;
 }
