@@ -297,7 +297,7 @@ function grabColors(overrideColor) {
 function sendColors(overrideColor) {
 	const rgbdata = grabColors(overrideColor);
 
-	const LedsPerPacket = 9;
+	const LedsPerPacket = 7;
 	let BytesSent = 0;
 	let BytesLeft = rgbdata.length;
 
