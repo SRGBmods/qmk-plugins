@@ -297,7 +297,7 @@ function grabColors(overrideColor) {
 function sendColors(overrideColor) {
 	const rgbdata = grabColors(overrideColor);
 
-	const LedsPerPacket = 7;
+	const LedsPerPacket = 9;
 	let BytesSent = 0;
 	let BytesLeft = rgbdata.length;
 
@@ -313,6 +313,7 @@ function sendColors(overrideColor) {
 function StreamLightingData(StartLedIdx, RGBData) {
 	const packet = [0x00, 0x24, StartLedIdx, Math.floor(RGBData.length / 3)].concat(RGBData);
 	device.write(packet, 33);
+	device.pause(10);
 }
 
 function hexToRgb(hex) {
