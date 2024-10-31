@@ -1,3 +1,5 @@
+# QMK + SRGB Support - [reddit post found here](https://www.reddit.com/r/SignalRGB/comments/1gg4s1z/qmk_support_madness_partnerships_were_willing_to/) #
+
 ## Here you will find plugins for QMK keyboards to work with SignalRGB ##
 
 ### Please note you must be using QMK firmware with SignalRGB Protocol support added to it to use these plugins ###
