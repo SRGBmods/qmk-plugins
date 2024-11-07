@@ -323,6 +323,6 @@ export function Validate(endpoint) {
 	return endpoint.interface === 1;
 }
 
-export function Image() {
-	return "";
+export function ImageUrl() {
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Monsgeek_M3.png";
 }
