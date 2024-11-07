@@ -33,28 +33,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* KBDFans KBD67 RGBMKII (V1, V2, V3, V4)
 	* KBDFans KBD67 RGBMKII V2 ISO
 * Keychron
-	* K10Pro ANSI & ISO
-	* K2 Pro ANSI & ISO DE
-	* K8Pro ANSI & ISO DE
-	* K8 TKL ANSI
-	* Q1 HE ANSI & ISO
-	* Q0 ANSI
-	* Q10 ANSI
-	* Q12 ANSI
-	* Q1v2 ANSI Encoder & ISO Encoder & ISO Nordic
-	* Q1 ANSI
-	* Q2 ANSI & ANSI Encoder
-	* Q3 ANSI
-	* Q4 ANSI
-	* Q5 Pro ANSI
-	* Q5 ANSI & ANSI Encoder
-	* Q6 ANSI, ANSI Encoder, ISO, and ISO Encoder
-	* V1 ANSI & ANSI Encoder
-	* V2 ANSI
-	* V3 ANSI & ISO Encoder
-	* V5 ANSI, ANSI Encoder & ISO Encoder
-	* V6 ANSI
-	* 81 Pro (Oneplus)
+	* Browse the Keychron directory as this list is rather long.
 * Massdrop:
 	* ALT v1
 	* CTRL v1
