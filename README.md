@@ -33,7 +33,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* KBDFans KBD67 RGBMKII (V1, V2, V3, V4)
 	* KBDFans KBD67 RGBMKII V2 ISO
 * Keychron
-	* Browse the Keychron directory as this list is rather long.
+	* Browse the [Keychron directory](https://github.com/SRGBmods/qmk-plugins/tree/main/Keychron) as this list is rather long.
 * Massdrop:
 	* ALT v1
 	* CTRL v1
