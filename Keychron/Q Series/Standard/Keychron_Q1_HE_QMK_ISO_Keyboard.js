@@ -330,5 +330,5 @@ export function Validate(endpoint) {
 }
 
 export function ImageUrl() {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/Keychron_Q1_HE_ISO.png";
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/Keychron_Q1_HE_ISO.png";
 }

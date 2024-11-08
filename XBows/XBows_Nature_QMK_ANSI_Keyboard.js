@@ -374,5 +374,5 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/XBows-Nature-Keyboard.png";
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/XBows-Nature-Keyboard.png";
 }

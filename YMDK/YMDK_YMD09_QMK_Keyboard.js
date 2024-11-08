@@ -323,5 +323,5 @@ export function Validate(endpoint) {
 
 export function ImageUrl()
 {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/YMDK_YMD09.png";
+	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/YMDK_YMD09.png";
 }
