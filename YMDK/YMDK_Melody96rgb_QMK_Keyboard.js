@@ -372,8 +372,3 @@ export function Validate(endpoint)
 {
 	return endpoint.interface === 1;
 }
-
-export function Image()
-{
-	return "";
-}

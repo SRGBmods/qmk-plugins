@@ -372,5 +372,5 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/KBDFans_KBD67_V2.png";
+	return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/KBDFans_KBD67_V2.png";
 }

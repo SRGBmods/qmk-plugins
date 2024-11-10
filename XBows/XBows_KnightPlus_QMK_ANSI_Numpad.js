@@ -375,5 +375,5 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/XBows-KnightPlus-Numpad.png";
+	return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/XBows-KnightPlus-Numpad.png";
 }

@@ -328,5 +328,5 @@ export function Validate(endpoint) {
 
 export function ImageUrl()
 {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/Alpaca_WhiteFox_Eclipse_QMK_Keyboard.png";
+	return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/Alpaca_WhiteFox_Eclipse_QMK_Keyboard.png";
 }

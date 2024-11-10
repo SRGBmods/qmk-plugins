@@ -371,5 +371,5 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-    return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/Nuphy_Halo96v2.png";
+    return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/Nuphy_Halo96v2.png";
 }

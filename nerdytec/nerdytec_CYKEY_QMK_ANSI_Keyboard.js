@@ -372,5 +372,5 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/nerdytec_CYKEY_QMK_ANSI_Keyboard.png";
+	return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/nerdytec_CYKEY_QMK_ANSI_Keyboard.png";
 }

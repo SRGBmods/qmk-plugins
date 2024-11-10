@@ -366,8 +366,3 @@ export function Validate(endpoint)
 {
 	return endpoint.interface === 1;
 }
-
-export function ImageUrl()
-{
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/main/_images/GMMK_2_96_ANSI.png";
-}
