@@ -331,3 +331,7 @@ function hexToRgb(hex) {
 export function Validate(endpoint) {
 	return endpoint.interface === 1;
 }
+
+export function ImageUrl(){
+	return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/pulsar_XBOARD QS_sRGB_240206.png";
+}
