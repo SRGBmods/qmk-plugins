@@ -326,6 +326,6 @@ export function Validate(endpoint) {
     return endpoint.interface === 1;
 }
 
-export function Image() {
-    return "";
+export function ImageUrl() {
+    return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/Keychron_Q65_QMK_ANSI_Encoder.png";
 }
