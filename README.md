@@ -1,5 +1,7 @@
 # QMK + SRGB Support - [reddit post found here](https://www.reddit.com/r/SignalRGB/comments/1gg4s1z/qmk_support_madness_partnerships_were_willing_to/) #
 
+**One thing of note if you are attempting to use VIA or Vial to configure your keyboard you _must_ quit SignalRGB before running either software this is a limitation of the raw_hid_send that both VIA & SignalRGB use to talk to your keyboard!**
+
 ## Here you will find plugins for QMK keyboards to work with SignalRGB ##
 
 ### Please note you must be using QMK firmware with SignalRGB Protocol support added to it to use these plugins ###
