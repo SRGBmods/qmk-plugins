@@ -17,36 +17,4 @@ Tech support is available on the [Test Plugin Discord](https://discord.com/invit
 Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/needs-testing) branch if you find your keyboard in there and it works please let us know either via the Discord link above or with the Issues system here on Github and thanks for the help!
 
 ### Supported Devices ###
-* DZTech: DZTech-65RGB-V3
-* Epomaker: Epomaker TH96
-* Ergodox EZ: Ergodox EZ Glow QMK
-* Feker: Feker-IK75
-* GMMK:
-	* GMMK 2 65% ANSI 
-	* GMMK 2 65% ISO 
-	* GMMK 2 96% ANSI 
-	* GMMK 2 96% ISO 
-	* GMMK 3 65% ANSI
-	* GMMK Numpad QMK
-	* GMMK Pro 
-	* GMMK TKL rev2 ISO
-* Helheim Designs: Freja 65 
-* IDOBAO: IDOBAO ID67 
-* KBDFans:
-	* KBDFans KBD67 RGBMKII (V1, V2, V3, V4)
-	* KBDFans KBD67 RGBMKII V2 ISO
-* Keychron
-	* Browse the [Keychron directory](https://github.com/SRGBmods/qmk-plugins/tree/main/Keychron) as this list is rather long.
-* Massdrop:
-	* ALT v1
-	* CTRL v1
-	* SENSE75 v1
-* Nuphy:
-    * Air75 v2
-    * Air96 v2
-    * Halo96 v2
-* XBows
-	* XBows KnightPlus ANSI
-	* XBows KnightPlus ANSI Numpad
-	* XBows Nature ANSI
-* YMDK: Melody96rgb
+Browse the Manufacturer directories here, the list was getting to large to maintain on top of maintaining everything else.
