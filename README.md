@@ -26,6 +26,7 @@ Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/ne
 	* GMMK 2 65% ISO 
 	* GMMK 2 96% ANSI 
 	* GMMK 2 96% ISO 
+	* GMMK 3 65% ANSI
 	* GMMK Numpad QMK
 	* GMMK Pro 
 	* GMMK TKL rev2 ISO
