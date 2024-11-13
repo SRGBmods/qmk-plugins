@@ -7,7 +7,7 @@
 ### Please note you must be using QMK firmware with SignalRGB Protocol support added to it to use these plugins ###
 [More information available here.](https://docs.signalrgb.com/qmk)
 
-[![Click here to add this repo to SignalRGB](https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/_images/add-to-signalrgb.png)](https://srgbmods.net/s?p=addon/install?url=https://github.com/SRGBmods/qmk-plugins)
+[![Click here to add this repo to SignalRGB](https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/add-to-signalrgb.png)](https://srgbmods.net/s?p=addon/install?url=https://github.com/SRGBmods/qmk-plugins)
 
 Using the above button will help keep your plugins up to date whenever any changes are made to them. (Added by Default to SignalRGB releases now!)
 
