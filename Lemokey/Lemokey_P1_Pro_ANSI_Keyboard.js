@@ -1,6 +1,6 @@
 export function Name() { return "Lemokey P1 Pro ANSI Keyboard"; }
 export function Version() { return "1.1.9"; }
-export function VendorId() { return 0x3434; }
+export function VendorId() { return 0x362D; }
 export function ProductId() { return 0x0303; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
