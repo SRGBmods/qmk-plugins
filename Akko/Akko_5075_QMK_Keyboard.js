@@ -39,12 +39,12 @@ const vKeys = [
 ];
 
 const vKeyNames = [
-	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "PrtSc", 
-	"`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+", "Backspace", "Delete", 
-	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "Backslash", "PgUp", 
-	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "semicol", "quot", "dummy1", "Enter", "PgDn", 
+	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Print Screen", 
+	"`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+", "Backspace", "Del", 
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "Backslash", "Page Up", 
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "dummy1", "Enter", "Page Down", 
 	"Left Shift", "dummy2", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "Home", 
-	"Left Ctrl", "Left Win", "Left Alt",       "Space",     "Right Alt", "Menu", "Right Ctrl", "Left Arrow", "Down Arrow", "Right Arrow", 
+	"Left Ctrl", "Left Win", "Left Alt",       "Space",     "Right Alt", "Right Win", "Right Ctrl", "Left Arrow", "Down Arrow", "Right Arrow", 
 	"LSideLight0", "LSideLight1", "LSideLight2", "LSideLight3", "LSideLight4", "LSideLight5", "LSideLight6", "LSideLight7", "LSideLight8", "LSideLight9", "LSideLight10", 
 	"RSideLight0", "RSideLight1", "RSideLight2", "RSideLight3", "RSideLight4", "RSideLight5", "RSideLight6", "RSideLight7", "RSideLight8", "RSideLight9", "RSideLight10", 
 ];

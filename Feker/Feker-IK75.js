@@ -41,12 +41,12 @@ const vKeys =
 const vKeyNames =
 [
 	"UG1", "UG2", "UG3", "UG4", "UG5", "UG6", "UG7", "UG8", "UG9", "UG10", "UG11", "UG12", "UG13", "UG14", "UG15", "UG16",
-	"UG17", "Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Delete", "Knob1", "Knob 2", "Knob3", "UG18",
+	"UG17", "Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Del", "Knob1", "Knob 2", "Knob3", "UG18",
 	"UG19", "`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace", "Home", "UG20",
-	"UG21", "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "PgUp", "UG22",
-	"UG23", "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "PgDn", "UG24",
+	"UG21", "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Page Up", "UG22",
+	"UG23", "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "Page Down", "UG24",
 	"UG25", "Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End", "UG26",
-	"L Ctrl", "Win", "L Alt", "Space", "R Alt", "Menu", "R Ctrl", "Left Arrow", "Down Arrow", "Right Arrow",
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Right Win", "Right Ctrl", "Left Arrow", "Down Arrow", "Right Arrow",
 	"UG27", "UG28", "UG29", "UG30", "UG31", "UG32", "UG33", "UG34", "UG35", "UG36", "UG37", "UG38", "UG39", "UG40"
 ];
 

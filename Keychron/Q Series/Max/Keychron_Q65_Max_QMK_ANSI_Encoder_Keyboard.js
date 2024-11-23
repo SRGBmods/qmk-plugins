@@ -36,10 +36,10 @@ const vKeys = [
 
 const vKeyNames = [
           "Esc", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace", "Del",                  //15
-    "M1", "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Home",                              //15
-    "M2", "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "PgUp",                               //14
-    "M3", "Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "PgDn",                //14
-    "M4", "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Menu", "Menu2", "Left Arrow",  "Down Arrow", "Right Arrow",   //11
+    "F13", "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Home",                              //15
+    "F14", "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "Page Up",                               //14
+    "F15", "Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "Page Down",                //14
+    "F16", "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Right Win", "Fn", "Left Arrow",  "Down Arrow", "Right Arrow",   //11
 ];
 
 const vKeyPositions = [

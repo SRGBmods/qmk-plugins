@@ -35,11 +35,11 @@ const vKeys = [
 ];
 
 const vKeyNames = [
-	"Esc", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Insert",	"PgUp",						//16
-	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", 	"Del", "PgDn",									//16
+	"Esc", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Insert",	"Page Up",						//16
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", 	"Del", "Page Down",									//16
 	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", 												//13
 	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", 									//13
-	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Function", "R Ctrl",  "Left Arrow", "Down Arrow", "Right Arrow",	//10
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Ctrl",  "Left Arrow", "Down Arrow", "Right Arrow",	//10
 ];
 
 const vKeyPositions = [

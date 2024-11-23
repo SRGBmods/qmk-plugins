@@ -36,7 +36,7 @@ const vKeys =     [
 ];
 
 const vKeyNames =     [
-    "Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Mac Prta", "Del", "Home", "End", "Pgup", "Pgdn",
+    "Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Mac Prta", "Del", "Home", "End", "Page Up", "Page Down",
       "`",  "1",  "2",  "3",  "4",  "5",  "6",  "7",  "8",  "9",  "10",   "-",   "=", "Backspace", "Numlock", "Num /", "Num *", "Num -",
     "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Num 7","Num 8","Num 9","Num +",
     "Capslock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "‘", "Enter","Num 4","Num 5","Num 6",

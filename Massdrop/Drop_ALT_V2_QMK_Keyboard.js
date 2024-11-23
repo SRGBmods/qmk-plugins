@@ -38,10 +38,10 @@ const vKeys = [
 const vKeyNames = [
 	"LED67", "LED68", "LED69", "LED70", "LED71", "LED72", "LED73", "LED74", "LED75", "LED76", "LED77", "LED78", "LED79", "LED80", "LED81", // 15
 	"Esc", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+", "Backspace", "Home", // 15
-	"LED104", "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "PgUp", "LED82", // 17
-	"LED103", "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "PgDn", "LED83", // 16
+	"LED104", "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Page Up", "LED82", // 17
+	"LED103", "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "Page Down", "LED83", // 16
 	"LED102", "Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End", "LED84", // 16
-	"LED101", "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Menu", "Left Arrow", "Down Arrow", "Right Arrow", "LED85", // 11
+	"LED101", "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Left Arrow", "Down Arrow", "Right Arrow", "LED85", // 11
 	"LED100", "LED99", "LED98", "LED97", "LED96", "LED95", "LED94", "LED93", "LED92", "LED91", "LED90", "LED89", "LED88", "LED87", "LED86", // 15
 ];
 
