@@ -38,7 +38,7 @@ const vKeys =
 ];
 const vKeyNames =
 [
-	"Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",  "Print Screen", "Scroll Lock", "Pause Break",   "Circle", "Triangle", "Square", "Cross", //What is this a playstation controller?
+	"Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",  "Print Screen", "Scroll Lock", "Pause Break",   "MediaPreviousTrack", "MediaPlayPause", "MediaNextTrack", "MediaStop", //What is this a playstation controller?
 	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",        "Insert",        "Home",     "Page Up",   "NumLock", "Num /", "Num *", "Num -",
 	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",                        "Del",         "End",   "Page Down",  "Num 7", "Num 8", "Num 9", "Num +",
 	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter",                                                           "Num 4", "Num 5", "Num 6",
