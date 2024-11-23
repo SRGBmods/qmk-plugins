@@ -48,7 +48,7 @@ const vKeyNamesANSI =
     "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",                        "Del", "End", "Page Down",                      "Num 7", "Num 8", "Num 9",
     "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter",                                                                     "Num 4", "Num 5", "Num 6", "Num +",
     "Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift",                                  "Up Arrow",                     "Num 1", "Num 2", "Num 3",
-    "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Menu", "Right Ctrl",          "Left Arrow", "Down Arrow", "Right Arrow",      "Num 0", "Num .", "Num Enter",
+    "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Right Win", "Fn", "Right Ctrl",          "Left Arrow", "Down Arrow", "Right Arrow",      "Num 0", "Num .", "Num Enter",
 ];
 
 const vKeyPositionsANSI =
@@ -73,12 +73,12 @@ const vKeysISO =
 
 const vKeyNamesISO =
 [
-    "Esc",  "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9",   "F10", "F11", "F12",            "Print Screen", "Scroll Lock", "Pause Break",   "Circle", "Triangle", "Square", "Cross",
+    "Esc",  "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9",   "F10", "F11", "F12",            "Print Screen", "Scroll Lock", "Pause Break",   "MediaPreviousTrack", "MediaPlayPause", "MediaNextTrack", "MediaStop",
     "`",   "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+",        "Backspace",          "Insert", "Home", "Page Up",                    "NumLock", "Num /", "Num *", "Num -",
     "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]",                              "Del", "End", "Page Down",                      "Num 7", "Num 8", "Num 9",
     "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "ISO_#", "Enter",                                                            "Num 4", "Num 5", "Num 6", "Num +",
     "Left Shift", "ISO_<", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/",    "Right Shift",              "Up Arrow",                             "Num 1", "Num 2", "Num 3",
-    "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Menu", "Right Ctrl",          "Left Arrow", "Down Arrow", "Right Arrow",      "Num 0", "Num .", "Num Enter",
+    "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Right Win", "Fn", "Right Ctrl",          "Left Arrow", "Down Arrow", "Right Arrow",      "Num 0", "Num .", "Num Enter",
 ];
 
 const vKeyPositionsISO =
