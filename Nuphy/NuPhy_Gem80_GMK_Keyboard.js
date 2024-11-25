@@ -26,17 +26,15 @@ export function ControllableParameters() {
 
 //Plugin Version: Built for Protocol V1.0.5
 
-// vKeys array maps each keyboard key to its position within the RGB Data being sent to the keyboard
 const vKeys = [
 	0,   1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, //17
-	17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, //17
+	33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, //17
 	34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, //17
-	51,  52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 	63, //13
+	63,  62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52,	51, //13
 	64, 	65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 	75,		76, //13
-	77, 78, 79, 			80,			 81, 82, 83, 84, 	85, 86, 87, //11
+	87, 86, 85,				84,				83, 82, 81, 80,	79, 78, 77,
 ];
 
-// vKeyNames array tells us which key corresponds to each vKey and vKeyPosition
 const vKeyNames = [
 	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "Scroll", "Print", "Lock", //17
 	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Insert", "Home", "Page Up", //17
@@ -46,7 +44,6 @@ const vKeyNames = [
 	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Right Win", "Menu", "Right Ctrl", "Left Arrow", "Down Arrow", "Right Arrow", //11
 ];
 
-// vKeyPositions array tells SignalRGB where each key on the keyboard is position-wise
 const vKeyPositions = [
 	[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0], [16, 0], //17
 	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], //18
