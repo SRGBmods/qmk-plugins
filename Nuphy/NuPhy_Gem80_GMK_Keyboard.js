@@ -38,7 +38,7 @@ const vKeys = [
 
 // vKeyNames array tells us which key corresponds to each vKey and vKeyPosition
 const vKeyNames = [
-	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "F14", "F15", "F16", //17
+	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "F13", "Scroll", "Print", "Lock", //17
 	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Insert", "Home", "Page Up", //17
 	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Del", "End", "Page Down", //17
 	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", //13
@@ -333,5 +333,5 @@ export function Validate(endpoint) {
 }
 
 export function Image() {
-	return "";
+	return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/Nuphy_Gem80.png";
 }
