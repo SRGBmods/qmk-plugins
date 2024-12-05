@@ -176,7 +176,7 @@ const vKeyPositionsISOp75 = [
 ];
 //end p75 iso
 
-//p100 ansi
+//p100 ansi thanks to dillrellis for development and testing - Signed off 12-5-2024 - Naitoshedo
 const vKeysANSIp100 = [
     0,      1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12,  13, 14, 15, //16
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,  30, 31, 32,    33, 34, 35, 36, //21
@@ -218,7 +218,7 @@ const vKeyPositionsANSIp100 = [
 ];
 //end p100 ansi
 
-//p100 iso
+//p100 iso thanks to pulsarbilly for development and testing - Signed off 12-5-2024 - Naitoshedo
 const vKeysISOp100 = [
      0,      1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,  13, 14, 15, //16
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,  30, 31, 32,    33, 34, 35, 36, //21
@@ -287,21 +287,21 @@ export function vKeysArrayCount() {
 	device.log('vKeyNamesISOp65 ' + vKeyNamesISOp65.length);
 	device.log('vKeyPositionsISOp65 ' + vKeyPositionsISOp65.length);
 
-	device.log('vKeysANSIp75 ' + vKeysANSIp75.length);
-	device.log('vKeyNamesANSIp75 ' + vKeyNamesANSIp75.length);
-	device.log('vKeyPositionsANSIp75 ' + vKeyPositionsANSIp75.length);
+	//device.log('vKeysANSIp75 ' + vKeysANSIp75.length);
+	//device.log('vKeyNamesANSIp75 ' + vKeyNamesANSIp75.length);
+	//device.log('vKeyPositionsANSIp75 ' + vKeyPositionsANSIp75.length);
 
 	device.log('vKeysISOp75 ' + vKeysISOp75.length);
 	device.log('vKeyNamesISOp75 ' + vKeyNamesISOp75.length);
 	device.log('vKeyPositionsISOp75 ' + vKeyPositionsISOp75.length);
 
-	device.log('vKeysANSIp100 ' + vKeysANSIp100.length);
-	device.log('vKeyNamesANSIp100 ' + vKeyNamesANSIp100.length);
-	device.log('vKeyPositionsANSIp100 ' + vKeyPositionsANSIp100.length);
+	//device.log('vKeysANSIp100 ' + vKeysANSIp100.length);
+	//device.log('vKeyNamesANSIp100 ' + vKeyNamesANSIp100.length);
+	//device.log('vKeyPositionsANSIp100 ' + vKeyPositionsANSIp100.length);
 
-	device.log('vKeysISOp100 ' + vKeysISOp100.length);
-	device.log('vKeyNamesISOp100 ' + vKeyNamesISOp100.length);
-	device.log('vKeyPositionsISOp100 ' + vKeyPositionsISOp100.length);
+	//device.log('vKeysISOp100 ' + vKeysISOp100.length);
+	//device.log('vKeyNamesISOp100 ' + vKeyNamesISOp100.length);
+	//device.log('vKeyPositionsISOp100 ' + vKeyPositionsISOp100.length);
 }
 
 export function Initialize() {
@@ -458,6 +458,7 @@ function returnUniqueIdentifier(data) {
 		vKeys = vKeysISOp75;
 		vKeyNames = vKeyNamesISOp75;
 		vKeyPositions = vKeyPositionsISOp75;
+        device.setSize([17,10]);
 	}
 	if(UniqueIdentifierByte3 === 15)
 	{
@@ -465,6 +466,7 @@ function returnUniqueIdentifier(data) {
 		vKeys = vKeysANSIp100;
 		vKeyNames = vKeyNamesANSIp100;
 		vKeyPositions = vKeyPositionsANSIp100;
+        device.setSize([23,10]);
 	}
 	if(UniqueIdentifierByte3 === 16)
 	{
@@ -472,6 +474,7 @@ function returnUniqueIdentifier(data) {
 		vKeys = vKeysISOp100;
 		vKeyNames = vKeyNamesISOp100;
 		vKeyPositions = vKeyPositionsISOp100;
+        device.setSize([23,10]);
 	}
 
 	device.log("Unique Device Identifier: " + UniqueIdentifierByte1 + UniqueIdentifierByte2 + UniqueIdentifierByte3);
