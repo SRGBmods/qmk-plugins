@@ -450,7 +450,7 @@ function returnUniqueIdentifier(data) {
 		vKeys = vKeysANSIp75;
 		vKeyNames = vKeyNamesANSIp75;
 		vKeyPositions = vKeyPositionsANSIp75;
-		device.setSize([9,16]);
+		device.setSize([16,9]);
 	}
 	if(UniqueIdentifierByte3 === 14)
 	{
