@@ -1,8 +1,8 @@
-export function Name() { return "GMMK3 p100 QMK Keyboard"; }
-export function Version() { return "1.2.0"; }
+export function Name() { return "GMMK3 QMK Keyboard"; }
+export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x504B; }
 export function ProductId() { return 0x320F; }
-export function Publisher() { return "DillRellis & WhirlwindFX"; }
+export function Publisher() { return "WhirlwindFX"; }
 export function Documentation(){ return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard"; }
 export function ConflictingProcesses() { return ["VIA.exe"]; }
@@ -30,7 +30,161 @@ let vKeyNames = [];
 let vKeyPositions = [];
 let vKeys = [];
 
-const vKeysANSI = [
+//p65 ansi
+const vKeysANSIp65 = [
+     0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, //14
+    14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, //14
+    28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,     40, 41, //15
+    42,     43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, //15
+    56, 57, 58,         59,         60, 61,         62, 63, 64, //9
+    // Left and right side lights
+    65, 66, 67, 68, 69, 70, 71, 72, 73, 74,
+    75, 76, 77, 78, 79, 80, 81, 82, 83, 84
+];
+
+const vKeyNamesANSIp65 = [
+	"Esc", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-_", "=+", "Backspace",
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'",  "Enter", "Page Up", //15
+	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/",     "Right Shift", "Up Arrow", "Page Down", //14
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn",  "Left Arrow", "Down Arrow", "Right Arrow", //9
+
+	"Right LED 1", "Right LED 2", "Right LED 3", "Right LED 4", "Right LED 5", "Right LED 6", "Right LED 7 ", "Right LED 8", "Right LED 9", "Right LED 10",
+	"Left LED 1", "Left LED 2", "Left LED 3", "Left LED 4", "Left LED 5", "Left LED 6", "Left LED 7", "Left LED 8", "Left LED 9", "Left LED 10"
+];
+
+const vKeyPositionsANSIp65 = [
+	[1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], //14
+	[1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], //14
+	[1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2],          [14, 2], [15, 2], //14
+	[1, 3],         [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], [12, 3], [13, 3], [14, 3], [15, 3], //14
+	[1, 4], [2, 4], [3, 4],                 [6, 4],                 [9, 4], [10, 4],                   [13, 4], [14, 4], [15, 4], //9
+
+	[16, 1], [16, 1], [16, 1], [16, 2], [16, 2], [16, 2], [16, 3], [16, 3], [16, 3], [16, 4], //10
+	 [0, 1],  [0, 1],  [0, 1],  [0, 2],  [0, 2],  [0, 2],  [0, 2],  [0, 3],  [0, 3],  [0, 3] //10
+];
+//end p65 ansi
+
+//p65 iso
+const vKeysISOp65 = [
+	0, 	 1,  2,  3,  4,  5,  6, 7, 8, 9, 10, 11, 12,				//12
+	13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,		//14
+	28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,	42,		//14
+	43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,			//13
+	57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 		//13
+	71, 72, 73,				74, 		75, 76, 77, 78, 79, 		//9
+	80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 						//10
+	90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 						//10
+	100																//1
+];
+
+
+const vKeyNamesISOp65 = [
+	"Esc", "F1",  "F2", "F3", "F4", "F5",  "F6", "F7", "F8", "F9", "F10", "F11", "F12",								//12
+	"~", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Delete",					//14
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "PGUP", 								//14
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "PGDN", 							//13
+	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End",				//13
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Left Arrow",  "Down Arrow", "Right Arrow",	//9
+	"sled1", "sled2", "sled3", "sled4", "sled5", "sled6", "sled7", "sled8", "sled9", "sled10",						//10
+	"sled11", "sled12", "sled13", "sled14", "sled15", "sled16", "sled17", "sled18", "sled19", "sled20",				//10
+	"Logo"																											//1		
+];
+const vKeyPositionsISOp65 = [
+        [0,0],   [18,0], [33,0], [48,0], [63,0],   [81,0], [96,0], [111,0], [126,0],   [144,0], [159,0], [174,0], [189,0],									//12
+        [0,15], [15,15], [30,15], [45,15], [60,15], [75,15], [90,15], [105,15], [120,15], [135,15], [150,15], [165,15], [180,15],   [202,15], [224,15],		//14
+        [4,27],   [19,27], [34,27], [49,27], [64,27], [79,27], [94,27], [109,27], [124,27], [139,27], [154,27], [169,27], [184,27], [204,27], [224,27],		//14
+        [8,40],     [23,40], [38,40], [53,40], [68,40], [83,40], [98,40], [113,40], [128,40], [143,40], [158,40], [173,40],         [199,40], [224,40],		//13
+        [15,52],      [30,52], [45,52], [60,52], [75,52], [90,52], [105,52], [120,52], [135,52], [150,52], [165,52],  [182,52],     [210,52], [224,52],		//13
+        [1,64], [19,64], [37,64],                           [92,64],                             [148,64], [167,64],      [195,64], [210,64], [224,64],		//9
+        // Left and right side lights
+        [0, 15],  [0, 20],  [0, 25],  [0, 30],  [0, 35],  [0, 40],  [0, 45],  [0, 50],  [0, 55],  [0, 60],													//10
+        [224, 15],  [224, 20],  [224, 25],  [224, 30],  [224, 35],  [224, 40],  [224, 45],  [224, 50],  [224, 55],  [224, 60],								//10
+        // logo
+        [207, 0]                  																															//1			
+];
+//end p65 iso
+
+//p75 ansi
+const vKeysANSIp75 = [
+	0, 	 1,  2,  3,  4,  5,  6, 7, 8, 9, 10, 11, 12,				//12
+	13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,		//14
+	28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,	42,		//14
+	43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,			//13
+	57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 		//13
+	71, 72, 73,				74, 		75, 76, 77, 78, 79, 		//9
+	80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 						//10
+	90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 						//10
+	100																//1
+];
+
+const vKeyNamesANSIp75 = [
+	"Esc", "F1",  "F2", "F3", "F4", "F5",  "F6", "F7", "F8", "F9", "F10", "F11", "F12",								//12
+	"~", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Delete",					//14
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "PGUP", 								//14
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "PGDN", 							//13
+	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End",				//13
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Left Arrow",  "Down Arrow", "Right Arrow",	//9
+	"sled1", "sled2", "sled3", "sled4", "sled5", "sled6", "sled7", "sled8", "sled9", "sled10",						//10
+	"sled11", "sled12", "sled13", "sled14", "sled15", "sled16", "sled17", "sled18", "sled19", "sled20",				//10
+	"Logo"																											//1	
+];
+const vKeyPositionsANSIp75 = [
+        [0,0],   [18,0], [33,0], [48,0], [63,0],   [81,0], [96,0], [111,0], [126,0],   [144,0], [159,0], [174,0], [189,0],									//12
+        [0,15], [15,15], [30,15], [45,15], [60,15], [75,15], [90,15], [105,15], [120,15], [135,15], [150,15], [165,15], [180,15],   [202,15], [224,15],		//14
+        [4,27],   [19,27], [34,27], [49,27], [64,27], [79,27], [94,27], [109,27], [124,27], [139,27], [154,27], [169,27], [184,27], [204,27], [224,27],		//14
+        [8,40],     [23,40], [38,40], [53,40], [68,40], [83,40], [98,40], [113,40], [128,40], [143,40], [158,40], [173,40],         [199,40], [224,40],		//13
+        [15,52],      [30,52], [45,52], [60,52], [75,52], [90,52], [105,52], [120,52], [135,52], [150,52], [165,52],  [182,52],     [210,52], [224,52],		//13
+        [1,64], [19,64], [37,64],                           [92,64],                             [148,64], [167,64],      [195,64], [210,64], [224,64],		//9
+        // Left and right side lights
+        [0, 15],  [0, 20],  [0, 25],  [0, 30],  [0, 35],  [0, 40],  [0, 45],  [0, 50],  [0, 55],  [0, 60],													//10
+        [224, 15],  [224, 20],  [224, 25],  [224, 30],  [224, 35],  [224, 40],  [224, 45],  [224, 50],  [224, 55],  [224, 60],								//10
+        // logo
+        [207, 0]                  																															//1			
+];
+//end p75 ansi
+
+//p75 iso
+const vKeysISOp75 = [
+	0, 	 1,  2,  3,  4,  5,  6, 7, 8, 9, 10, 11, 12,				//12
+	13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,		//14
+	28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,	42,		//14
+	43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,			//13
+	57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 		//13
+	71, 72, 73,				74, 		75, 76, 77, 78, 79, 		//9
+	80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 						//10
+	90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 						//10
+	100																//1
+];
+
+const vKeyNamesISOp75 = [
+	"Esc", "F1",  "F2", "F3", "F4", "F5",  "F6", "F7", "F8", "F9", "F10", "F11", "F12",								//12
+	"~", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Delete",					//14
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "PGUP", 								//14
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "PGDN", 							//13
+	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End",				//13
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Left Arrow",  "Down Arrow", "Right Arrow",	//9
+	"sled1", "sled2", "sled3", "sled4", "sled5", "sled6", "sled7", "sled8", "sled9", "sled10",						//10
+	"sled11", "sled12", "sled13", "sled14", "sled15", "sled16", "sled17", "sled18", "sled19", "sled20",				//10
+	"Logo"																											//1	
+];
+const vKeyPositionsISOp75 = [
+        [0,0],   [18,0], [33,0], [48,0], [63,0],   [81,0], [96,0], [111,0], [126,0],   [144,0], [159,0], [174,0], [189,0],									//12
+        [0,15], [15,15], [30,15], [45,15], [60,15], [75,15], [90,15], [105,15], [120,15], [135,15], [150,15], [165,15], [180,15],   [202,15], [224,15],		//14
+        [4,27],   [19,27], [34,27], [49,27], [64,27], [79,27], [94,27], [109,27], [124,27], [139,27], [154,27], [169,27], [184,27], [204,27], [224,27],		//14
+        [8,40],     [23,40], [38,40], [53,40], [68,40], [83,40], [98,40], [113,40], [128,40], [143,40], [158,40], [173,40],         [199,40], [224,40],		//13
+        [15,52],      [30,52], [45,52], [60,52], [75,52], [90,52], [105,52], [120,52], [135,52], [150,52], [165,52],  [182,52],     [210,52], [224,52],		//13
+        [1,64], [19,64], [37,64],                           [92,64],                             [148,64], [167,64],      [195,64], [210,64], [224,64],		//9
+        // Left and right side lights
+        [0, 15],  [0, 20],  [0, 25],  [0, 30],  [0, 35],  [0, 40],  [0, 45],  [0, 50],  [0, 55],  [0, 60],													//10
+        [224, 15],  [224, 20],  [224, 25],  [224, 30],  [224, 35],  [224, 40],  [224, 45],  [224, 50],  [224, 55],  [224, 60],								//10
+        // logo
+        [207, 0]                  																															//1			
+];
+//end p75 iso
+
+//p100 ansi
+const vKeysANSIp100 = [
     0,      1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12,  13, 14, 15, //16
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,  30, 31, 32,    33, 34, 35, 36, //21
     37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,  51, 52, 53,    54, 55, 56, 57, //21
@@ -44,7 +198,7 @@ const vKeysANSI = [
     124 //1 (duh)
 ];
 
-const vKeyNamesANSI = [
+const vKeyNamesANSIp100 = [
     "Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",  "PrtSc", "ScrollLock", "Pause", //16
     "`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace", "Insert", "Home", "PgUp", "NumLock", "Num /", "Num *", "Num -",              //21
     "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Del", "End", "PgDwn",              "Num 7", "Num 8", "Num 9", "Num +",              //21
@@ -57,7 +211,7 @@ const vKeyNamesANSI = [
     "Logo" //1 (duh)
 ];
 
-const vKeyPositionsANSI = [
+const vKeyPositionsANSIp100 = [
     [1, 0],         [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0], [16, 0], [17, 0], //16
     [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1], [21, 1], //21
     [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2], [14, 2], [15, 2], [16, 2], [17, 2], [18, 2], [19, 2], [20, 2], [21, 2],//21
@@ -69,8 +223,10 @@ const vKeyPositionsANSI = [
     [22, 0], [22, 1], [22, 2], [22, 3], [22, 4], [22, 5], [22, 6], [22, 7], [22, 8], [22, 9], //10
     [20, 0] //1 (duh)
 ];
+//end p100 ansi
 
-const vKeysISO = [
+//p100 iso
+const vKeysISOp100 = [
      0,      1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,  13, 14, 15, //16
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,  30, 31, 32,    33, 34, 35, 36, //21
     37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,  51, 52, 53,    54, 55, 56, 57, //21
@@ -84,7 +240,7 @@ const vKeysISO = [
     125 //1 (duh)
 ];
 
-const vKeyNamesISO = [
+const vKeyNamesISOp100 = [
     "Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",  "PrtSc", "ScrollLock", "Pause", //16
     "`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace", "Insert", "Home", "PgUp", "NumLock", "Num /", "Num *", "Num -",              //21
     "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "Enter", "Del", "End", "PgDwn",              "Num 7", "Num 8", "Num 9", "Num +",              //21
@@ -97,7 +253,7 @@ const vKeyNamesISO = [
     "Logo" //1 (duh)
 ];
 
-const vKeyPositionsISO = [
+const vKeyPositionsISOp100 = [
     [1, 0],         [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0], [16, 0], [17, 0], //16
     [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1], [21, 1], //21
     [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [12, 2], [13, 2], [14, 2], [15, 2], [16, 2], [17, 2], [18, 2], [19, 2], [20, 2], [21, 2],//21
@@ -109,6 +265,7 @@ const vKeyPositionsISO = [
      [0, 1],  [0, 1],  [0, 1],  [0, 2],  [0, 2],  [0, 2],  [0, 2],  [0, 3],  [0, 3],  [0, 3], //10
     [20, 0] //1 (duh)
 ];
+//end p100 iso
 
 let LEDCount = 0;
 let IsViaKeyboard = false;
@@ -256,23 +413,50 @@ function returnUniqueIdentifier(data) {
 	const UniqueIdentifierByte2 = data[3];
 	const UniqueIdentifierByte3 = data[4];
 
-    if(UniqueIdentifierByte3 === 16)
+    if(UniqueIdentifierByte3 === 11)
 	{
-		device.setControllableLeds(vKeyNamesISO, vKeyPositionsISO);
-		vKeys = vKeysISO;
-		vKeyNames = vKeyNamesISO;
-		vKeyPositions = vKeyPositionsISO;
+		device.setControllableLeds(vKeyNamesANSIp65, vKeyPositionsANSIp65);
+		vKeys = vKeysANSIp65;
+		vKeyNames = vKeyNamesANSIp65;
+		vKeyPositions = vKeyPositionsANSIp65;
 	}
-	else
+	if(UniqueIdentifierByte3 === 12)
 	{
-		device.setControllableLeds(vKeyNamesANSI, vKeyPositionsANSI);
-		vKeys = vKeysANSI;
-		vKeyNames = vKeyNamesANSI;
-		vKeyPositions = vKeyPositionsANSI;
+		device.setControllableLeds(vKeyNamesISOp65, vKeyPositionsISOp65);
+		vKeys = vKeysISOp75;
+		vKeyNames = vKeyNamesISOp75;
+		vKeyPositions = vKeyPositionsISOp75;
+	}
+    if(UniqueIdentifierByte3 === 13)
+	{
+		device.setControllableLeds(vKeyNamesANSIp75, vKeyPositionsANSIp75);
+		vKeys = vKeysANSIp75;
+		vKeyNames = vKeyNamesANSIp75;
+		vKeyPositions = vKeyPositionsANSIp75;
+	}
+	if(UniqueIdentifierByte3 === 14)
+	{
+		device.setControllableLeds(vKeyNamesISOp75, vKeyPositionsISOp75);
+		vKeys = vKeysISOp75;
+		vKeyNames = vKeyNamesISOp75;
+		vKeyPositions = vKeyPositionsISOp75;
+	}
+	if(UniqueIdentifierByte3 === 15)
+	{
+		device.setControllableLeds(vKeyNamesANSIp100, vKeyPositionsANSIp100);
+		vKeys = vKeysANSIp100;
+		vKeyNames = vKeyNamesANSIp100;
+		vKeyPositions = vKeyPositionsANSIp100;
+	}
+	if(UniqueIdentifierByte3 === 16)
+	{
+		device.setControllableLeds(vKeyNamesISOp100, vKeyPositionsISOp100);
+		vKeys = vKeysISOp100;
+		vKeyNames = vKeyNamesISOp100;
+		vKeyPositions = vKeyPositionsISOp100;
 	}
 
 	device.log("Unique Device Identifier: " + UniqueIdentifierByte1 + UniqueIdentifierByte2 + UniqueIdentifierByte3);
-	device.pause(30);
 	device.pause(30);
 
 }
