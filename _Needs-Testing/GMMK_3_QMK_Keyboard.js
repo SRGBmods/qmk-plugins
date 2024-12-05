@@ -285,6 +285,30 @@ export function vKeysArrayCount() {
 	device.log('vKeys ' + vKeys.length);
 	device.log('vKeyNames ' + vKeyNames.length);
 	device.log('vKeyPositions ' + vKeyPositions.length);
+
+	device.log('vKeysANSIp65 ' + vKeysANSIp65.length);
+	device.log('vKeyNamesANSIp65 ' + vKeyNamesANSIp65.length);
+	device.log('vKeyPositionsANSIp65 ' + vKeyPositionsANSIp65.length);
+
+	device.log('vKeysISOp65 ' + vKeysISOp65.length);
+	device.log('vKeyNamesISOp65 ' + vKeyNamesISOp65.length);
+	device.log('vKeyPositionsISOp65 ' + vKeyPositionsISOp65.length);
+
+	device.log('vKeysANSIp75 ' + vKeysANSIp75.length);
+	device.log('vKeyNamesANSIp75 ' + vKeyNamesANSIp75.length);
+	device.log('vKeyPositionsANSIp75 ' + vKeyPositionsANSIp75.length);
+
+	device.log('vKeysISOp75 ' + vKeysISOp75.length);
+	device.log('vKeyNamesISOp75 ' + vKeyNamesISOp75.length);
+	device.log('vKeyPositionsISOp75 ' + vKeyPositionsISOp75.length);
+
+	device.log('vKeysANSIp100 ' + vKeysANSIp100.length);
+	device.log('vKeyNamesANSIp100 ' + vKeyNamesANSIp100.length);
+	device.log('vKeyPositionsANSIp100 ' + vKeyPositionsANSIp100.length);
+
+	device.log('vKeysISOp100 ' + vKeysISOp100.length);
+	device.log('vKeyNamesISOp100 ' + vKeyNamesISOp100.length);
+	device.log('vKeyPositionsISOp100 ' + vKeyPositionsISOp100.length);
 }
 
 export function Initialize() {
