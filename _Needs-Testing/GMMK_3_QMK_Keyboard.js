@@ -137,7 +137,7 @@ const vKeyPositionsANSIp75 = [
     [1, 5], [2, 5], [3, 5],                         [7, 5],                          [11, 5], [12, 5], [13, 5], [14 ,5], [15, 5], //9
 
     [0, 0],   [0, 1],  [0, 2],  [0, 3],  [0, 4],  [0, 5],  [0, 6],  [0, 7],  [0, 8],  [0, 9], //10
-    [16, 9], [16, 8], [16, 7], [16, 6], [16, 5], [16, 4], [16, 3], [16, 2], [16, 1], [16, 0], //10         
+    [17, 9], [17, 8], [17, 7], [17, 6], [17, 5], [17, 4], [17, 3], [17, 2], [17, 1], [17, 0], //10         
 ];
 //end p75 ansi
 
@@ -450,7 +450,7 @@ function returnUniqueIdentifier(data) {
 		vKeys = vKeysANSIp75;
 		vKeyNames = vKeyNamesANSIp75;
 		vKeyPositions = vKeyPositionsANSIp75;
-		device.setSize([9,16]);
+		device.setSize([9,17]);
 	}
 	if(UniqueIdentifierByte3 === 14)
 	{
