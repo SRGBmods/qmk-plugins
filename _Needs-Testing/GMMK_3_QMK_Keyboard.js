@@ -135,7 +135,7 @@ const vKeyPositionsANSIp75 = [
     [0, 0],   [0, 1],  [0, 2],  [0, 3],  [0, 4],  [0, 5],  [0, 6],  [0, 7],  [0, 8],  [0, 9], //10
     [16, 9], [16, 8], [16, 7], [16, 6], [16, 5], [16, 4], [16, 3], [16, 2], [16, 1], [16, 0], //10         
 ];
-//end p75 ansi
+//end p75 ansi thanks to OuroborosWurm for development and testing - Signed off 12-5-2024 - Naitoshedo
 
 //p75 iso Needs testing
 const vKeysISOp75 = [
@@ -212,7 +212,7 @@ const vKeyPositionsANSIp100 = [
     [22, 0], [22, 1], [22, 2], [22, 3], [22, 4], [22, 5], [22, 6], [22, 7], [22, 8], [22, 9], //10
     [20, 0] //1 (duh)
 ];
-//end p100 ansi
+//end p100 ansi thanks to dillrellis for development and testing - Signed off 12-5-2024 - Naitoshedo
 
 //p100 iso thanks to pulsarbilly for development and testing - Signed off 12-5-2024 - Naitoshedo
 const vKeysISOp100 = [
@@ -254,7 +254,7 @@ const vKeyPositionsISOp100 = [
      [0, 1],  [0, 1],  [0, 1],  [0, 2],  [0, 2],  [0, 2],  [0, 2],  [0, 3],  [0, 3],  [0, 3], //10
     [20, 0] //1 (duh)
 ];
-//end p100 iso
+//end p100 iso thanks to pulsarbilly for development and testing - Signed off 12-5-2024 - Naitoshedo
 
 let LEDCount = 0;
 let IsViaKeyboard = false;
