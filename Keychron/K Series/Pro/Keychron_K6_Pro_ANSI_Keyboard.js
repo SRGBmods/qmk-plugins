@@ -327,5 +327,5 @@ export function Validate(endpoint) {
 }
 
 export function ImageUrl() {
-	return "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/Keychron_K6_Pro_ANSI_Encoder.png";
+	return "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/Keychron_K6_Pro_ANSI_Encoder.png";
 }
