@@ -429,7 +429,7 @@ export function Validate(endpoint)
 
 export function ImageUrl()
 {
-    const baseImageUrl = "https://raw.githubusercontent.com/SRGBmods/qmk-plugins/z_device_images_only/_images/";
+    const baseImageUrl = "https://raw.githubusercontent.com/SRGBmods/QMK-Images/main/images/";
     if ([0x0160].includes(device.productId())) // ANSI
     {
         return baseImageUrl + "Keychron_Q6_ANSI.png";
