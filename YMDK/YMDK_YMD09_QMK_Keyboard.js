@@ -5,7 +5,6 @@ export function ProductId() { return 0x4409; }
 export function Publisher() { return "Shie1dsey"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard"; }
-export function ConflictingProcesses() { return ["VIA.exe"]; }
 export function Size() { return [3, 3]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
@@ -24,7 +23,7 @@ export function ControllableParameters() {
 	];
 }
 
-//Plugin Version: Built for Protocol V1.0.4
+//Plugin Version: Built for Protocol V1.0.6
 
 const vKeyNames = [
 	"FN_MO13", "FN_MO23", "Del", 				//3
@@ -48,7 +47,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.5";
+const PluginProtocolVersion = "1.0.6";
 
 export function LedNames() {
 	return vKeyNames;

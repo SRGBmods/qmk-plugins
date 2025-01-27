@@ -5,7 +5,6 @@ export function ProductId() { return [0x1224, 0x1225, 0x1226, 0x1227]; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard"; }
-export function ConflictingProcesses() { return ["VIA.exe"]; }
 export function Size() { return [15, 5]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
@@ -25,7 +24,7 @@ export function ControllableParameters()
 	];
 }
 
-//Plugin Version: Built for Protocol V1.0.3
+//Plugin Version: Built for Protocol V1.0.6
 
 const vKeys =
 [
@@ -58,7 +57,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.5";
+const PluginProtocolVersion = "1.0.6";
 
 export function LedNames()
 {

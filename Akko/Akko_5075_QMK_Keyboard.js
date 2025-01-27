@@ -5,7 +5,6 @@ export function ProductId() { return 0x000b; }
 export function Publisher() { return "X12013"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard"; }
-export function ConflictingProcesses() { return ["VIA.exe"]; }
 export function Size() { return [134, 56]; }
 export function DefaultPosition(){return [1, 1]; }
 export function DefaultScale(){return 1;}
@@ -24,7 +23,7 @@ export function ControllableParameters() {
 	];
 }
 
-//Plugin Version: Built for Protocol V1.0.5
+//Plugin Version: Built for Protocol V1.0.6
 //Note the dummy1,dummy2 are used for offsetting the LEDs, they do not light up. Effects will not work properly if removed.
 
 const vKeys = [
@@ -64,7 +63,7 @@ let LEDCount = 0;
 let IsViaKeyboard = false;
 const MainlineQMKFirmware = 1;
 const VIAFirmware = 2;
-const PluginProtocolVersion = "1.0.4";
+const PluginProtocolVersion = "1.0.6";
 
 export function LedNames() {
 	return vKeyNames;
