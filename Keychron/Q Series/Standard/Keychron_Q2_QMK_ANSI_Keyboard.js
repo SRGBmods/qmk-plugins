@@ -5,7 +5,7 @@ export function ProductId() { return 0x0110; }
 export function Publisher() { return "WhirlwindFX"; }
 export function Documentation() { return "/qmk/building-firmware-from-source"; }
 export function DeviceType() { return "keyboard"; }
-export function Size() { return [15, 5]; }
+export function Size() { return [16, 5]; }
 export function DefaultPosition(){return [10, 100]; }
 export function DefaultScale(){return 8.0;}
 /* global
