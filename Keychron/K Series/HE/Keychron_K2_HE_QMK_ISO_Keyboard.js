@@ -1,7 +1,7 @@
-export function Name() { return "Keychron K2 HE ANSI QMK Keyboard"; }
+export function Name() { return "Keychron K2 HE ISO QMK Keyboard"; }
 export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x3434; }
-export function ProductId() { return 0x0E20; }
+export function ProductId() { return 0x0E21; }
 export function Publisher() { return "Whirlwindfx"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard";}
@@ -31,16 +31,16 @@ const vKeys = [
 	16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,	29, 30,
 	31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,	44, 45,
 	46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,         58, 59,
-	60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,	71, 72, 73,
-	74, 75, 76,             77,      78, 79, 80, 81, 82, 83
+	60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70,	71, 72, 73, 74,
+	75, 76,             77,      78, 79, 80, 81, 82, 83, 84
 ];
 
 const vKeyNames = [
-	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Print Screen", "Del", "ContextMenu",
-	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+", "Backspace", "Page Up",
-	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "Page Down",
-	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter", "Home",
-	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End",
+	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Print Screen", "Del", "Led",
+	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "ß",   "`", "Backspace", "Page Up",
+	"Tab", "Q", "W", "E", "R", "T", "Z", "U", "I", "O", "P", "Ü", "+", "Enter", "Page Down",
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ö", "Ä", "#", "Home",
+	"Left Shift", "<", "Y", "X", "C", "V", "B", "N", "M", ",", ".", "-", "Right Shift", "Up Arrow", "End",
 	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Ctrl", "Left Arrow", "Down Arrow", "Right Arrow"
 ];
 
@@ -49,7 +49,7 @@ const vKeyPositions = [
 	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [13, 1],          [14, 1], [15, 1],
 	[0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [9, 2], [10, 2], [11, 2], [13, 2], 	        [14, 2], [15, 2],
 	[0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3], [10, 3], [11, 3], 		            [14, 3], [15, 3],
-	[0, 4], [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [12, 4], [14, 4], [15, 4],
+	[0, 4], [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [12, 4], [14, 4], [15, 4], [16, 4],
 	[0, 5], [1, 5], [2, 5],			  		[6, 5],			  		                [10, 5], [11, 5], [12, 5], [13, 5], [14, 5], [15, 5]
 ];
 
