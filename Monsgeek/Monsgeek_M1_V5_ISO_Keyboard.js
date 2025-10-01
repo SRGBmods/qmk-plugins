@@ -2,7 +2,7 @@ export function Name() { return "Monsgeek M1_V5 ISO"; }
 export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x342d; }
 export function ProductId() { return 0xe4c2; }
-export function Publisher() { return "WhirlwindFX"; }
+export function Publisher() { return "WhirlwindFX & Salakolte"; }
 export function Documentation() { return "qmk/srgbmods-qmk-firmware"; }
 export function DeviceType() { return "keyboard"; }
 export function Size() { return [16, 6]; }
@@ -26,23 +26,23 @@ export function ControllableParameters() {
 //Plugin Version: Built for Protocol V1.0.6
 
 const vKeys = [
-	 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13,     //14
-	14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, //15
-	29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,     42, //14
-    43, 44,	45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, //15
-    58, 59, 60,	61, 62, 63, 64, 65, 66, 67, 68, 69, 70,	71,	72, //15
-    73, 74, 75,	        76,             77, 78, 79, 80, 81, 82  //10
+    23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10,       //14
+	24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 9,    //15
+	51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39,     8,   //14
+    52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 38, 7,    //14
+   	78, 77, 76, 75,	74, 73, 72, 71, 70, 69, 68, 67, 66, 65,	6,    //15
+    	79, 80, 81, 	    82,	         0,  1,  2,  3, 4, 5,     //10    
+		
 ];
 
 const vKeyNames = [
-	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Delete",	//14
+	"Esc", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Delete",	                    //14
 	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",	"Home",						//15
-	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\", "PgUp",								//14
+	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]",  "PgUp",								//14
 	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "#", "Enter", "PgDn",						//15
 	"Left Shift", "\|", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift", "Up Arrow", "End",			//15
-	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Menu", "Left Arrow",  "Down Arrow", "Right Arrow",	//9
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Right Ctrl", "Menu", "Left Arrow",  "Down Arrow", "Right Arrow",	//9
 ];
-
 const vKeyPositions = [
 	[0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], //14
 	[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1],	[14, 1], //15
