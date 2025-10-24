@@ -1,4 +1,4 @@
-export function Name() { return "Keychron K8 TKL QMK Keyboard"; }
+export function Name() { return "Keychron K8 TKL ISO QMK Keyboard"; }
 export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return 0xfe0f; }
