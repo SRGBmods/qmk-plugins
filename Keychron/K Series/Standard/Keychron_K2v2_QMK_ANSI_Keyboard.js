@@ -1,4 +1,4 @@
-export function Name() { return "Keychon K2v2 ANSI"; }
+export function Name() { return "Keychon K2v2+v3 ANSI"; }
 export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x3434; }
 export function ProductId() { return [0xfe02, 0x0D20]; }
