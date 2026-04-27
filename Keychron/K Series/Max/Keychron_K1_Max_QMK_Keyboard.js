@@ -44,9 +44,9 @@ const vKeyNamesANSI =
 	"Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",  "Misc", "Mic", "RGB",
 	"`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-", "+", "Backspace", "Insert", "Home", "Page Up",
 	"Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]",      "\\", "Delete", "End", "Page Down",
-	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", ",", "Enter",                                       "Home",
+	"CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", ",", "Enter",                                      
 	"Left Shift", "Z", "X", "C", "V", "B", "N", "M", "<", ">", "/", "Right Shift",                  "Up Arrow",
-	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Win",  "Left Arrow",  "Down Arrow", "Right Arrow"
+	"Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Win", "Right Ctrl",  "Left Arrow",  "Down Arrow", "Right Arrow"
 ];
 const vKeyPositionsANSI =
 [
@@ -112,7 +112,7 @@ export function vKeysArrayCount()
 
 export function Initialize()
 {
-    if ([0x0210].includes(device.productId()))
+    if ([0x0A10].includes(device.productId()))
     {
         vKeyNames = vKeyNamesANSI;
         vKeyPositions = vKeyPositionsANSI;
