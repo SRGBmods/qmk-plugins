@@ -39,10 +39,10 @@ const vKeyNames =
 [
     "Esc",     "F1", "F2", "F3", "F4",   "F5", "F6", "F7", "F8",    "F9", "F10", "F11", "F12",                                 "Del",          "Previous", "Pause", "Next",
     "`", "1",  "2", "3", "4", "5",  "6", "7", "8", "9", "0",  "-",   "+",  "Backspace",                                        "Page Up",      "NumLock", "Num /", "Num *", "Num -",
-    "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",                                                   "Page Down",    "Num 7", "Num 8", "Num 9",
-    "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter",                                                "Home",         "Num 4", "Num 5", "Num 6", "Num +",
-    "Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift",                  "Up Arrow",                                "Num 1", "Num 2", "Num 3",
-    "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Ctrl",  "Left Arrow",  "Down Arrow", "Right Arrow",                "Num 0", "Num .", "Num Enter",
+    "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",                                                   "Page Down",    "Num 7", "Num 8", "Num 9", "Num +",
+    "CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter",                                                "Home",         "Num 4", "Num 5", "Num 6",
+    "Left Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Right Shift",                  "Up Arrow",                                "Num 1", "Num 2", "Num 3", "Num Enter",
+    "Left Ctrl", "Left Win", "Left Alt", "Space", "Right Alt", "Fn", "Right Ctrl",  "Left Arrow",  "Down Arrow", "Right Arrow",                "Num 0", "Num .",
 ];
 
 const vKeyPositions =
