@@ -1,15 +1,13 @@
-# Supported Keyboards
+﻿# Supported Keyboards
 
-This document lists all QMK keyboards supported by SignalRGB plugins. The list is automatically generated and can be updated using the `scripts/update-keyboards.sh` script.
-
-**Total Keyboards Supported: 67**
+**Total Keyboards Supported: 179**
 
 ## Table of Contents
 - [Akko](#akko) (1)
 - [Alpaca](#alpaca) (1)
 - [Cerakey](#cerakey) (1)
-- [DZTech](#dztech) (2)
 - [DesignedByGG](#designedbygg) (1)
+- [DZTech](#dztech) (2)
 - [Epomaker](#epomaker) (2)
 - [Ergodox_EZ](#ergodox_ez) (1)
 - [Feker](#feker) (1)
@@ -20,13 +18,14 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - [Inland](#inland) (1)
 - [KBDCraft](#kbdcraft) (2)
 - [KBDFans](#kbdfans) (2)
+- [Keychron](#keychron) (113)
 - [KPRepublic](#kprepublic) (1)
-- [Keychron](#keychron) (1)
 - [Lemokey](#lemokey) (6)
-- [MCHOSE](#mchose) (1)
 - [Massdrop](#massdrop) (8)
+- [MCHOSE](#mchose) (1)
 - [Monsgeek](#monsgeek) (5)
 - [NCR](#ncr) (1)
+- [nerdytec](#nerdytec) (2)
 - [Nuphy](#nuphy) (5)
 - [Pulsar](#pulsar) (1)
 - [Swagkeys](#swagkeys) (1)
@@ -34,7 +33,6 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - [XBows](#xbows) (3)
 - [YMDK](#ymdk) (2)
 - [Yunzii](#yunzii) (3)
-- [nerdytec](#nerdytec) (2)
 
 ---
 
@@ -44,20 +42,23 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Akko 5075 Keyboard
 
-
 ## Alpaca
 
 **Total: 1 keyboards**
 
 - Alpaca WhiteFox Eclipse Keyboard
 
-
 ## Cerakey
 
 **Total: 1 keyboards**
 
-- Cerakey Zen75 ANSI Keyboard [ANSI]
+- Cerakey Zen75 Keyboard [ANSI]
 
+## DesignedByGG
+
+**Total: 1 keyboards**
+
+- GG Keyboard TKL AZERTY French [ISO]
 
 ## DZTech
 
@@ -66,35 +67,24 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - DZTech-60RGB Keyboard
 - DZTech-65RGB-V3 Keyboard
 
-
-## DesignedByGG
-
-**Total: 1 keyboards**
-
-- GG ISO Keyboard TKL AZERTY French [ISO]
-
-
 ## Epomaker
 
 **Total: 2 keyboards**
 
-- Epomaker TH85
-- Epomaker TH96
-
+- Epomaker TH85 QMK
+- Epomaker TH96 QMK
 
 ## Ergodox_EZ
 
 **Total: 1 keyboards**
 
-- Ergodox EZ Glow
-
+- Ergodox EZ Glow QMK
 
 ## Feker
 
 **Total: 1 keyboards**
 
 - Feker-IK75
-
 
 ## Framework
 
@@ -103,19 +93,17 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Framework 16 Keyboard
 - Framework Macropad
 
-
 ## GMMK
 
 **Total: 7 keyboards**
 
-- GMMK 2 65 ANSI Keyboard [ANSI]
-- GMMK 2 65 ISO Keyboard [ISO]
-- GMMK 2 96 ANSI Keyboard [ANSI]
-- GMMK 2 96 ISO Keyboard [ISO]
+- GMMK 2 65 Keyboard [ISO]
+- GMMK 2 65 Keyboard [ANSI]
+- GMMK 2 96 Keyboard [ISO]
+- GMMK 2 96 Keyboard [ANSI]
 - GMMK 3 Keyboard
-- GMMK Numpad
+- GMMK Numpad QMK
 - GMMK Pro Keyboard
-
 
 ## Helheim Designs
 
@@ -123,13 +111,11 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Freja 65 Keyboard
 
-
 ## IDOBAO
 
 **Total: 1 keyboards**
 
 - IDOBAO ID67 Keyboard
-
 
 ## Inland
 
@@ -137,22 +123,200 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Inland KB83 Keyboard
 
-
 ## KBDCraft
 
 **Total: 2 keyboards**
 
-- KBDCraft Adam0110 Keyboard-Test
 - KBDCraft Adam0110 Keyboard
-
+- KBDCraft Adam0110 Keyboard-Test
 
 ## KBDFans
 
 **Total: 2 keyboards**
 
 - KBDFans KBD67 RGBMKII Keyboard
-- KBDFans KBD67 V2 ISO Keyboard [ISO]
+- KBDFans KBD67 V2 Keyboard [ISO]
 
+## Keychron
+
+**Total: 113 keyboards**
+
+- Keychron C1 Pro Keyboard [ANSI]
+- Keychron C2 Pro Keyboard [ANSI]
+
+- Keychron C3 Pro 8K Keyboard [ANSI]
+
+- Keychron C3 Pro Keyboard [ANSI]
+
+- Keychron J2 Keyboard [ANSI]
+
+- Keychron K1 Max Keyboard
+
+- Keychron K1 Pro Keyboard
+
+- Keychron K10 HE Keyboard [ANSI]
+- Keychron K10 HE Keyboard [ISO]
+
+- Keychron K10 Max Keyboard [ISO]
+- Keychron K10 Max Keyboard [ANSI]
+- Keychron K10 v2 Keyboard [ANSI]
+
+- Keychron K10Pro Keyboard [ANSI]
+- Keychron K10Pro Keyboard [ISO]
+
+- Keychron K10V2 Keyboard [ISO]
+- Keychron K10V2 Keyboard [ANSI]
+
+- Keychron K12 Pro Keyboard [ANSI]
+
+- Keychron K17 Max Keyboard [ANSI]
+
+- Keychron K2 HE Keyboard [ANSI]
+- Keychron K2 HE Keyboard [ISO]
+
+- Keychron K2 Max Keyboard [ANSI]
+- Keychron K2 Max Keyboard [ISO]
+
+- Keychron K2 Pro DE Keyboard [ISO]
+- Keychron K2 Pro Keyboard [ANSI]
+
+- Keychron K2v2+v3 Keyboard [ANSI]
+- Keychron K2v3 Keyboard [ISO]
+
+- Keychron K3 Pro Keyboard [ANSI]
+- Keychron K3 Pro Keyboard [ISO]
+
+- Keychron K4 HE Keyboard [ANSI]
+
+- Keychron K4 Pro DE Keyboard [ISO]
+- Keychron K4 Pro Keyboard [ANSI]
+
+- Keychron K4v2 Keyboard [ANSI]
+
+- Keychron K5 Max Keyboard [ISO]
+- Keychron K5 Max Keyboard [ANSI]
+
+- Keychron K5 Pro Keyboard [ANSI]
+
+- Keychron K5 v2 Keyboard [ISO]
+
+- Keychron K6 Pro Keyboard [ANSI]
+
+- Keychron K8 HE Keyboard [ISO]
+- Keychron K8 HE Keyboard [ANSI]
+
+- Keychron K8 TKL Keyboard [ISO]
+- Keychron K8 TKL Version 2 Keyboard [ANSI]
+- Keychron K8 TKL Version 2 Keyboard [ISO]
+
+- Keychron K8Max Keyboard [ANSI]
+- Keychron K8Max Keyboard [ISO]
+
+- Keychron K8Pro DE Keyboard [ISO]
+- Keychron K8Pro Keyboard [ANSI]
+
+- Keychron Q0 Keyboard [ANSI]
+
+- Keychron Q0 Max Keyboard
+
+- Keychron Q0 Plus Keyboard [ANSI]
+
+- Keychron Q1 HE Keyboard [ANSI]
+- Keychron Q1 HE Keyboard [ISO]
+
+- Keychron Q1 Max Encoder Keyboard [ANSI]
+- Keychron Q1 Max Encoder Keyboard [ISO]
+
+- Keychron Q1 Pro Encoder Keyboard [ISO]
+- Keychron Q1 Pro Encoder Keyboard [ANSI]
+
+- Keychron Q10 Keyboard [ANSI]
+- Keychron Q12 Keyboard [ANSI]
+
+- Keychron Q12 Max Encoder Keyboard [ANSI]
+
+- Keychron Q1v1 Keyboard [ISO]
+- Keychron Q1v1 Keyboard [ANSI]
+- Keychron Q1v2 Encoder Keyboard [ISO]
+- Keychron Q1v2 Encoder Keyboard [ANSI]
+- Keychron Q2 Encoder Keyboard [ANSI]
+- Keychron Q2 Keyboard [ANSI]
+
+- Keychron Q2 Max Encoder Keyboard [ANSI]
+
+- Keychron Q2 Pro Keyboard [ANSI]
+
+- Keychron Q3 Encoder Keyboard [ANSI]
+
+- Keychron Q3 HE Encoder Keyboard [ANSI]
+
+- Keychron Q3 Keyboard [ISO]
+- Keychron Q3 Keyboard [ANSI]
+
+- Keychron Q3 Max Keyboard [ANSI]
+- Keychron Q3 Max Keyboard [ISO]
+
+- Keychron Q3 Pro SE Keyboard [ISO]
+- Keychron Q3 Pro SE Keyboard [ANSI]
+
+- Keychron Q4 Keyboard [ANSI]
+- Keychron Q5 Encoder Keyboard [ANSI]
+- Keychron Q5 Encoder Keyboard [ISO]
+
+- Keychron Q5 HE Encoder Keyboard [ANSI]
+
+- Keychron Q5 Keyboard [ANSI]
+
+- Keychron Q5 Max Encoder Keyboard [ANSI]
+
+- Keychron Q5 Pro Keyboard [ANSI]
+- Keychron Q5 Pro Keyboard [ISO]
+
+- Keychron Q6 HE Keyboard [ANSI] [ISO]
+
+- Keychron Q6 Keyboard [ANSI] [ISO]
+
+- Keychron Q6 Max Keyboard [ANSI]
+- Keychron Q6 Max Keyboard [ISO]
+
+- Keychron Q6 Pro Keyboard [ISO]
+- Keychron Q6 Pro Keyboard [ANSI]
+
+- Keychron Q65 Encoder Keyboard [ANSI]
+
+- Keychron Q65 Max Encoder Keyboard [ANSI]
+- Keychron Q8 Max Keyboard [ANSI]
+
+- Keychron Q8 Pro Keyboard [ANSI]
+
+- Keychron V1 Encoder Keyboard [ANSI]
+- Keychron V1 Keyboard [ISO]
+- Keychron V1 Keyboard [ANSI]
+
+- Keychron V1 Max Encoder Keyboard [ANSI]
+- Keychron V1 Max Encoder Keyboard [ISO]
+
+- Keychron V2 Keyboard [ANSI]
+- Keychron V3 Keyboard [ANSI]
+- Keychron V3 Keyboard [ISO]
+
+- Keychron V3 Max Encoder Keyboard [ANSI]
+- Keychron V3 Max Keyboard [ISO]
+
+- Keychron V4 Keyboard [ANSI]
+- Keychron V4 Keyboard [ISO]
+- Keychron V5 Encoder Keyboard [ANSI]
+- Keychron V5 Encoder Keyboard [ISO]
+- Keychron V5 Keyboard [ANSI]
+
+- Keychron V5 Max Encoder Keyboard [ANSI]
+- Keychron V5 Max Encoder Keyboard [ISO]
+
+- Keychron V6 Keyboard [ANSI]
+- Keychron V6 Keyboard [ISO]
+
+- Keychron V6 Max Keyboard [ISO]
+- Keychron V6 Max Keyboard [ANSI]
 
 ## KPRepublic
 
@@ -160,32 +324,16 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - KPRepublic BM60 Poker Rev 2
 
-
-## Keychron
-
-**Total: 1 keyboards**
-
-- Keychron J2 ANSI Keyboard [ANSI]
-
-
 ## Lemokey
 
 **Total: 6 keyboards**
 
-- Lemokey L1 ANSI Keyboard [ANSI]
-- Lemokey L3 ANSI Keyboard [ANSI]
-- Lemokey P1 HE ANSI Keyboard [ANSI]
-- Lemokey P1 HE ISO Keyboard [ISO]
-- Lemokey P1 Pro ANSI Keyboard [ANSI]
-- Lemokey P1 Pro ISO Keyboard [ISO]
-
-
-## MCHOSE
-
-**Total: 1 keyboards**
-
-- MCHOSE GX87 ANSI Keyboard [ANSI]
-
+- Lemokey L1 Keyboard [ANSI]
+- Lemokey L3 Keyboard [ANSI]
+- Lemokey P1 HE Keyboard [ISO]
+- Lemokey P1 HE Keyboard [ANSI]
+- Lemokey P1 Pro Keyboard [ISO]
+- Lemokey P1 Pro Keyboard [ANSI]
 
 ## Massdrop
 
@@ -200,17 +348,21 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Massdrop CTRL V2 Keyboard
 - Massdrop SENSE75 Keyboard
 
+## MCHOSE
+
+**Total: 1 keyboards**
+
+- MCHOSE GX87 Keyboard [ANSI]
 
 ## Monsgeek
 
 **Total: 5 keyboards**
 
 - Monsgeek M1 V3 Keyboard
-- Monsgeek M1 V5 ANSI Keyboard [ANSI]
-- Monsgeek M1 V5 ISO Keyboard [ISO]
+- Monsgeek M1 V5 Keyboard [ISO]
+- Monsgeek M1 V5 Keyboard [ANSI]
 - Monsgeek M3 Keyboard TKL
-- Monsgeek M7 ANSI Keyboard [ANSI]
-
+- Monsgeek M7 Keyboard [ANSI]
 
 ## NCR
 
@@ -218,17 +370,22 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - NCR-80 Hotswap Keyboard
 
+## nerdytec
+
+**Total: 2 keyboards**
+
+- nerdytec CYKEY Keyboard [ISO]
+- nerdytec CYKEY Keyboard [ANSI]
 
 ## Nuphy
 
 **Total: 5 keyboards**
 
 - NuPhy Air75v2 Keyboard
-- NuPhy Air96v2 ANSI Keyboard [ANSI]
+- NuPhy Air96v2 Keyboard [ANSI]
 - NuPhy Gem80 Keyboard
 - NuPhy Halo75v2 Keyboard
 - NuPhy Halo96v2 Keyboard
-
 
 ## Pulsar
 
@@ -236,13 +393,11 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - pulsar XBOARD QS sRGB 240206
 
-
 ## Swagkeys
 
 **Total: 1 keyboards**
 
 - SW EAVE65
-
 
 ## System76
 
@@ -250,15 +405,13 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - System76 Launch-1 Keyboard
 
-
 ## XBows
 
 **Total: 3 keyboards**
 
-- XBows KnightPlus ANSI Keyboard [ANSI]
-- XBows KnightPlus ANSI Numpad [ANSI]
-- XBows Nature ANSI Keyboard [ANSI]
-
+- XBows KnightPlus Keyboard [ANSI]
+- XBows KnightPlus Numpad [ANSI]
+- XBows Nature Keyboard [ANSI]
 
 ## YMDK
 
@@ -267,21 +420,12 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - YMDK Melody96rgb Keyboard
 - YMDK YMD09 Keyboard
 
-
 ## Yunzii
 
 **Total: 3 keyboards**
 
-- Yunzii AL80 ANSI Keyboard [ANSI]
-- Yunzii MK25047 ANSI Keyboard [ANSI]
-- Yunzii X98 ANSI Keyboard [ANSI]
-
-
-## nerdytec
-
-**Total: 2 keyboards**
-
-- nerdytec CYKEY ANSI Keyboard [ANSI]
-- nerdytec CYKEY ISO Keyboard [ISO]
+- Yunzii AL80 Keyboard [ANSI]
+- Yunzii MK25047 Keyboard [ANSI]
+- Yunzii X98 Keyboard [ANSI]
 
 
