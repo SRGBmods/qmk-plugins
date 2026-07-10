@@ -8,6 +8,17 @@ name: Update Supported Keyboards List
 # keyboard/manufacturer counts and table of contents.
 
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
   push:
     branches:
       - main
