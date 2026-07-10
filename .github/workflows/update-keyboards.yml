@@ -1,0 +1,62 @@
+name: Update Supported Keyboards List
+
+# Regenerates SUPPORTED_KEYBOARDS.md whenever new keyboard .js files are
+# added on main, and commits the result back automatically.
+#
+# This only triggers the regeneration when files are ADDED (not just
+# modified/deleted), since that's the only case that changes the total
+# keyboard/manufacturer counts and table of contents.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.js"
+
+permissions:
+  contents: write
+
+jobs:
+  update-keyboards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for added keyboard files
+        id: check
+        run: |
+          before="${{ github.event.before }}"
+          after="${{ github.event.after }}"
+
+          if [ "$before" = "0000000000000000000000000000000000000000" ]; then
+            # First push to a new/empty branch: nothing to diff against,
+            # treat every tracked .js file as "added".
+            added_count=$(git ls-files -- '*.js' | wc -l)
+          else
+            added_count=$(git diff --name-status --diff-filter=A "$before" "$after" -- '*.js' | wc -l)
+          fi
+
+          echo "Added .js files: ${added_count}"
+          echo "added_count=${added_count}" >> "$GITHUB_OUTPUT"
+
+      - name: Regenerate SUPPORTED_KEYBOARDS.md
+        if: steps.check.outputs.added_count != '0'
+        run: bash scripts/update-keyboards.sh
+
+      - name: Commit and push updated list
+        if: steps.check.outputs.added_count != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add SUPPORTED_KEYBOARDS.md
+          if git diff --staged --quiet; then
+            echo "No changes to SUPPORTED_KEYBOARDS.md, skipping commit."
+          else
+            git commit -m "chore: update supported keyboards list"
+            git push
+          fi
