@@ -173,7 +173,7 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 **Total: 1 keyboards**
 
-- WhirlwindFX Keyboard [ANSI]
+- WhirlwindFX Element-V2 Keyboard [ANSI]
 
 ## ymdk
 
