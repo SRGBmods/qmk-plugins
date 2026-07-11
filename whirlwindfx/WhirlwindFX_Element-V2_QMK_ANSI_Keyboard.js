@@ -1,4 +1,4 @@
-export function Name() { return "WhirlwindFX ANSI QMK Keyboard"; }
+export function Name() { return "WhirlwindFX Element V2 ANSI QMK Keyboard"; }
 export function Version() { return "1.1.9"; }
 export function VendorId() { return 0x0483; }
 export function ProductId() { return 0xA33E; }
