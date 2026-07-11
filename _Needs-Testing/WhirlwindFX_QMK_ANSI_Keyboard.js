@@ -287,9 +287,9 @@ function grabColors(overrideColor) {
 		const color = device.color(iPxX, iPxY);
 
 		const iLedIdx = vKeys[iIdx] * 3;
-		rgbdata[iLedIdx] = color[0];
-		rgbdata[iLedIdx+1] = color[1];
-		rgbdata[iLedIdx+2] = color[2];
+		rgbdata[iLedIdx] = color[1];
+		rgbdata[iLedIdx+1] = color[2];
+		rgbdata[iLedIdx+2] = color[0];
 	}
 
 	return rgbdata;
