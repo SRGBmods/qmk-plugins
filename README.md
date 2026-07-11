@@ -15,6 +15,3 @@ Tech support is available on the [Test Plugin Discord](https://discord.com/invit
 
 ### Needs Testing ###
 Please see the [\_Needs-Testing](https://github.com/SRGBmods/qmk-plugins/tree/needs-testing) branch if you find your keyboard in there and it works. Please let us know either via the Discord link above or with the Issues system here on GitHub, and thanks for the help!
-
-### Supported Devices ###
-Browse the manufacturer directories here. The list was getting too large to maintain on top of maintaining everything else.
