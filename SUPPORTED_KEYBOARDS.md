@@ -1,6 +1,7 @@
 ﻿# Supported Keyboards
 
-**Total Keyboards Supported: 179**
+This document lists all QMK keyboards supported by SignalRGB plugins. The list is automatically generated and can be updated using the `scripts/update-keyboards.ps1` script.
+**Total Keyboards Supported: 180**
 
 ## Table of Contents
 - [Akko](#akko) (1)
@@ -18,7 +19,7 @@
 - [Inland](#inland) (1)
 - [KBDCraft](#kbdcraft) (2)
 - [KBDFans](#kbdfans) (2)
-- [Keychron](#keychron) (113)
+- [Keychron](#keychron) (114)
 - [KPRepublic](#kprepublic) (1)
 - [Lemokey](#lemokey) (6)
 - [Massdrop](#massdrop) (8)
@@ -139,7 +140,7 @@
 
 ## Keychron
 
-**Total: 113 keyboards**
+**Total: 114 keyboards**
 
 - Keychron C1 Pro Keyboard [ANSI]
 - Keychron C2 Pro Keyboard [ANSI]
@@ -154,18 +155,18 @@
 
 - Keychron K1 Pro Keyboard
 
-- Keychron K10 HE Keyboard [ANSI]
 - Keychron K10 HE Keyboard [ISO]
+- Keychron K10 HE Keyboard [ANSI]
 
-- Keychron K10 Max Keyboard [ISO]
 - Keychron K10 Max Keyboard [ANSI]
+- Keychron K10 Max Keyboard [ISO]
 - Keychron K10 v2 Keyboard [ANSI]
 
 - Keychron K10Pro Keyboard [ANSI]
 - Keychron K10Pro Keyboard [ISO]
 
-- Keychron K10V2 Keyboard [ISO]
 - Keychron K10V2 Keyboard [ANSI]
+- Keychron K10V2 Keyboard [ISO]
 
 - Keychron K12 Pro Keyboard [ANSI]
 
@@ -174,8 +175,8 @@
 - Keychron K2 HE Keyboard [ANSI]
 - Keychron K2 HE Keyboard [ISO]
 
-- Keychron K2 Max Keyboard [ANSI]
 - Keychron K2 Max Keyboard [ISO]
+- Keychron K2 Max Keyboard [ANSI]
 
 - Keychron K2 Pro DE Keyboard [ISO]
 - Keychron K2 Pro Keyboard [ANSI]
@@ -186,6 +187,8 @@
 - Keychron K3 Pro Keyboard [ANSI]
 - Keychron K3 Pro Keyboard [ISO]
 
+- Keychron K3v3 Keyboard [ISO]
+
 - Keychron K4 HE Keyboard [ANSI]
 
 - Keychron K4 Pro DE Keyboard [ISO]
@@ -193,8 +196,8 @@
 
 - Keychron K4v2 Keyboard [ANSI]
 
-- Keychron K5 Max Keyboard [ISO]
 - Keychron K5 Max Keyboard [ANSI]
+- Keychron K5 Max Keyboard [ISO]
 
 - Keychron K5 Pro Keyboard [ANSI]
 
@@ -202,12 +205,12 @@
 
 - Keychron K6 Pro Keyboard [ANSI]
 
-- Keychron K8 HE Keyboard [ISO]
 - Keychron K8 HE Keyboard [ANSI]
+- Keychron K8 HE Keyboard [ISO]
 
 - Keychron K8 TKL Keyboard [ISO]
-- Keychron K8 TKL Version 2 Keyboard [ANSI]
 - Keychron K8 TKL Version 2 Keyboard [ISO]
+- Keychron K8 TKL Version 2 Keyboard [ANSI]
 
 - Keychron K8Max Keyboard [ANSI]
 - Keychron K8Max Keyboard [ISO]
@@ -221,22 +224,22 @@
 
 - Keychron Q0 Plus Keyboard [ANSI]
 
-- Keychron Q1 HE Keyboard [ANSI]
 - Keychron Q1 HE Keyboard [ISO]
+- Keychron Q1 HE Keyboard [ANSI]
 
 - Keychron Q1 Max Encoder Keyboard [ANSI]
 - Keychron Q1 Max Encoder Keyboard [ISO]
 
-- Keychron Q1 Pro Encoder Keyboard [ISO]
 - Keychron Q1 Pro Encoder Keyboard [ANSI]
+- Keychron Q1 Pro Encoder Keyboard [ISO]
 
 - Keychron Q10 Keyboard [ANSI]
 - Keychron Q12 Keyboard [ANSI]
 
 - Keychron Q12 Max Encoder Keyboard [ANSI]
 
-- Keychron Q1v1 Keyboard [ISO]
 - Keychron Q1v1 Keyboard [ANSI]
+- Keychron Q1v1 Keyboard [ISO]
 - Keychron Q1v2 Encoder Keyboard [ISO]
 - Keychron Q1v2 Encoder Keyboard [ANSI]
 - Keychron Q2 Encoder Keyboard [ANSI]
@@ -253,8 +256,8 @@
 - Keychron Q3 Keyboard [ISO]
 - Keychron Q3 Keyboard [ANSI]
 
-- Keychron Q3 Max Keyboard [ANSI]
 - Keychron Q3 Max Keyboard [ISO]
+- Keychron Q3 Max Keyboard [ANSI]
 
 - Keychron Q3 Pro SE Keyboard [ISO]
 - Keychron Q3 Pro SE Keyboard [ANSI]
@@ -269,18 +272,18 @@
 
 - Keychron Q5 Max Encoder Keyboard [ANSI]
 
-- Keychron Q5 Pro Keyboard [ANSI]
 - Keychron Q5 Pro Keyboard [ISO]
+- Keychron Q5 Pro Keyboard [ANSI]
 
 - Keychron Q6 HE Keyboard [ANSI] [ISO]
 
 - Keychron Q6 Keyboard [ANSI] [ISO]
 
-- Keychron Q6 Max Keyboard [ANSI]
 - Keychron Q6 Max Keyboard [ISO]
+- Keychron Q6 Max Keyboard [ANSI]
 
-- Keychron Q6 Pro Keyboard [ISO]
 - Keychron Q6 Pro Keyboard [ANSI]
+- Keychron Q6 Pro Keyboard [ISO]
 
 - Keychron Q65 Encoder Keyboard [ANSI]
 
@@ -290,21 +293,21 @@
 - Keychron Q8 Pro Keyboard [ANSI]
 
 - Keychron V1 Encoder Keyboard [ANSI]
-- Keychron V1 Keyboard [ISO]
 - Keychron V1 Keyboard [ANSI]
+- Keychron V1 Keyboard [ISO]
 
-- Keychron V1 Max Encoder Keyboard [ANSI]
 - Keychron V1 Max Encoder Keyboard [ISO]
+- Keychron V1 Max Encoder Keyboard [ANSI]
 
 - Keychron V2 Keyboard [ANSI]
-- Keychron V3 Keyboard [ANSI]
 - Keychron V3 Keyboard [ISO]
+- Keychron V3 Keyboard [ANSI]
 
 - Keychron V3 Max Encoder Keyboard [ANSI]
 - Keychron V3 Max Keyboard [ISO]
 
-- Keychron V4 Keyboard [ANSI]
 - Keychron V4 Keyboard [ISO]
+- Keychron V4 Keyboard [ANSI]
 - Keychron V5 Encoder Keyboard [ANSI]
 - Keychron V5 Encoder Keyboard [ISO]
 - Keychron V5 Keyboard [ANSI]
@@ -315,8 +318,8 @@
 - Keychron V6 Keyboard [ANSI]
 - Keychron V6 Keyboard [ISO]
 
-- Keychron V6 Max Keyboard [ISO]
 - Keychron V6 Max Keyboard [ANSI]
+- Keychron V6 Max Keyboard [ISO]
 
 ## KPRepublic
 
