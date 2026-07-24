@@ -1,19 +1,18 @@
-# Supported Keyboards
+﻿# Supported Keyboards
 
-This document lists all QMK keyboards supported by SignalRGB plugins. The list is automatically generated and can be updated using the `scripts/update-keyboards.sh` script.
-
-**Total Keyboards Supported: 85**
+This document lists all QMK keyboards supported by SignalRGB plugins. The list is automatically generated and can be updated using the `scripts/update-keyboards.ps1` script.
+**Total Keyboards Supported: 84**
 
 ## Table of Contents
-- [1upkeyboards](#1upkeyboards) (7)
-- [DesignedbyGG](#designedbygg) (1)
 - [_Random-Brands](#_random-brands) (40)
+- [1upkeyboards](#1upkeyboards) (7)
 - [akko](#akko) (3)
 - [boardsource](#boardsource) (5)
 - [controller_works](#controller_works) (3)
+- [DesignedbyGG](#designedbygg) (1)
 - [drop](#drop) (5)
 - [gg](#gg) (2)
-- [keychron](#keychron) (6)
+- [keychron](#keychron) (5)
 - [lx3](#lx3) (3)
 - [mattmcca](#mattmcca) (2)
 - [monsgeek](#monsgeek) (4)
@@ -23,33 +22,10 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 ---
 
-## 1upkeyboards
-
-**Total: 7 keyboards**
-
-- 1upkeyboards 1upocarina
-- 1upkeyboards 1upsuper16v3
-- 1upkeyboards pi40
-- 1upkeyboards pi60hse
-- 1upkeyboards pi60rgb
-- 1upkeyboards pi60
-- 1upkeyboards sweet16v2
-
-
-## DesignedbyGG
-
-**Total: 1 keyboards**
-
-- QMK DbGG IroncladV3 1.0VIA Full [ISO]
-
-
 ## _Random-Brands
 
 **Total: 40 keyboards**
 
-- GMMK 3 Keyboard
-- Meletrix Zoom98 Keyboard
-- Novelkeys NK87 Keyboard
 - abko ak84bt
 - anachronism tetromino
 - atlantis ps17
@@ -66,6 +42,7 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - flashquark horizonz
 - freya splaytoraid
 - gkeyboard gpad82r
+- GMMK 3 Keyboard
 - helheim freja 65
 - hoksi technology durgod hades qmk
 - inland mk47
@@ -75,9 +52,11 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - keebio nyquistpad
 - kuro kuro65
 - laser ninja pumpkin pad
+- Meletrix Zoom98 Keyboard
+- Novelkeys NK87 Keyboard
 - ozone tactical
 - plywrks ply8x
-- projectd projectd 65 ansi
+- projectd projectd 65 [ANSI]
 - skeletonkbd frost68
 - skmt skmt 15k
 - soda mango
@@ -88,6 +67,17 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - yiancardesigns nk
 - zzeneg stront
 
+## 1upkeyboards
+
+**Total: 7 keyboards**
+
+- 1upkeyboards 1upocarina
+- 1upkeyboards 1upsuper16v3
+- 1upkeyboards pi40
+- 1upkeyboards pi60
+- 1upkeyboards pi60hse
+- 1upkeyboards pi60rgb
+- 1upkeyboards sweet16v2
 
 ## akko
 
@@ -96,7 +86,6 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - akko 5108
 - akko acr87
 - akko top40
-
 
 ## boardsource
 
@@ -108,7 +97,6 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - boardsource techniks
 - boardsource the mark65
 
-
 ## controller_works
 
 **Total: 3 keyboards**
@@ -117,6 +105,11 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - controller works mini36
 - controller works mini42
 
+## DesignedbyGG
+
+**Total: 1 keyboards**
+
+- QMK DbGG IroncladV3 1.0 QMKVIA Full [ISO]
 
 ## drop
 
@@ -128,7 +121,6 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - drop inc sense75
 - drop inc shift v2
 
-
 ## gg
 
 **Total: 2 keyboards**
@@ -136,18 +128,15 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - gg berserker
 - gg ironclad
 
-
 ## keychron
 
-**Total: 6 keyboards**
+**Total: 5 keyboards**
 
-- Keychron C3 Pro Keyboard-6-Underglow [ANSI]
+- keychron keychron q0 plus
+- keychron q0
 - Keychron Q11 Keyboard [ANSI]
 - Keychron V1 Max Encoder Keyboard [ISO]
 - Keychron V1 Max Encoder Keyboard [ANSI]
-- keychron keychron q0 plus
-- keychron q0
-
 
 ## lx3
 
@@ -157,7 +146,6 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - lx3 fave60a
 - lx3 favepada
 
-
 ## mattmcca
 
 **Total: 2 keyboards**
@@ -165,16 +153,14 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - mattmcca blackhellebore
 - mattmcca heliotrope
 
-
 ## monsgeek
 
 **Total: 4 keyboards**
 
-- Monsgeek M1 V5 Keyboard [ANSI]
 - monsgeek m1
+- Monsgeek M1 V5 Keyboard [ANSI]
 - monsgeek m5
 - monsgeek m6
-
 
 ## rama
 
@@ -183,13 +169,11 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - rama m6c
 - rama works m60b
 
-
 ## whirlwindfx
 
 **Total: 1 keyboards**
 
 - WhirlwindFX Element-V2 Keyboard [ANSI]
-
 
 ## ymdk
 
