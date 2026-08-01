@@ -1,7 +1,7 @@
 ﻿# Supported Keyboards
 
 This document lists all QMK keyboards supported by SignalRGB plugins. The list is automatically generated and can be updated using the `scripts/update-keyboards.ps1` script.
-**Total Keyboards Supported: 180**
+**Total Keyboards Supported: 181**
 
 ## Table of Contents
 - [Akko](#akko) (1)
@@ -20,6 +20,7 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - [KBDCraft](#kbdcraft) (2)
 - [KBDFans](#kbdfans) (2)
 - [Keychron](#keychron) (114)
+- [Kinst](#kinst) (1)
 - [KPRepublic](#kprepublic) (1)
 - [Lemokey](#lemokey) (6)
 - [Massdrop](#massdrop) (8)
@@ -155,18 +156,18 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Keychron K1 Pro Keyboard
 
-- Keychron K10 HE Keyboard [ISO]
 - Keychron K10 HE Keyboard [ANSI]
+- Keychron K10 HE Keyboard [ISO]
 
-- Keychron K10 Max Keyboard [ANSI]
 - Keychron K10 Max Keyboard [ISO]
+- Keychron K10 Max Keyboard [ANSI]
 - Keychron K10 v2 Keyboard [ANSI]
 
 - Keychron K10Pro Keyboard [ANSI]
 - Keychron K10Pro Keyboard [ISO]
 
-- Keychron K10V2 Keyboard [ANSI]
 - Keychron K10V2 Keyboard [ISO]
+- Keychron K10V2 Keyboard [ANSI]
 
 - Keychron K12 Pro Keyboard [ANSI]
 
@@ -175,8 +176,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron K2 HE Keyboard [ANSI]
 - Keychron K2 HE Keyboard [ISO]
 
-- Keychron K2 Max Keyboard [ISO]
 - Keychron K2 Max Keyboard [ANSI]
+- Keychron K2 Max Keyboard [ISO]
 
 - Keychron K2 Pro DE Keyboard [ISO]
 - Keychron K2 Pro Keyboard [ANSI]
@@ -196,8 +197,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Keychron K4v2 Keyboard [ANSI]
 
-- Keychron K5 Max Keyboard [ANSI]
 - Keychron K5 Max Keyboard [ISO]
+- Keychron K5 Max Keyboard [ANSI]
 
 - Keychron K5 Pro Keyboard [ANSI]
 
@@ -205,12 +206,12 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Keychron K6 Pro Keyboard [ANSI]
 
-- Keychron K8 HE Keyboard [ANSI]
 - Keychron K8 HE Keyboard [ISO]
+- Keychron K8 HE Keyboard [ANSI]
 
 - Keychron K8 TKL Keyboard [ISO]
-- Keychron K8 TKL Version 2 Keyboard [ISO]
 - Keychron K8 TKL Version 2 Keyboard [ANSI]
+- Keychron K8 TKL Version 2 Keyboard [ISO]
 
 - Keychron K8Max Keyboard [ANSI]
 - Keychron K8Max Keyboard [ISO]
@@ -253,8 +254,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Keychron Q3 HE Encoder Keyboard [ANSI]
 
-- Keychron Q3 Keyboard [ISO]
 - Keychron Q3 Keyboard [ANSI]
+- Keychron Q3 Keyboard [ISO]
 
 - Keychron Q3 Max Keyboard [ISO]
 - Keychron Q3 Max Keyboard [ANSI]
@@ -263,8 +264,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron Q3 Pro SE Keyboard [ANSI]
 
 - Keychron Q4 Keyboard [ANSI]
-- Keychron Q5 Encoder Keyboard [ANSI]
 - Keychron Q5 Encoder Keyboard [ISO]
+- Keychron Q5 Encoder Keyboard [ANSI]
 
 - Keychron Q5 HE Encoder Keyboard [ANSI]
 
@@ -272,18 +273,18 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Keychron Q5 Max Encoder Keyboard [ANSI]
 
-- Keychron Q5 Pro Keyboard [ISO]
 - Keychron Q5 Pro Keyboard [ANSI]
+- Keychron Q5 Pro Keyboard [ISO]
 
 - Keychron Q6 HE Keyboard [ANSI] [ISO]
 
 - Keychron Q6 Keyboard [ANSI] [ISO]
 
-- Keychron Q6 Max Keyboard [ISO]
 - Keychron Q6 Max Keyboard [ANSI]
+- Keychron Q6 Max Keyboard [ISO]
 
-- Keychron Q6 Pro Keyboard [ANSI]
 - Keychron Q6 Pro Keyboard [ISO]
+- Keychron Q6 Pro Keyboard [ANSI]
 
 - Keychron Q65 Encoder Keyboard [ANSI]
 
@@ -293,11 +294,11 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron Q8 Pro Keyboard [ANSI]
 
 - Keychron V1 Encoder Keyboard [ANSI]
-- Keychron V1 Keyboard [ANSI]
 - Keychron V1 Keyboard [ISO]
+- Keychron V1 Keyboard [ANSI]
 
-- Keychron V1 Max Encoder Keyboard [ISO]
 - Keychron V1 Max Encoder Keyboard [ANSI]
+- Keychron V1 Max Encoder Keyboard [ISO]
 
 - Keychron V2 Keyboard [ANSI]
 - Keychron V3 Keyboard [ISO]
@@ -306,20 +307,26 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron V3 Max Encoder Keyboard [ANSI]
 - Keychron V3 Max Keyboard [ISO]
 
-- Keychron V4 Keyboard [ISO]
 - Keychron V4 Keyboard [ANSI]
-- Keychron V5 Encoder Keyboard [ANSI]
+- Keychron V4 Keyboard [ISO]
 - Keychron V5 Encoder Keyboard [ISO]
+- Keychron V5 Encoder Keyboard [ANSI]
 - Keychron V5 Keyboard [ANSI]
 
-- Keychron V5 Max Encoder Keyboard [ANSI]
 - Keychron V5 Max Encoder Keyboard [ISO]
+- Keychron V5 Max Encoder Keyboard [ANSI]
 
 - Keychron V6 Keyboard [ANSI]
 - Keychron V6 Keyboard [ISO]
 
 - Keychron V6 Max Keyboard [ANSI]
 - Keychron V6 Max Keyboard [ISO]
+
+## Kinst
+
+**Total: 1 keyboards**
+
+- Kinst MF17 Numpad
 
 ## KPRepublic
 
