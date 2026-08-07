@@ -1,7 +1,7 @@
 ﻿# Supported Keyboards
 
 This document lists all QMK keyboards supported by SignalRGB plugins. The list is automatically generated and can be updated using the `scripts/update-keyboards.ps1` script.
-**Total Keyboards Supported: 181**
+**Total Keyboards Supported: 184**
 
 ## Table of Contents
 - [Akko](#akko) (1)
@@ -34,7 +34,7 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - [System76](#system76) (1)
 - [XBows](#xbows) (3)
 - [YMDK](#ymdk) (2)
-- [Yunzii](#yunzii) (3)
+- [Yunzii](#yunzii) (6)
 
 ---
 
@@ -176,8 +176,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron K2 HE Keyboard [ANSI]
 - Keychron K2 HE Keyboard [ISO]
 
-- Keychron K2 Max Keyboard [ANSI]
 - Keychron K2 Max Keyboard [ISO]
+- Keychron K2 Max Keyboard [ANSI]
 
 - Keychron K2 Pro DE Keyboard [ISO]
 - Keychron K2 Pro Keyboard [ANSI]
@@ -213,8 +213,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron K8 TKL Version 2 Keyboard [ANSI]
 - Keychron K8 TKL Version 2 Keyboard [ISO]
 
-- Keychron K8Max Keyboard [ANSI]
 - Keychron K8Max Keyboard [ISO]
+- Keychron K8Max Keyboard [ANSI]
 
 - Keychron K8Pro DE Keyboard [ISO]
 - Keychron K8Pro Keyboard [ANSI]
@@ -231,18 +231,18 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron Q1 Max Encoder Keyboard [ANSI]
 - Keychron Q1 Max Encoder Keyboard [ISO]
 
-- Keychron Q1 Pro Encoder Keyboard [ANSI]
 - Keychron Q1 Pro Encoder Keyboard [ISO]
+- Keychron Q1 Pro Encoder Keyboard [ANSI]
 
 - Keychron Q10 Keyboard [ANSI]
 - Keychron Q12 Keyboard [ANSI]
 
 - Keychron Q12 Max Encoder Keyboard [ANSI]
 
-- Keychron Q1v1 Keyboard [ANSI]
 - Keychron Q1v1 Keyboard [ISO]
-- Keychron Q1v2 Encoder Keyboard [ISO]
+- Keychron Q1v1 Keyboard [ANSI]
 - Keychron Q1v2 Encoder Keyboard [ANSI]
+- Keychron Q1v2 Encoder Keyboard [ISO]
 - Keychron Q2 Encoder Keyboard [ANSI]
 - Keychron Q2 Keyboard [ANSI]
 
@@ -254,8 +254,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Keychron Q3 HE Encoder Keyboard [ANSI]
 
-- Keychron Q3 Keyboard [ANSI]
 - Keychron Q3 Keyboard [ISO]
+- Keychron Q3 Keyboard [ANSI]
 
 - Keychron Q3 Max Keyboard [ISO]
 - Keychron Q3 Max Keyboard [ANSI]
@@ -264,8 +264,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron Q3 Pro SE Keyboard [ANSI]
 
 - Keychron Q4 Keyboard [ANSI]
-- Keychron Q5 Encoder Keyboard [ISO]
 - Keychron Q5 Encoder Keyboard [ANSI]
+- Keychron Q5 Encoder Keyboard [ISO]
 
 - Keychron Q5 HE Encoder Keyboard [ANSI]
 
@@ -273,8 +273,8 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 - Keychron Q5 Max Encoder Keyboard [ANSI]
 
-- Keychron Q5 Pro Keyboard [ANSI]
 - Keychron Q5 Pro Keyboard [ISO]
+- Keychron Q5 Pro Keyboard [ANSI]
 
 - Keychron Q6 HE Keyboard [ANSI] [ISO]
 
@@ -301,26 +301,26 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 - Keychron V1 Max Encoder Keyboard [ISO]
 
 - Keychron V2 Keyboard [ANSI]
-- Keychron V3 Keyboard [ISO]
 - Keychron V3 Keyboard [ANSI]
+- Keychron V3 Keyboard [ISO]
 
 - Keychron V3 Max Encoder Keyboard [ANSI]
 - Keychron V3 Max Keyboard [ISO]
 
 - Keychron V4 Keyboard [ANSI]
 - Keychron V4 Keyboard [ISO]
-- Keychron V5 Encoder Keyboard [ISO]
 - Keychron V5 Encoder Keyboard [ANSI]
+- Keychron V5 Encoder Keyboard [ISO]
 - Keychron V5 Keyboard [ANSI]
 
-- Keychron V5 Max Encoder Keyboard [ISO]
 - Keychron V5 Max Encoder Keyboard [ANSI]
+- Keychron V5 Max Encoder Keyboard [ISO]
 
 - Keychron V6 Keyboard [ANSI]
 - Keychron V6 Keyboard [ISO]
 
-- Keychron V6 Max Keyboard [ANSI]
 - Keychron V6 Max Keyboard [ISO]
+- Keychron V6 Max Keyboard [ANSI]
 
 ## Kinst
 
@@ -432,9 +432,12 @@ This document lists all QMK keyboards supported by SignalRGB plugins. The list i
 
 ## Yunzii
 
-**Total: 3 keyboards**
+**Total: 6 keyboards**
 
+- Yunzii AL68 Keyboard [ANSI]
 - Yunzii AL80 Keyboard [ANSI]
+- Yunzii B87 Keyboard [ANSI]
+- Yunzii IF99 Keyboard [ANSI]
 - Yunzii MK25047 Keyboard [ANSI]
 - Yunzii X98 Keyboard [ANSI]
 
