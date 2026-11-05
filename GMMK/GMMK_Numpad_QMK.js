@@ -26,7 +26,7 @@ export function ControllableParameters()
 
 //Plugin Version: Built for Protocol V1.0.6
 
-const vKeys = [
+const vNumKeys = [
 	17, 0,   1,   2,   3,    24,
 	18, 4,   5,   6,   7,    25,
 	19, 8,   9,   10,        26,
@@ -37,7 +37,7 @@ const vKeys = [
 
 ];
 
-const vKeyNames = [
+const vNumKeyNames = [
 	"Sidestrip 1", "NumLock", "Num /",  "Num *", "Num -", "Sidestrip 8",
 	"Sidestrip 2", "Num 7",       "Num 8",  "Num 9", "Num +", "Sidestrip 9",
 	"Sidestrip 3", "Num 4", "Num 5", "Num 6",             "Sidestrip 10",
@@ -48,7 +48,7 @@ const vKeyNames = [
 
 ];
 
-const vKeyPositions = [
+const vNumKeyPositions = [
 	[4, 0], [0, 0], [1, 0], [2, 0], [3, 0], [5, 0],
 	[4, 1], [0, 1], [1, 1], [2, 1], [3, 1], [5, 1],
 	[4, 2], [0, 2], [1, 2], [2, 2],         [5, 2],
@@ -226,6 +226,14 @@ function returnUniqueIdentifier(data)
 	const UniqueIdentifierByte1 = data[2];
 	const UniqueIdentifierByte2 = data[3];
 	const UniqueIdentifierByte3 = data[4];
+    
+    if(UniqueIdentifierByte3 === 17)
+    {
+        device.setControllableLeds(vKeyNames, vKeyPositions);
+        vKeys = vNumKeys;
+        vKeyNames = vNumKeyNames;
+        vKeyPositions = vNumKeyPositions;
+    }
 
 	if(!(UniqueIdentifierByte1 === 0 && UniqueIdentifierByte2 === 0 && UniqueIdentifierByte3 === 0))
 	{
