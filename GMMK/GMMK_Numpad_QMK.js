@@ -26,6 +26,15 @@ export function ControllableParameters()
 
 //Plugin Version: Built for Protocol V1.0.6
 
+const vKeys = [
+	17, 0,   1,   2,   3,    24,
+	18, 4,   5,   6,   7,    25,
+	19, 8,   9,   10,        26,
+	20, 11,  12,  13,  14,   27,
+	21, 15,            16,   28,
+	22,						 29,
+	23,						 30,
+];
 const vNumKeys = [
 	17, 0,   1,   2,   3,    24,
 	18, 4,   5,   6,   7,    25,
@@ -34,9 +43,17 @@ const vNumKeys = [
 	21, 15,            16,   28,
 	22,						 29,
 	23,						 30,
-
 ];
 
+const vKeyNames = [
+	"Sidestrip 1", "NumLock", "Num /",  "Num *", "Num -", "Sidestrip 8",
+	"Sidestrip 2", "Num 7",       "Num 8",  "Num 9", "Num +", "Sidestrip 9",
+	"Sidestrip 3", "Num 4", "Num 5", "Num 6",             "Sidestrip 10",
+	"Sidestrip 4", "Num 1", "Num 2", "Num 3",   "Num Enter",  "Sidestrip 11",
+	"Sidestrip 5", "Num 0", "Num .",                  "Sidestrip 12",
+	"Sidestrip 6",                            "Sidestrip 13",
+	"Sidestrip 7",                            "Sidestrip 14",
+];
 const vNumKeyNames = [
 	"Sidestrip 1", "NumLock", "Num /",  "Num *", "Num -", "Sidestrip 8",
 	"Sidestrip 2", "Num 7",       "Num 8",  "Num 9", "Num +", "Sidestrip 9",
@@ -45,9 +62,17 @@ const vNumKeyNames = [
 	"Sidestrip 5", "Num 0", "Num .",                  "Sidestrip 12",
 	"Sidestrip 6",                            "Sidestrip 13",
 	"Sidestrip 7",                            "Sidestrip 14",
-
 ];
 
+const vKeyPositions = [
+	[4, 0], [0, 0], [1, 0], [2, 0], [3, 0], [5, 0],
+	[4, 1], [0, 1], [1, 1], [2, 1], [3, 1], [5, 1],
+	[4, 2], [0, 2], [1, 2], [2, 2],         [5, 2],
+	[4, 3], [0, 3], [1, 3], [2, 3], [3, 3], [5, 3],
+	[4, 4], [0, 4], [1, 4],                 [5, 4],
+	[4, 5],                                 [5, 5],
+	[4, 6],                                 [5, 6]
+];
 const vNumKeyPositions = [
 	[4, 0], [0, 0], [1, 0], [2, 0], [3, 0], [5, 0],
 	[4, 1], [0, 1], [1, 1], [2, 1], [3, 1], [5, 1],
@@ -56,7 +81,6 @@ const vNumKeyPositions = [
 	[4, 4], [0, 4], [1, 4],                 [5, 4],
 	[4, 5],                                 [5, 5],
 	[4, 6],                                 [5, 6]
-
 ];
 
 let LEDCount = 0;
